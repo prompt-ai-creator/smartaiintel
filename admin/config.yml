@@ -1,0 +1,53 @@
+backend:
+  name: github
+  repo: prompt-ai-creator/smartaiintel
+  branch: main
+  base_url: https://smartaiintel-editor-auth.olayiwolafaruk2011.workers.dev
+  auth_endpoint: auth
+publish_mode: editorial_workflow
+site_url: https://smartaiintel.pages.dev
+display_url: https://smartaiintel.pages.dev
+media_folder: assets/uploads
+public_folder: /assets/uploads
+slug:
+  encoding: ascii
+  clean_accents: true
+collections:
+  - name: articles
+    label: Articles
+    folder: content/articles
+    create: true
+    slug: '{{slug}}'
+    preview_path: articles/{{slug}}/
+    fields:
+      - {label: Headline, name: title, widget: string}
+      - label: Section and byline
+        name: section
+        widget: select
+        options:
+          - {label: 'US News — Austin J.', value: us-news}
+          - {label: 'World & Global Affairs — Ethan R.', value: world}
+          - {label: 'War & Security — Mason T.', value: security}
+          - {label: 'Technology & AI — Logan M.', value: technology}
+          - {label: 'Business & Economy — Carter B.', value: business}
+          - {label: 'Football & Sports — Jordan W.', value: sports}
+        hint: The website derives the byline from this assignment. Credit the actual responsible contributor.
+      - {label: Summary, name: summary, widget: text}
+      - {label: Publication date, name: date, widget: datetime}
+      - {label: Last materially updated, name: updated, widget: datetime, required: false}
+      - {label: Article body, name: body, widget: markdown}
+      - label: Sources
+        name: sources
+        widget: list
+        min: 1
+        fields:
+          - {label: Source title, name: title, widget: string}
+          - {label: HTTPS URL, name: url, widget: string, pattern: ['^https://[^\s]+$', 'Enter an HTTPS URL.']}
+      - {label: Main image, name: image, widget: image, required: false}
+      - {label: Image description, name: image_alt, widget: string, required: false}
+      - {label: Image credit and licence note, name: image_credit, widget: string, required: false}
+      - {label: SEO title, name: seo_title, widget: string, required: false, hint: Defaults to headline. No guaranteed Google display or ranking.}
+      - {label: Search description, name: description, widget: text, hint: An accurate concise description. Google may rewrite snippets.}
+      - {label: Correction note, name: correction, widget: text, required: false}
+      - {label: 'Editorial approval: facts, authorship, sources and media rights checked', name: editorial_approved, widget: boolean, default: false, hint: Production build rejects an unapproved article on main. This checkbox is not an independent reviewer signature.}
+      - {label: 'Allow this article to be indexed after launch review', name: indexable, widget: boolean, default: false, hint: Leave off until content and publication checks are complete.}

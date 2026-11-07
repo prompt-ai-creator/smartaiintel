@@ -1,0 +1,49 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import matter from 'gray-matter';
+import MarkdownIt from 'markdown-it';
+const root=process.cwd(), dest=path.join(root,'_site');
+const md=new MarkdownIt({html:false,linkify:false,typographer:true});
+const sections={ 'us-news':['US News','Austin J.'],world:['World & Global Affairs','Ethan R.'],security:['War & Security','Mason T.'],technology:['Technology & AI','Logan M.'],business:['Business & Economy','Carter B.'],sports:['Football & Sports','Jordan W.']};
+const origin='https://smartaiintel.pages.dev';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const json=o=>JSON.stringify(o).replace(/</g,'\\u003c');
+const https=s=>{try{return new URL(s).protocol==='https:'}catch{return false}};
+const stamp=v=>{const d=new Date(v);if(!v||!Number.isFinite(d.getTime()))throw Error('Valid date required');return d.toISOString()};
+const nice=s=>new Date(s).toLocaleString('en-GB',{dateStyle:'long',timeStyle:'short',timeZone:'UTC'})+' UTC';
+await fs.rm(dest,{recursive:true,force:true});await fs.mkdir(dest,{recursive:true});
+for(const file of ['index.html','styles.css','script.js','article.css','_headers','assets','admin']){try{await fs.cp(path.join(root,file),path.join(dest,file),{recursive:true})}catch(e){if(e.code!=='ENOENT')throw e}}
+const input=await fs.readdir('content/articles');const articles=[];
+for(const file of input.filter(f=>f.endsWith('.md'))){
+ const slug=file.slice(0,-3);if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error(`Invalid slug: ${file}`);
+ const {data:d,content}=matter(await fs.readFile('content/articles/'+file,'utf8'));
+ if(d.editorial_approved!==true)throw Error(`${file}: editorial approval required on main.`);
+ for(const field of ['title','summary','description'])if(typeof d[field]!=='string'||!d[field].trim())throw Error(`${file}: ${field} required.`);
+ if(!content.trim()||!sections[d.section])throw Error(`${file}: body and valid section required.`);
+ if(!Array.isArray(d.sources)||!d.sources.length||d.sources.some(s=>!s.title||!https(s.url)))throw Error(`${file}: named HTTPS sources required.`);
+ const date=stamp(d.date),updated=d.updated?stamp(d.updated):date;if(updated<date)throw Error(`${file}: update predates publication.`);
+ if(new Date(date)>new Date())throw Error(`${file}: future publication dates need a scheduled publishing service, not yet configured.`);
+ if(d.image){if(!/^\/assets\/[a-zA-Z0-9_./-]+$/.test(d.image)||d.image.includes('..')||!d.image_alt||!d.image_credit)throw Error(`${file}: local image, alt text and rights note required.`);await fs.access(path.join(dest,d.image.slice(1)))}
+ articles.push({...d,slug,date,updated,html:md.render(content),sectionLabel:sections[d.section][0],author:sections[d.section][1],url:origin+'/articles/'+slug+'/'});
+}
+articles.sort((a,b)=>b.date.localeCompare(a.date));
+const shell=(title,body,extra='')=>`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} | SmartAIIntel</title><link rel="stylesheet" href="/article.css">${extra}</head><body><a class="skip" href="#main">Skip to content</a><header class="wrap"><a class="brand" href="/">Smart<span>AI</span>Intel<b>.</b><small>US NEWS. GLOBAL CONTEXT.</small></a><a href="/articles/">All articles →</a></header><nav><div class="wrap"><div id="navlinks" style="display:flex;flex-wrap:wrap"><a href="/">Home</a><a href="/articles/">Articles</a></div></div></nav><main class="wrap" id="main">${body}</main><footer><div class="wrap"><a class="brand" href="/">Smart<span>AI</span>Intel<b>.</b></a><p>SmartAIIntel editorial publication</p><a href="#main">Back to top ↑</a></div></footer></body></html>`;
+for(const a of articles){
+ const structured={'@context':'https://schema.org','@type':'NewsArticle',headline:a.title,description:a.description,datePublished:a.date,dateModified:a.updated,author:{'@type':'Person',name:a.author},publisher:{'@type':'Organization',name:'SmartAIIntel'},mainEntityOfPage:a.url,...(a.image?{image:[origin+a.image]}:{})};
+ const extra=`<meta name="description" content="${esc(a.description)}"><meta name="robots" content="${a.indexable===true?'index,follow':'noindex,nofollow'}"><link rel="canonical" href="${esc(a.url)}"><meta property="og:type" content="article"><meta property="og:title" content="${esc(a.title)}"><meta property="og:description" content="${esc(a.description)}"><meta property="og:url" content="${esc(a.url)}">${a.image?`<meta property="og:image" content="${esc(origin+a.image)}">`:''}<script type="application/ld+json">${json(structured)}</script>`;
+ const related=articles.filter(b=>b.slug!==a.slug).sort((b,c)=>Number(c.section===a.section)-Number(b.section===a.section)).slice(0,3);
+ const body=`<div class="breadcrumbs">SMARTAIINTEL / ${esc(a.sectionLabel)}</div><article style="max-width:800px;margin:0 auto 60px"><span class="eyebrow">${esc(a.sectionLabel)}</span><h1>${esc(a.title)}</h1><p class="standfirst">${esc(a.summary)}</p><div class="byline"><strong>By ${esc(a.author)}</strong></div><div class="article-meta"><span>Published <time datetime="${a.date}">${nice(a.date)}</time>${a.updated!==a.date?` · Updated <time datetime="${a.updated}">${nice(a.updated)}</time>`:''}</span></div>${a.image?`<figure><img src="${esc(a.image)}" alt="${esc(a.image_alt)}"><figcaption>${esc(a.image_credit)}</figcaption></figure>`:''}<div class="article-body">${a.html}</div><section class="sources"><h2>Sources & reporting notes</h2><ul>${a.sources.map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join('')}</ul></section>${a.correction?`<p class="corrections"><strong>Correction:</strong> ${esc(a.correction)}</p>`:''}${related.length?`<section class="related"><h2>Related reporting</h2>${related.map(b=>`<p><a href="/articles/${b.slug}/">${esc(b.title)}</a></p>`).join('')}</section>`:''}</article>`;
+ await fs.mkdir(`${dest}/articles/${a.slug}`,{recursive:true});await fs.writeFile(`${dest}/articles/${a.slug}/index.html`,shell(a.seo_title||a.title,body,extra));
+}
+await fs.mkdir(dest+'/articles',{recursive:true});
+await fs.writeFile(dest+'/articles/index.html',shell('Latest articles',`<div class="breadcrumbs">SMARTAIINTEL / ARTICLES</div><section style="min-height:50vh"><h1>Latest articles</h1>${articles.length?articles.map(a=>`<article style="padding:24px 0;border-bottom:1px solid #ddd"><span class="eyebrow">${esc(a.sectionLabel)}</span><h2><a href="/articles/${a.slug}/">${esc(a.title)}</a></h2><p>${esc(a.summary)}</p><p>By ${esc(a.author)}</p></article>`).join(''):'<p>No articles have been published yet.</p>'}</section>`,'<meta name="robots" content="noindex,follow">'));
+// Retain the approved homepage verbatim: only add a clearly identified article-list link.
+let homepage=await fs.readFile(dest+'/index.html','utf8');
+if(!homepage.includes('href="/articles/"'))homepage=homepage.replace('</nav>','</nav><div style="max-width:1220px;margin:auto;padding:10px 30px;font:12px Arial"><a href="/articles/" style="color:#b80000">Read our published articles →</a></div>');
+await fs.writeFile(dest+'/index.html',homepage);
+const sitemap=articles.filter(a=>a.indexable===true).map(a=>`<url><loc>${esc(a.url)}</loc><lastmod>${a.updated}</lastmod></url>`).join('');
+await fs.writeFile(dest+'/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${sitemap}</urlset>`);
+await fs.writeFile(dest+'/robots.txt',`User-agent: *\nDisallow: /admin/\nSitemap: ${origin}/sitemap.xml\n`);
+let headers=await fs.readFile(dest+'/_headers','utf8').catch(()=>'/*\n  Cache-Control: no-cache\n');
+headers+='\n/admin/*\n  X-Robots-Tag: noindex, nofollow\n  Cache-Control: no-store\n';await fs.writeFile(dest+'/_headers',headers);
+console.log(`Built ${articles.length} approved articles into _site. No publication performed.`);
