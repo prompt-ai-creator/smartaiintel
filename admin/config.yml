@@ -21,6 +21,8 @@ collections:
     preview_path: articles/{{slug}}/
     fields:
       - {label: Headline, name: title, widget: string}
+      - {label: Show on homepage, name: show_on_homepage, widget: boolean, default: true}
+      - {label: Test article — exclude from homepage, name: test_only, widget: boolean, default: false}
       - label: Section and byline
         name: section
         widget: select
