@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import matter from 'gray-matter';
 import MarkdownIt from 'markdown-it';
+import {homepage} from './homepage.mjs';
 const root=process.cwd(), dest=path.join(root,'_site');
 const md=new MarkdownIt({html:false,linkify:false,typographer:true});
 const sections={ 'us-news':['US News','Austin J.'],world:['World & Global Affairs','Ethan R.'],security:['War & Security','Mason T.'],technology:['Technology & AI','Logan M.'],business:['Business & Economy','Carter B.'],sports:['Football & Sports','Jordan W.']};
@@ -12,7 +13,8 @@ const https=s=>{try{return new URL(s).protocol==='https:'}catch{return false}};
 const stamp=v=>{const d=new Date(v);if(!v||!Number.isFinite(d.getTime()))throw Error('Valid date required');return d.toISOString()};
 const nice=s=>new Date(s).toLocaleString('en-GB',{dateStyle:'long',timeStyle:'short',timeZone:'UTC'})+' UTC';
 await fs.rm(dest,{recursive:true,force:true});await fs.mkdir(dest,{recursive:true});
-for(const file of ['index.html','styles.css','script.js','article.css','_headers','assets','admin']){try{await fs.cp(path.join(root,file),path.join(dest,file),{recursive:true})}catch(e){if(e.code!=='ENOENT')throw e}}
+for(const file of ['index.html','styles.css','script.js','article.css','homepage-live.js','_headers','assets','admin']){try{await fs.cp(path.join(root,file),path.join(dest,file),{recursive:true})}catch(e){if(e.code!=='ENOENT')throw e}}
+await fs.mkdir('content/articles',{recursive:true});
 const input=await fs.readdir('content/articles');const articles=[];
 for(const file of input.filter(f=>f.endsWith('.md'))){
  const slug=file.slice(0,-3);if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error(`Invalid slug: ${file}`);
@@ -38,9 +40,9 @@ for(const a of articles){
 await fs.mkdir(dest+'/articles',{recursive:true});
 await fs.writeFile(dest+'/articles/index.html',shell('Latest articles',`<div class="breadcrumbs">SMARTAIINTEL / ARTICLES</div><section style="min-height:50vh"><h1>Latest articles</h1>${articles.length?articles.map(a=>`<article style="padding:24px 0;border-bottom:1px solid #ddd"><span class="eyebrow">${esc(a.sectionLabel)}</span><h2><a href="/articles/${a.slug}/">${esc(a.title)}</a></h2><p>${esc(a.summary)}</p><p>By ${esc(a.author)}</p></article>`).join(''):'<p>No articles have been published yet.</p>'}</section>`,'<meta name="robots" content="noindex,follow">'));
 // Retain the approved homepage verbatim: only add a clearly identified article-list link.
-let homepage=await fs.readFile(dest+'/index.html','utf8');
-if(!homepage.includes('href="/articles/"'))homepage=homepage.replace('</nav>','</nav><div style="max-width:1220px;margin:auto;padding:10px 30px;font:12px Arial"><a href="/articles/" style="color:#b80000">Read our published articles →</a></div>');
-await fs.writeFile(dest+'/index.html',homepage);
+let home=homepage(await fs.readFile(dest+'/index.html','utf8'),articles);
+if(!home.includes('href="/articles/"'))home=home.replace('</nav>','</nav><div style="max-width:1220px;margin:auto;padding:10px 30px;font:12px Arial"><a href="/articles/" style="color:#b80000">Read our published articles →</a></div>');
+await fs.writeFile(dest+'/index.html',home);
 const sitemap=articles.filter(a=>a.indexable===true).map(a=>`<url><loc>${esc(a.url)}</loc><lastmod>${a.updated}</lastmod></url>`).join('');
 await fs.writeFile(dest+'/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${sitemap}</urlset>`);
 await fs.writeFile(dest+'/robots.txt',`User-agent: *\nDisallow: /admin/\nSitemap: ${origin}/sitemap.xml\n`);
