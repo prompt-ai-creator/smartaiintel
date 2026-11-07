@@ -12,25 +12,9 @@ indexable: false
 ---
 ### Do this
 
-1. Return to your Pages project’s 
-
-   **Deployments**
-
-    list.
-2. Find the deployment labelled 
-
-   **“Create .gitkeep”**
-
-   , commit 
-
-   **`08c0ee2`**
-
-   .
-3. Open that deployment and check its status.
-4. If it failed, retry 
-
-   **that deployment**
-
-   , not 
-
-   **“Add files via upload.”**
+1. Return to your Pages project’s **Deployments** list.
+2. Find the deployment labelled **“Create .gitkeep”** commit 
+3. **`08c0ee2`**
+4. Open that deployment and check its status.
+5. If it failed, retry **that deployment,** not 
+6. **“Add files via upload.”**
