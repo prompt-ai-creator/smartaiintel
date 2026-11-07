@@ -1,5 +1,5 @@
 ---
-title: INTERNAL CMS TEST — DO NOT PUBLISH
+title: SmartAIIntel article layout test — not a news report
 section: us-news
 summary: Temporary draft used to test the CMS. Not a news report.
 date: 2026-11-07T12:29:00.000+01:00
