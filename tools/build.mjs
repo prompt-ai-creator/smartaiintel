@@ -20,7 +20,12 @@ const input=await fs.readdir('content/articles');const articles=[];
 for(const file of input.filter(f=>f.endsWith('.md'))){
  const slug=file.slice(0,-3);if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error(`Invalid slug: ${file}`);
  const {data:d,content}=matter(await fs.readFile('content/articles/'+file,'utf8'));
- if(d.editorial_approved!==true)throw Error(`${file}: editorial approval required on main.`);
+ // Unpublished drafts must not block deployment of the existing publication.
+ // Approval alone does not override an explicit editorial hold.
+ if(d.editorial_approved!==true||d.publication_hold===true){
+  console.log(`Skipped unpublished article: ${file}${d.publication_hold===true?' (publication hold)':' (draft)'}`);
+  continue;
+ }
  for(const field of ['title','summary','description'])if(typeof d[field]!=='string'||!d[field].trim())throw Error(`${file}: ${field} required.`);
  if(!content.trim()||!sections[d.section])throw Error(`${file}: body and valid section required.`);
  if(!Array.isArray(d.sources)||!d.sources.length||d.sources.some(s=>!s.title||!https(s.url)))throw Error(`${file}: named HTTPS sources required.`);
