@@ -1,34 +1,34 @@
 ---
-{
-  "title": "Anthropic secures $3.4 billion generator deal, FT reports",
-  "summary": "The reported purchase covers commitments for 1.7 gigawatts of equipment. It highlights the gap between securing generators and delivering usable AI capacity.",
-  "description": "Anthropic reportedly secured $3.4 billion in generator commitments. The deal puts AI power supply, installation costs and delivery schedules in focus.",
-  "section": "technology",
-  "sources": [
-    {
-      "title": "Reuters report carried by StreetInsider",
-      "url": "https://www.streetinsider.com/Reuters/Anthropic+secures+$3.4+billion+generator+deal+for+AI+data+centers,+FT+reports/27309458.html"
-    },
-    {
-      "title": "IEA Energy and AI executive summary",
-      "url": "https://www.iea.org/reports/energy-and-ai/executive-summary"
-    }
-  ],
-  "seo_title": "Anthropic secures $3.4 billion generator deal, FT reports",
-  "editorial_approved": true,
-  "indexable": true,
-  "show_on_homepage": true,
-  "image": "/assets/uploads/nersc-server-racks-2011.webp",
-  "image_alt": "Archive image: server racks at NERSC, October 14, 2011.",
-  "image_credit": "Archive image: server racks at NERSC, October 14, 2011. This is not an Anthropic facility. Derrick Coetzee, via Wikimedia Commons, CC0. Resized and converted to WebP.",
-  "date_mode": "first-publication",
-  "source_not_before": "2026-11-08T07:53:00-05:00",
-  "coverage_date": "2026-11-08",
-  "release_not_before": "2026-11-08T00:00:00-05:00"
-}
+release_not_before: 2026-11-08T00:00:00-05:00
+title: Anthropic secures $3.4 billion generator deal, FT reports
+show_on_homepage: true
+test_only: false
+section: technology
+summary: The reported purchase covers commitments for 1.7 gigawatts of
+  equipment. It highlights the gap between securing generators and delivering
+  usable AI capacity.
+image_alt: "Archive image: server racks at NERSC, October 14, 2011."
+coverage_date: 2026-11-08
+date: 2026-11-08T19:50:00.000+01:00
+sources:
+  - title: Reuters report carried by StreetInsider
+    url: https://www.streetinsider.com/Reuters/Anthropic+secures+$3.4+billion+generator+deal+for+AI+data+centers,+FT+reports/27309458.html
+  - title: IEA Energy and AI executive summary
+    url: https://www.iea.org/reports/energy-and-ai/executive-summary
+image: /assets/uploads/nersc-server-racks-2011.webp
+image_credit: "Archive image: server racks at NERSC, October 14, 2011. This is
+  not an Anthropic facility. Derrick Coetzee, via Wikimedia Commons, CC0.
+  Resized and converted to WebP."
+seo_title: Anthropic secures $3.4 billion generator deal, FT reports
+description: Anthropic reportedly secured $3.4 billion in generator commitments.
+  The deal puts AI power supply, installation costs and delivery schedules in
+  focus.
+editorial_approved: true
+indexable: true
+source_not_before: 2026-11-08T07:53:00-05:00
+date_mode: first-publication
 ---
-
-In a report dated November 8, 2026, [Reuters](https://www.streetinsider.com/Reuters/Anthropic+secures+$3.4+billion+generator+deal+for+AI+data+centers,+FT+reports/27309458.html) says the Financial Times reported that Anthropic secured a deal worth about $3.4 billion for gas fired generators intended to support data centres. The reported arrangement covers commitments for 1.7 gigawatts of equipment from Texas supplier OnePWR Solutions. **Those commitments are not confirmation that the generators have been installed or are supplying electricity.**
+According to [Reuters](https://www.streetinsider.com/Reuters/Anthropic+secures+$3.4+billion+generator+deal+for+AI+data+centers,+FT+reports/27309458.html) says the Financial Times reported that Anthropic secured a deal worth about $3.4 billion for gas fired generators intended to support data centres. The reported arrangement covers commitments for 1.7 gigawatts of equipment from Texas supplier OnePWR Solutions. **Those commitments are not confirmation that the generators have been installed or are supplying electricity.**
 
 Reuters said it could not immediately verify the FT report, and that Anthropic and OnePWR did not respond to requests for comment. The reported agreement dates to late September, making this a account of an earlier transaction rather than a company announcement on the report’s publication date.
 
