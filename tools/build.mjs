@@ -7,7 +7,7 @@ import {homepage} from './homepage.mjs';
 const root=process.cwd(), dest=path.join(root,'_site');
 const md=new MarkdownIt({html:false,linkify:false,typographer:true});
 const sections={ 'us-news':['US News','Austin J.'],world:['World & Global Affairs','Ethan R.'],security:['War & Security','Mason T.'],technology:['Technology & AI','Logan M.'],business:['Business & Economy','Carter B.'],sports:['Football & Sports','Jordan W.']};
-const origin='https://smartaiintel.pages.dev';
+const origin='https://smartaiintel.com';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const json=o=>JSON.stringify(o).replace(/</g,'\\u003c');
 const https=s=>{try{return new URL(s).protocol==='https:'}catch{return false}};
@@ -49,6 +49,7 @@ await fs.mkdir(dest+'/articles',{recursive:true});
 await fs.writeFile(dest+'/articles/index.html',shell('Latest articles',`<div class="breadcrumbs">SMARTAIINTEL / ARTICLES</div><section style="min-height:50vh"><h1>Latest articles</h1>${articles.length?articles.map(a=>`<article style="padding:24px 0;border-bottom:1px solid #ddd"><span class="eyebrow">${esc(a.sectionLabel)}</span><h2><a href="/articles/${a.slug}/">${esc(a.title)}</a></h2><p>${esc(a.summary)}</p><p>By ${esc(a.author)}</p></article>`).join(''):'<p>No articles have been published yet.</p>'}</section>`,'<meta name="robots" content="noindex,follow">'));
 // Retain the approved homepage verbatim: only add a clearly identified article-list link.
 let home=homepage(await fs.readFile(dest+'/index.html','utf8'),articles);
+home=home.replace('</head>',`<link rel="canonical" href="${origin}/"></head>`);
 if(!home.includes('href="/articles/"'))home=home.replace('</nav>','</nav><div style="max-width:1220px;margin:auto;padding:10px 30px;font:12px Arial"><a href="/articles/" style="color:#b80000">Read our published articles →</a></div>');
 home=home.replace('<div class="footer-bottom">',`<div style="padding:18px 0">${policyLinks}</div><div class="footer-bottom">`);
 await fs.writeFile(dest+'/index.html',home);
