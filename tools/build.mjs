@@ -36,7 +36,7 @@ const publicationPages=JSON.parse(await fs.readFile('content/pages.json','utf8')
 for(const page of publicationPages){
  if(!['about','contact','editorial-policy','privacy'].includes(page.slug))throw Error('Unexpected policy slug');
  await fs.mkdir(`${dest}/${page.slug}`,{recursive:true});
- await fs.writeFile(`${dest}/${page.slug}/index.html`,shell(page.title,`<article class="article-body" style="max-width:800px;margin:32px auto 64px"><h1>${esc(page.title)}</h1>${md.render(page.body)}</article>`,'<meta name="robots" content="noindex,follow">'));
+ await fs.writeFile(`${dest}/${page.slug}/index.html`,shell(page.title,`<article class="article-body" style="max-width:800px;margin:32px auto 64px"><h1>${esc(page.title)}</h1>${md.render(page.body)}</article>`,`<meta name="robots" content="index,follow"><link rel="canonical" href="${origin}/${page.slug}/">`));
 }
 for(const a of articles){
  const structured={'@context':'https://schema.org','@type':'NewsArticle',headline:a.title,description:a.description,datePublished:a.date,dateModified:a.updated,author:{'@type':'Person',name:a.author},publisher:{'@type':'Organization',name:'SmartAIIntel'},mainEntityOfPage:a.url,...(a.image?{image:[origin+a.image]}:{})};
@@ -46,14 +46,27 @@ for(const a of articles){
  await fs.mkdir(`${dest}/articles/${a.slug}`,{recursive:true});await fs.writeFile(`${dest}/articles/${a.slug}/index.html`,articlePage(a));
 }
 await fs.mkdir(dest+'/articles',{recursive:true});
-await fs.writeFile(dest+'/articles/index.html',shell('Latest articles',`<div class="breadcrumbs">SMARTAIINTEL / ARTICLES</div><section style="min-height:50vh"><h1>Latest articles</h1>${articles.length?articles.map(a=>`<article style="padding:24px 0;border-bottom:1px solid #ddd"><span class="eyebrow">${esc(a.sectionLabel)}</span><h2><a href="/articles/${a.slug}/">${esc(a.title)}</a></h2><p>${esc(a.summary)}</p><p>By ${esc(a.author)}</p></article>`).join(''):'<p>No articles have been published yet.</p>'}</section>`,'<meta name="robots" content="noindex,follow">'));
+await fs.writeFile(dest+'/articles/index.html',shell('Latest articles',`<div class="breadcrumbs">SMARTAIINTEL / ARTICLES</div><section style="min-height:50vh"><h1>Latest articles</h1>${articles.length?articles.map(a=>`<article style="padding:24px 0;border-bottom:1px solid #ddd"><span class="eyebrow">${esc(a.sectionLabel)}</span><h2><a href="/articles/${a.slug}/">${esc(a.title)}</a></h2><p>${esc(a.summary)}</p><p>By ${esc(a.author)}</p></article>`).join(''):'<p>No articles have been published yet.</p>'}</section>`,`<meta name="robots" content="index,follow"><link rel="canonical" href="${origin}/articles/">`));
 // Retain the approved homepage verbatim: only add a clearly identified article-list link.
 let home=homepage(await fs.readFile(dest+'/index.html','utf8'),articles);
 home=home.replace('</head>',`<link rel="canonical" href="${origin}/"></head>`);
 if(!home.includes('href="/articles/"'))home=home.replace('</nav>','</nav><div style="max-width:1220px;margin:auto;padding:10px 30px;font:12px Arial"><a href="/articles/" style="color:#b80000">Read our published articles →</a></div>');
 home=home.replace('<div class="footer-bottom">',`<div style="padding:18px 0">${policyLinks}</div><div class="footer-bottom">`);
+// Launch cleanup applies only to the generated public homepage, not the design source or admin.
+home=home.replace('<meta name="robots" content="noindex">','<meta name="robots" content="index,follow">');
+home=home.replace(/<div class="preview">[\s\S]*?<\/div>/,'');
+home=home.replace('Editorial policies and launch checks in progress.','Independent reporting. Clear editorial standards.');
+home=home.replace(/<title>[^<]*<\/title>/,'<title>SmartAIIntel | US News, World Affairs and Technology</title>');
+home=home.replace('</head>','<meta name="description" content="Read SmartAIIntel reporting and analysis on US news, world affairs, security, technology, business and sports."></head>');
+home=home.replace(/(<article class="story lead"[\s\S]*?<img[^>]*?)loading="lazy"/,'$1loading="eager" fetchpriority="high"');
+for(const a of articles){
+ const oldDate=new Date(a.date).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
+ const newDate=new Date(a.date).toLocaleDateString('en-US',{day:'numeric',month:'short',year:'numeric',timeZone:'America/New_York'});
+ home=home.split(`<time datetime="${a.date}">${oldDate}</time>`).join(`<time datetime="${a.date}">${newDate}</time>`);
+}
 await fs.writeFile(dest+'/index.html',home);
-const sitemap=articles.filter(a=>a.indexable===true).map(a=>`<url><loc>${esc(a.url)}</loc><lastmod>${a.updated}</lastmod></url>`).join('');
+const publicPages=['/','/articles/',...publicationPages.map(p=>'/'+p.slug+'/')].map(p=>`<url><loc>${esc(origin+p)}</loc></url>`).join('');
+const sitemap=publicPages+articles.filter(a=>a.indexable===true).map(a=>`<url><loc>${esc(a.url)}</loc><lastmod>${a.updated}</lastmod></url>`).join('');
 await fs.writeFile(dest+'/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${sitemap}</urlset>`);
 await fs.writeFile(dest+'/robots.txt',`User-agent: *\nDisallow: /admin/\nSitemap: ${origin}/sitemap.xml\n`);
 let headers=await fs.readFile(dest+'/_headers','utf8').catch(()=>'/*\n  Cache-Control: no-cache\n');
