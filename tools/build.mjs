@@ -13,6 +13,29 @@ const json=o=>JSON.stringify(o).replace(/</g,'\\u003c');
 const https=s=>{try{return new URL(s).protocol==='https:'}catch{return false}};
 const stamp=v=>{const d=new Date(v);if(!v||!Number.isFinite(d.getTime()))throw Error('Valid date required');return d.toISOString()};
 const nice=s=>new Date(s).toLocaleString('en-GB',{dateStyle:'long',timeStyle:'short',timeZone:'UTC'})+' UTC';
+
+// Resolve first-publication metadata from the existing live page, not from a draft placeholder.
+// On the initial release, the build timestamp becomes the publication timestamp.
+// Later builds retain that original timestamp. Fail closed on unexpected responses.
+async function publicationDate(slug,title,notBefore){
+ const url=origin+'/articles/'+slug+'/';
+ let response;
+ try{response=await fetch(url,{signal:AbortSignal.timeout(20000),headers:{'Cache-Control':'no-cache'}})}
+ catch(e){throw Error(`${slug}: cannot verify existing publication timestamp (${e.message}). Retry the build; do not invent a date.`)}
+ if(response.status===404)return new Date().toISOString();
+ if(!response.ok)throw Error(`${slug}: publication date lookup returned HTTP ${response.status}.`);
+ const page=await response.text();
+ const scripts=[...page.matchAll(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)];
+ for(const match of scripts){
+  let item;try{item=JSON.parse(match[1])}catch{continue}
+  if(item['@type']!=='NewsArticle'||item.mainEntityOfPage!==url)continue;
+  const published=stamp(item.datePublished);
+  if(new Date(published)<new Date(notBefore)||new Date(published)>new Date())throw Error(`${slug}: existing publication date conflicts with the source date or build clock. Manual review required.`);
+  return published;
+ }
+ throw Error(`${slug}: a live page exists but its original publication timestamp could not be verified. Manual review required.`);
+}
+
 await fs.rm(dest,{recursive:true,force:true});await fs.mkdir(dest,{recursive:true});
 for(const file of ['index.html','styles.css','script.js','article.css','homepage-live.js','_headers','assets','admin']){try{await fs.cp(path.join(root,file),path.join(dest,file),{recursive:true})}catch(e){if(e.code!=='ENOENT')throw e}}
 await fs.mkdir('content/articles',{recursive:true});
@@ -29,7 +52,18 @@ for(const file of input.filter(f=>f.endsWith('.md'))){
  for(const field of ['title','summary','description'])if(typeof d[field]!=='string'||!d[field].trim())throw Error(`${file}: ${field} required.`);
  if(!content.trim()||!sections[d.section])throw Error(`${file}: body and valid section required.`);
  if(!Array.isArray(d.sources)||!d.sources.length||d.sources.some(s=>!s.title||!https(s.url)))throw Error(`${file}: named HTTPS sources required.`);
- const date=stamp(d.date),updated=d.updated?stamp(d.updated):date;if(updated<date)throw Error(`${file}: update predates publication.`);
+ let resolvedDate=d.date;
+ if(d.date_mode==='first-publication'){
+  const sourceDate=stamp(d.source_not_before);
+  const releaseDate=d.release_not_before?stamp(d.release_not_before):sourceDate;
+  const notBefore=sourceDate>releaseDate?sourceDate:releaseDate;
+  if(new Date()<new Date(notBefore)){
+   console.log(`Held ${file}: release/source threshold ${notBefore} is later than the build clock.`);
+   continue;
+  }
+  resolvedDate=await publicationDate(slug,d.title,notBefore);
+ }
+ const date=stamp(resolvedDate),updated=d.updated?stamp(d.updated):date;if(updated<date)throw Error(`${file}: update predates publication.`);
  if(new Date(date)>new Date())throw Error(`${file}: future publication dates need a scheduled publishing service, not yet configured.`);
  if(d.image){if(!/^\/assets\/[a-zA-Z0-9_./-]+$/.test(d.image)||d.image.includes('..')||!d.image_alt||!d.image_credit)throw Error(`${file}: local image, alt text and rights note required.`);await fs.access(path.join(dest,d.image.slice(1)))}
  articles.push({...d,slug,date,updated,html:md.render(content),sectionLabel:sections[d.section][0],author:d.author==='SmartAIIntel News Desk'?'SmartAIIntel News Desk':sections[d.section][1],url:origin+'/articles/'+slug+'/'});
