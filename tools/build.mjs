@@ -71,4 +71,6 @@ await fs.writeFile(dest+'/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><u
 await fs.writeFile(dest+'/robots.txt',`User-agent: *\nDisallow: /admin/\nSitemap: ${origin}/sitemap.xml\n`);
 let headers=await fs.readFile(dest+'/_headers','utf8').catch(()=>'/*\n  Cache-Control: no-cache\n');
 headers+='\n/admin/*\n  X-Robots-Tag: noindex, nofollow\n  Cache-Control: no-store\n';await fs.writeFile(dest+'/_headers',headers);
+// A top-level 404.html disables Cloudflare Pages SPA fallback for missing routes.
+await fs.writeFile(dest+'/404.html',shell('Page not found',`<section style="min-height:50vh;max-width:760px;margin:50px auto"><span class="eyebrow">404</span><h1>Page not found</h1><p>This address is no longer available or does not exist. Older articles from our previous website have been retired.</p><p><a href="/">Visit the SmartAIIntel homepage</a> or <a href="/articles/">browse our published articles</a>.</p></section>`,'<meta name="robots" content="noindex,follow">'));
 console.log(`Built ${articles.length} approved articles into _site. No publication performed.`);
