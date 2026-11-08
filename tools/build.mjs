@@ -26,10 +26,17 @@ for(const file of input.filter(f=>f.endsWith('.md'))){
  const date=stamp(d.date),updated=d.updated?stamp(d.updated):date;if(updated<date)throw Error(`${file}: update predates publication.`);
  if(new Date(date)>new Date())throw Error(`${file}: future publication dates need a scheduled publishing service, not yet configured.`);
  if(d.image){if(!/^\/assets\/[a-zA-Z0-9_./-]+$/.test(d.image)||d.image.includes('..')||!d.image_alt||!d.image_credit)throw Error(`${file}: local image, alt text and rights note required.`);await fs.access(path.join(dest,d.image.slice(1)))}
- articles.push({...d,slug,date,updated,html:md.render(content),sectionLabel:sections[d.section][0],author:sections[d.section][1],url:origin+'/articles/'+slug+'/'});
+ articles.push({...d,slug,date,updated,html:md.render(content),sectionLabel:sections[d.section][0],author:d.author==='SmartAIIntel News Desk'?'SmartAIIntel News Desk':sections[d.section][1],url:origin+'/articles/'+slug+'/'});
 }
 articles.sort((a,b)=>b.date.localeCompare(a.date));
-const shell=(title,body,extra='')=>`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} | SmartAIIntel</title><link rel="stylesheet" href="/article.css">${extra}</head><body><a class="skip" href="#main">Skip to content</a><header class="wrap"><a class="brand" href="/">Smart<span>AI</span>Intel<b>.</b><small>US NEWS. GLOBAL CONTEXT.</small></a><a href="/articles/">All articles →</a></header><nav><div class="wrap"><div id="navlinks" style="display:flex;flex-wrap:wrap"><a href="/">Home</a><a href="/articles/">Articles</a></div></div></nav><main class="wrap" id="main">${body}</main><footer><div class="wrap"><a class="brand" href="/">Smart<span>AI</span>Intel<b>.</b></a><p>SmartAIIntel editorial publication</p><a href="#main">Back to top ↑</a></div></footer></body></html>`;
+const policyLinks='<a href="/about/">About</a> · <a href="/contact/">Contact</a> · <a href="/editorial-policy/">Editorial &amp; Corrections</a> · <a href="/privacy/">Privacy Policy</a>';
+const shell=(title,body,extra='')=>`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} | SmartAIIntel</title><link rel="stylesheet" href="/article.css">${extra}</head><body><a class="skip" href="#main">Skip to content</a><header class="wrap"><a class="brand" href="/">Smart<span>AI</span>Intel<b>.</b><small>US NEWS. GLOBAL CONTEXT.</small></a><a href="/articles/">All articles →</a></header><nav><div class="wrap"><div id="navlinks" style="display:flex;flex-wrap:wrap"><a href="/">Home</a><a href="/articles/">Articles</a></div></div></nav><main class="wrap" id="main">${body}</main><footer><div class="wrap"><a class="brand" href="/">Smart<span>AI</span>Intel<b>.</b></a><p>SmartAIIntel editorial publication</p><p>${policyLinks}</p><a href="#main">Back to top ↑</a></div></footer></body></html>`;
+const publicationPages=JSON.parse(await fs.readFile('content/pages.json','utf8'));
+for(const page of publicationPages){
+ if(!['about','contact','editorial-policy','privacy'].includes(page.slug))throw Error('Unexpected policy slug');
+ await fs.mkdir(`${dest}/${page.slug}`,{recursive:true});
+ await fs.writeFile(`${dest}/${page.slug}/index.html`,shell(page.title,`<article class="article-body" style="max-width:800px;margin:32px auto 64px"><h1>${esc(page.title)}</h1>${md.render(page.body)}</article>`,'<meta name="robots" content="noindex,follow">'));
+}
 for(const a of articles){
  const structured={'@context':'https://schema.org','@type':'NewsArticle',headline:a.title,description:a.description,datePublished:a.date,dateModified:a.updated,author:{'@type':'Person',name:a.author},publisher:{'@type':'Organization',name:'SmartAIIntel'},mainEntityOfPage:a.url,...(a.image?{image:[origin+a.image]}:{})};
  const extra=`<meta name="description" content="${esc(a.description)}"><meta name="robots" content="${a.indexable===true?'index,follow':'noindex,nofollow'}"><link rel="canonical" href="${esc(a.url)}"><meta property="og:type" content="article"><meta property="og:title" content="${esc(a.title)}"><meta property="og:description" content="${esc(a.description)}"><meta property="og:url" content="${esc(a.url)}">${a.image?`<meta property="og:image" content="${esc(origin+a.image)}">`:''}<script type="application/ld+json">${json(structured)}</script>`;
@@ -42,6 +49,7 @@ await fs.writeFile(dest+'/articles/index.html',shell('Latest articles',`<div cla
 // Retain the approved homepage verbatim: only add a clearly identified article-list link.
 let home=homepage(await fs.readFile(dest+'/index.html','utf8'),articles);
 if(!home.includes('href="/articles/"'))home=home.replace('</nav>','</nav><div style="max-width:1220px;margin:auto;padding:10px 30px;font:12px Arial"><a href="/articles/" style="color:#b80000">Read our published articles →</a></div>');
+home=home.replace('<div class="footer-bottom">',`<div style="padding:18px 0">${policyLinks}</div><div class="footer-bottom">`);
 await fs.writeFile(dest+'/index.html',home);
 const sitemap=articles.filter(a=>a.indexable===true).map(a=>`<url><loc>${esc(a.url)}</loc><lastmod>${a.updated}</lastmod></url>`).join('');
 await fs.writeFile(dest+'/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${sitemap}</urlset>`);
