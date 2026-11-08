@@ -14,14 +14,17 @@
       "url": "https://www.iea.org/reports/energy-and-ai/executive-summary"
     }
   ],
-  "date": "2026-11-06T00:00:00-05:00",
   "seo_title": "Anthropic secures $3.4 billion generator deal, FT reports",
-  "editorial_approved": false,
-  "indexable": false,
-  "show_on_homepage": false,
+  "editorial_approved": true,
+  "indexable": true,
+  "show_on_homepage": true,
   "image": "/assets/uploads/nersc-server-racks-2011.webp",
   "image_alt": "Archive image: server racks at NERSC, October 14, 2011.",
-  "image_credit": "Archive image: server racks at NERSC, October 14, 2011. This is not an Anthropic facility. Derrick Coetzee, via Wikimedia Commons, CC0. Resized and converted to WebP."
+  "image_credit": "Archive image: server racks at NERSC, October 14, 2011. This is not an Anthropic facility. Derrick Coetzee, via Wikimedia Commons, CC0. Resized and converted to WebP.",
+  "date_mode": "first-publication",
+  "source_not_before": "2026-11-08T07:53:00-05:00",
+  "coverage_date": "2026-11-08",
+  "release_not_before": "2026-11-08T00:00:00-05:00"
 }
 ---
 

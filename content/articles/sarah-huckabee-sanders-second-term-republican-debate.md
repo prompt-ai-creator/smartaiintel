@@ -14,14 +14,17 @@
       "url": "https://arkansasadvocate.com/2026/11/04/live-coverage-arkansas-2026-election/"
     }
   ],
-  "date": "2026-11-06T00:00:00-05:00",
   "seo_title": "Sanders faces governing tests as Republicans debate their future",
-  "editorial_approved": false,
-  "indexable": false,
-  "show_on_homepage": false,
+  "editorial_approved": true,
+  "indexable": true,
+  "show_on_homepage": true,
   "image": "/assets/uploads/sarah-huckabee-sanders-2017.webp",
   "image_alt": "Archive image: Sarah Huckabee Sanders at a White House press briefing, May 5, 2017.",
-  "image_credit": "Archive image: Sarah Huckabee Sanders at a White House press briefing, May 5, 2017. The White House, via Wikimedia Commons. Public domain US government work. Resized and converted to WebP."
+  "image_credit": "Archive image: Sarah Huckabee Sanders at a White House press briefing, May 5, 2017. The White House, via Wikimedia Commons. Public domain US government work. Resized and converted to WebP.",
+  "date_mode": "first-publication",
+  "source_not_before": "2026-11-06T12:17:00-05:00",
+  "coverage_date": "2026-11-08",
+  "release_not_before": "2026-11-08T00:00:00-05:00"
 }
 ---
 

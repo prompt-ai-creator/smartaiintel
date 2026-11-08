@@ -14,14 +14,17 @@
       "url": "https://bdnews24.com/business/9qii1cvrv3"
     }
   ],
-  "date": "2026-11-06T00:00:00-05:00",
   "seo_title": "Berkshire buys back $9.6 billion as operating earnings fall",
-  "editorial_approved": false,
-  "indexable": false,
-  "show_on_homepage": false,
+  "editorial_approved": true,
+  "indexable": true,
+  "show_on_homepage": true,
   "image": "/assets/uploads/kiewit-plaza-omaha-2010.webp",
   "image_alt": "Archive image: Kiewit Plaza in Omaha, May 31, 2010.",
-  "image_credit": "Archive image: Kiewit Plaza in Omaha, May 31, 2010. JonClee86, via Wikimedia Commons, CC BY-SA 3.0. Resized and converted to WebP; this adapted image remains available under CC BY-SA 3.0. This photograph does not establish Berkshire’s current office location."
+  "image_credit": "Archive image: Kiewit Plaza in Omaha, May 31, 2010. JonClee86, via Wikimedia Commons, CC BY-SA 3.0. Resized and converted to WebP; this adapted image remains available under CC BY-SA 3.0. This photograph does not establish Berkshire’s current office location.",
+  "date_mode": "first-publication",
+  "source_not_before": "2026-11-08T00:13:17-05:00",
+  "coverage_date": "2026-11-08",
+  "release_not_before": "2026-11-08T00:00:00-05:00"
 }
 ---
 
