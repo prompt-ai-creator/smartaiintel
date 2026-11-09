@@ -5,6 +5,13 @@ import matter from 'gray-matter';
 const ORIGIN='https://smartaiintel.com';
 const STATE_FILE='.scheduled-publishing/state.json';
 const validDate=(value,label)=>{
+ // The CMS may save YAML timestamps unquoted. gray-matter's YAML reader
+ // parses them as Date objects; JSON frontmatter retains string values.
+ // Both represent the same absolute instant and must be accepted.
+ if(value instanceof Date){
+  if(!Number.isFinite(value.getTime()))throw Error(`${label}: invalid date.`);
+  return new Date(value.getTime());
+ }
  if(typeof value!=='string'||!/^\d{4}-\d\d-\d\dT\d\d:\d\d(?::\d\d(?:\.\d+)?)?(?:Z|[+-]\d\d:\d\d)$/.test(value))throw Error(`${label}: use an ISO timestamp with an explicit timezone.`);
  const date=new Date(value);if(!Number.isFinite(date.getTime()))throw Error(`${label}: invalid date.`);return date;
 };
