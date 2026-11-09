@@ -1,31 +1,33 @@
 ---
-{
-  "title": "Tesla to refund many Cybertruck deposits before production ends, Musk says",
-  "summary": "Musk says Tesla cannot fulfil every order before the production line closes. His refund comments add a new consequence to the previously announced wind down.",
-  "description": "Elon Musk says Tesla will refund many Cybertruck deposits because it cannot fulfil every order before the production line closes.",
-  "section": "business",
-  "sources": [
-    {
-      "title": "Reuters report carried by SRN News",
-      "url": "https://srnnews.com/tesla-to-refund-many-cybertruck-deposits-as-demand-exceeds-production-musk-says/"
-    },
-    {
-      "title": "Reuters initial dispatch carried by Investing.com",
-      "url": "https://za.investing.com/news/stock-market-news/tesla-to-refund-many-cybertruck-deposits-as-demand-exceeds-production-musk-says-4560450"
-    }
-  ],
-  "source_not_before": "2026-11-09T07:58:00-05:00",
-  "seo_title": "Tesla to refund many Cybertruck deposits before production ends, Musk says",
-  "editorial_approved": true,
-  "indexable": true,
-  "show_on_homepage": true,
-  "date_mode": "first-publication",
-  "coverage_date": "2026-11-09",
-  "release_not_before": "2026-11-09T00:00:00-05:00",
-  "image": "/assets/uploads/cybertruck-oslo-2024.webp",
-  "image_alt": "Archive photograph: Tesla Cybertruck on display at Skøyen, Oslo, May 4, 2024.",
-  "image_credit": "Archive photograph: Tesla Cybertruck on display at Skøyen, Oslo, May 4, 2024. Premeditated, via Wikimedia Commons, Creative Commons Attribution ShareAlike 4.0. Resized and converted to WebP; the adapted photograph remains under the same license. Not an image of a vehicle affected by the current refund announcement."
-}
+release_not_before: 2026-11-09T00:00:00-05:00
+title: Tesla to refund many Cybertruck deposits before production ends, Musk says
+show_on_homepage: true
+test_only: false
+section: business
+summary: Musk says Tesla cannot fulfil every order before the production line
+  closes. His refund comments add a new consequence to the previously announced
+  wind down.
+image_alt: "Archive photograph: Tesla Cybertruck on display at Skøyen, Oslo, May 4, 2024."
+coverage_date: 2026-11-09
+date: 2026-11-09T12:42:00.000+01:00
+sources:
+  - title: Reuters report carried by SRN News
+    url: https://srnnews.com/tesla-to-refund-many-cybertruck-deposits-as-demand-exceeds-production-musk-says/
+  - title: Reuters initial dispatch carried by Investing.com
+    url: https://za.investing.com/news/stock-market-news/tesla-to-refund-many-cybertruck-deposits-as-demand-exceeds-production-musk-says-4560450
+image: /assets/uploads/cybertruck-oslo-2024.webp
+image_credit: "Archive photograph: Tesla Cybertruck on display at Skøyen, Oslo,
+  May 4, 2024. Premeditated, via Wikimedia Commons, Creative Commons Attribution
+  ShareAlike 4.0. Resized and converted to WebP; the adapted photograph remains
+  under the same license. Not an image of a vehicle affected by the current
+  refund announcement."
+seo_title: Tesla to refund many Cybertruck deposits before production ends, Musk says
+description: Elon Musk says Tesla will refund many Cybertruck deposits because
+  it cannot fulfil every order before the production line closes.
+editorial_approved: true
+indexable: true
+source_not_before: 2026-11-09T07:58:00-05:00
+date_mode: first-publication
 ---
 
 Tesla will have to refund deposits to many Cybertruck customers because it cannot build enough vehicles to fulfil all orders before production ends, Elon Musk said Monday.
