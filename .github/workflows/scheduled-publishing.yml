@@ -1,0 +1,50 @@
+name: Scheduled article publishing
+
+on:
+  schedule:
+    # UTC, four checks per hour. Article timestamps carry their own UTC offset.
+    - cron: '7,22,37,52 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: scheduled-article-publishing
+  cancel-in-progress: false
+
+jobs:
+  check-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: Restore deployment retry limits
+        uses: actions/cache/restore@v4
+        with:
+          path: .scheduled-publishing/state.json
+          key: publishing-state-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            publishing-state-
+      - name: Check approved scheduled articles
+        id: publish
+        env:
+          CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
+        run: node tools/check-scheduled-posts.mjs
+      - name: Save deployment retry limits
+        if: ${{ always() && steps.publish.outputs.state_changed == 'true' }}
+        uses: actions/cache/save@v4
+        with:
+          path: .scheduled-publishing/state.json
+          key: publishing-state-${{ github.run_id }}-${{ github.run_attempt }}
