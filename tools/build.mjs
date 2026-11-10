@@ -86,10 +86,10 @@ for(const a of articles){
  await fs.mkdir(`${dest}/articles/${a.slug}`,{recursive:true});await fs.writeFile(`${dest}/articles/${a.slug}/index.html`,articlePage(a));
 }
 await fs.mkdir(dest+'/articles',{recursive:true});
-await fs.writeFile(dest+'/articles/index.html',shell('Latest articles',`<div class="breadcrumbs">SMARTAIINTEL / ARTICLES</div><section style="min-height:50vh"><h1>Latest articles</h1>${articles.length?articles.map(a=>`<article style="padding:24px 0;border-bottom:1px solid #ddd"><span class="eyebrow">${esc(a.sectionLabel)}</span><h2><a href="/articles/${a.slug}/">${esc(a.title)}</a></h2><p>${esc(a.summary)}</p><p>By ${esc(a.author)}</p></article>`).join(''):'<p>No articles have been published yet.</p>'}</section>`,`<meta name="robots" content="index,follow"><link rel="canonical" href="${origin}/articles/">`));
+await fs.writeFile(dest+'/articles/index.html',shell('Latest articles',`<div class="breadcrumbs">SMARTAIINTEL / ARTICLES</div><section style="min-height:50vh"><h1>Latest articles</h1>${articles.length?articles.map(a=>`<article style="padding:24px 0;border-bottom:1px solid #ddd"><span class="eyebrow">${esc(a.sectionLabel)}</span><h2><a href="/articles/${a.slug}/">${esc(a.title)}</a></h2><p>${esc(a.summary)}</p><p>By ${esc(a.author)}</p></article>`).join(''):'<p>No articles have been published yet.</p>'}</section>`,`<meta name="robots" content="index,follow"><link rel="canonical" href="${origin}/articles/"><link rel="alternate" type="application/rss+xml" title="SmartAIIntel" href="${origin}/rss.xml">`));
 // Retain the approved homepage verbatim: only add a clearly identified article-list link.
 let home=homepage(await fs.readFile(dest+'/index.html','utf8'),articles);
-home=home.replace('</head>',`<link rel="canonical" href="${origin}/"></head>`);
+home=home.replace('</head>',`<link rel="canonical" href="${origin}/"><link rel="alternate" type="application/rss+xml" title="SmartAIIntel" href="${origin}/rss.xml"></head>`);
 if(!home.includes('href="/articles/"'))home=home.replace('</nav>','</nav><div style="max-width:1220px;margin:auto;padding:10px 30px;font:12px Arial"><a href="/articles/" style="color:#b80000">Read our published articles →</a></div>');
 home=home.replace('<div class="footer-bottom">',`<div style="padding:18px 0">${policyLinks}</div><div class="footer-bottom">`);
 // Launch cleanup applies only to the generated public homepage, not the design source or admin.
@@ -105,10 +105,18 @@ for(const a of articles){
  home=home.split(`<time datetime="${a.date}">${oldDate}</time>`).join(`<time datetime="${a.date}">${newDate}</time>`);
 }
 await fs.writeFile(dest+'/index.html',home);
-const publicPages=['/','/articles/',...publicationPages.map(p=>'/'+p.slug+'/')].map(p=>`<url><loc>${esc(origin+p)}</loc></url>`).join('');
-const sitemap=publicPages+articles.filter(a=>a.indexable===true).map(a=>`<url><loc>${esc(a.url)}</loc><lastmod>${a.updated}</lastmod></url>`).join('');
+const indexableArticles=articles.filter(a=>a.indexable===true&&!a.test_only);
+const latestMod=indexableArticles.reduce((m,a)=>a.updated>m?a.updated:m,'');
+const publicPages=['/','/articles/',...publicationPages.map(p=>'/'+p.slug+'/')].map(p=>`<url><loc>${esc(origin+p)}</loc>${(p==='/'||p==='/articles/')&&latestMod?`<lastmod>${latestMod}</lastmod>`:''}</url>`).join('');
+const sitemap=publicPages+indexableArticles.map(a=>`<url><loc>${esc(a.url)}</loc><lastmod>${a.updated}</lastmod></url>`).join('');
 await fs.writeFile(dest+'/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${sitemap}</urlset>`);
-await fs.writeFile(dest+'/robots.txt',`User-agent: *\nDisallow: /admin/\nSitemap: ${origin}/sitemap.xml\n`);
+const nowMs=Date.now(),newsWindowMs=48*60*60*1000;
+const recentNews=indexableArticles.filter(a=>{const publishedMs=new Date(a.date).getTime();return publishedMs<=nowMs&&(nowMs-publishedMs)<=newsWindowMs}).slice(0,1000);
+const newsEntries=recentNews.map(a=>`<url><loc>${esc(a.url)}</loc><lastmod>${a.updated}</lastmod><news:news><news:publication><news:name>SmartAIIntel</news:name><news:language>en</news:language></news:publication><news:publication_date>${esc(a.date)}</news:publication_date><news:title>${esc(a.title)}</news:title></news:news></url>`).join('');
+await fs.writeFile(dest+'/news-sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">${newsEntries}</urlset>`);
+const rssItems=indexableArticles.slice(0,30).map(a=>`<item><title>${esc(a.title)}</title><link>${esc(a.url)}</link><guid isPermaLink="true">${esc(a.url)}</guid><pubDate>${esc(new Date(a.date).toUTCString())}</pubDate><description>${esc(a.description)}</description></item>`).join('');
+await fs.writeFile(dest+'/rss.xml',`<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SmartAIIntel</title><link>${origin}/</link><description>US news, world affairs, security, technology, business and sports from SmartAIIntel.</description><language>en-us</language><atom:link href="${origin}/rss.xml" rel="self" type="application/rss+xml"/>${latestMod?`<lastBuildDate>${esc(new Date(latestMod).toUTCString())}</lastBuildDate>`:''}${rssItems}</channel></rss>`);
+await fs.writeFile(dest+'/robots.txt',`User-agent: *\nDisallow: /admin/\nSitemap: ${origin}/sitemap.xml\nSitemap: ${origin}/news-sitemap.xml\n`);
 let headers=await fs.readFile(dest+'/_headers','utf8').catch(()=>'/*\n  Cache-Control: no-cache\n');
 headers+='\n/admin/*\n  X-Robots-Tag: noindex, nofollow\n  Cache-Control: no-store\n';await fs.writeFile(dest+'/_headers',headers);
 // A top-level 404.html disables Cloudflare Pages SPA fallback for missing routes.
