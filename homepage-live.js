@@ -7,6 +7,5 @@ function closeMenu(){menu?.setAttribute('aria-expanded','false');links?.classLis
 document.querySelectorAll('[data-filter]').forEach(a=>a.addEventListener('click',()=>{category=a.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('active',a===b);b.removeAttribute('aria-current')});a.setAttribute('aria-current','page');filter();closeMenu()}));
 toggle?.addEventListener('click',()=>{panel.hidden=!panel.hidden;toggle.setAttribute('aria-expanded',String(!panel.hidden));if(!panel.hidden)search.focus()});search?.addEventListener('input',filter);
 $('#clear-search')?.addEventListener('click',()=>{search.value='';filter();search.focus()});$('#reset-filter')?.addEventListener('click',()=>{category='All';search.value='';filter()});
-document.querySelectorAll('[data-topic]').forEach(button=>button.addEventListener('click',()=>{panel.hidden=false;toggle.setAttribute('aria-expanded','true');search.value=button.dataset.topic;category='All';filter();$('#coverage').scrollIntoView({behavior:'smooth'})}));
 $('#analysis-link')?.addEventListener('click',()=>{category='All';search.value='';filter()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMenu();panel.hidden=true;toggle.setAttribute('aria-expanded','false')}});
