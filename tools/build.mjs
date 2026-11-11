@@ -40,7 +40,7 @@ async function publicationDate(slug,title,notBefore){
 await fs.rm(dest,{recursive:true,force:true});await fs.mkdir(dest,{recursive:true});
 for(const file of ['index.html','styles.css','script.js','article.css','homepage-live.js','_headers','manifest.json','sw.js','assets','admin']){try{await fs.cp(path.join(root,file),path.join(dest,file),{recursive:true})}catch(e){if(e.code!=='ENOENT')throw e}}
 await fs.mkdir('content/articles',{recursive:true});
-const input=await fs.readdir('content/articles');const articles=[];
+const input=await fs.readdir('content/articles');const articles=[],heldArticles=[];
 for(const file of input.filter(f=>f.endsWith('.md'))){
  const slug=file.slice(0,-3);if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error(`Invalid slug: ${file}`);
  const {data:d,content}=matter(await fs.readFile('content/articles/'+file,'utf8'));
@@ -59,6 +59,7 @@ for(const file of input.filter(f=>f.endsWith('.md'))){
   const releaseDate=d.release_not_before?stamp(d.release_not_before):sourceDate;
   const notBefore=sourceDate>releaseDate?sourceDate:releaseDate;
   if(new Date()<new Date(notBefore)){
+   heldArticles.push({slug,notBefore});
    console.log(`Held ${file}: release/source threshold ${notBefore} is later than the build clock.`);
    continue;
   }
@@ -168,13 +169,23 @@ const nowMs=Date.now(),newsWindowMs=48*60*60*1000;
 const recentNews=indexableArticles.filter(a=>{const publishedMs=new Date(a.date).getTime();return publishedMs<=nowMs&&(nowMs-publishedMs)<=newsWindowMs}).slice(0,1000);
 const newsEntries=recentNews.map(a=>`<url><loc>${esc(a.url)}</loc><lastmod>${a.updated}</lastmod><news:news><news:publication><news:name>SmartAIIntel</news:name><news:language>en</news:language></news:publication><news:publication_date>${esc(a.date)}</news:publication_date><news:title>${esc(a.title)}</news:title></news:news></url>`).join('');
 await fs.writeFile(dest+'/news-sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">${newsEntries}</urlset>`);
-const rssItems=indexableArticles.slice(0,30).map(a=>`<item><title>${esc(a.title)}</title><link>${esc(a.url)}</link><guid isPermaLink="true">${esc(a.url)}</guid><pubDate>${esc(new Date(a.date).toUTCString())}</pubDate><category>${esc(a.sectionLabel)}</category><description>${esc(a.description)}</description>${a.image?`<media:content url="${esc(origin+a.image)}" medium="image" type="image/webp"/>`:''}</item>`).join('');
+const rssItems=indexableArticles.slice(0,30).map(a=>`<item><title>${esc(a.title)}</title><link>${esc(a.url)}</link><guid isPermaLink="true">${esc(a.url)}</guid><pubDate>${esc(new Date(a.date).toUTCString())}</pubDate><atom:updated>${esc(a.updated)}</atom:updated><category>${esc(a.sectionLabel)}</category><description>${esc(a.description)}</description>${a.image?`<media:content url="${esc(origin+a.image)}" medium="image" type="image/webp"/>`:''}</item>`).join('');
 await fs.writeFile(dest+'/rss.xml',`<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>SmartAIIntel</title><link>${origin}/</link><description>US news, world affairs, security, technology, business and sports from SmartAIIntel.</description><language>en-us</language><atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/><atom:link href="${origin}/rss.xml" rel="self" type="application/rss+xml"/>${latestMod?`<lastBuildDate>${esc(new Date(latestMod).toUTCString())}</lastBuildDate>`:''}${rssItems}</channel></rss>`);
+await fs.writeFile(dest+'/schedule-manifest.json',JSON.stringify({generatedAt:new Date().toISOString(),articleCount:indexableArticles.length,heldArticles,latestArticles:indexableArticles.slice(0,10).map(a=>({url:a.url,section:a.section,date:a.date,updated:a.updated}))}));
 const indexNowKey='8f4a2c91e7b04d63a5c8192e0f3b7d4a';
 await fs.writeFile(`${dest}/${indexNowKey}.txt`,indexNowKey);
 await fs.writeFile(dest+'/robots.txt',`User-agent: *\nDisallow: /admin/\nSitemap: ${origin}/sitemap.xml\nSitemap: ${origin}/news-sitemap.xml\nSitemap: ${origin}/rss.xml\n`);
 let headers=await fs.readFile(dest+'/_headers','utf8').catch(()=>'/*\n  Cache-Control: no-cache\n');
-headers+=`\n/sw.js\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n/manifest.json\n  Cache-Control: no-cache\n/news-sitemap.xml\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n/sitemap.xml\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n/rss.xml\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n  Link: <https://pubsubhubbub.appspot.com/>; rel="hub", <${origin}/rss.xml>; rel="self"\n/admin/*\n  X-Robots-Tag: noindex, nofollow\n  Cache-Control: no-store\n`;await fs.writeFile(dest+'/_headers',headers);
+headers+=`\n/sw.js\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n/manifest.json\n  Cache-Control: no-cache\n/schedule-manifest.json\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n  X-Robots-Tag: noindex, nofollow\n/news-sitemap.xml\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n/sitemap.xml\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n/rss.xml\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n  Link: <https://pubsubhubbub.appspot.com/>; rel="hub", <${origin}/rss.xml>; rel="self"\n/admin/*\n  X-Robots-Tag: noindex, nofollow\n  Cache-Control: no-store\n`;await fs.writeFile(dest+'/_headers',headers);
 // A top-level 404.html disables Cloudflare Pages SPA fallback for missing routes.
 await fs.writeFile(dest+'/404.html',shell('Page not found',`<section style="min-height:50vh;max-width:760px;margin:50px auto"><span class="eyebrow">404</span><h1>Page not found</h1><p>This address is no longer available or does not exist. Older articles from our previous website have been retired.</p><p><a href="/">Visit the SmartAIIntel homepage</a> or <a href="/articles/">browse our published articles</a>.</p></section>`,'<meta name="robots" content="noindex,follow">'));
+if(process.env.CF_PAGES==='1'){
+ try{
+  const freshUrls=Array.from(new Set(indexableArticles.slice(0,5).flatMap(a=>[a.url,`${origin}/${a.section}/`])));
+  const pingRes=await fetch('https://smartaiintel-scheduler.olayiwolafaruk2011.workers.dev/on-deploy',{method:'POST',headers:{'Content-Type':'application/json','User-Agent':'SmartAIIntel-Pages-Build/2.0'},body:JSON.stringify({triggeredBy:'cf-pages-build',freshUrls}),signal:AbortSignal.timeout(4000)});
+  console.log(`Queued 18s post-deploy Google WebSub + IndexNow push (HTTP ${pingRes.status}).`);
+ }catch(e){
+  console.log(`Post-deploy push hook skipped (${e.message}).`);
+ }
+}
 console.log(`Built ${articles.length} approved articles into _site. No publication performed.`);
