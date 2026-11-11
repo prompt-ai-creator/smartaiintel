@@ -1,4 +1,5 @@
 import {articlePage} from './article-template.mjs';
+import {createHash} from 'node:crypto';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import matter from 'gray-matter';
@@ -65,7 +66,7 @@ for(const file of input.filter(f=>f.endsWith('.md'))){
  }
  const date=stamp(resolvedDate),updated=d.updated?stamp(d.updated):date;if(updated<date)throw Error(`${file}: update predates publication.`);
  if(new Date(date)>new Date())throw Error(`${file}: future publication dates need a scheduled publishing service, not yet configured.`);
- if(d.image){if(!/^\/assets\/[a-zA-Z0-9_./-]+$/.test(d.image)||d.image.includes('..')||!d.image_alt||!d.image_credit)throw Error(`${file}: local image, alt text and rights note required.`);await fs.access(path.join(dest,d.image.slice(1)))}
+ if(d.image){if(!/^\/assets\/[a-zA-Z0-9_./-]+$/.test(d.image)||d.image.includes('..')||!d.image_alt||!d.image_credit)throw Error(`${file}: local image, alt text and rights note required.`);const imgBuf=await fs.readFile(path.join(dest,d.image.slice(1)));d.image=`${d.image}?v=${createHash('md5').update(imgBuf).digest('hex').slice(0,8)}`}
  articles.push({...d,slug,date,updated,html:md.render(content),sectionLabel:sections[d.section][0],author:d.author==='SmartAIIntel News Desk'?'SmartAIIntel News Desk':sections[d.section][1],url:origin+'/articles/'+slug+'/'});
 }
 articles.sort((a,b)=>b.date.localeCompare(a.date));

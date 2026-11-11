@@ -43,7 +43,8 @@ function formatCreditLine(credit,imagePath){
  const raw=String(credit||'').trim();
  const srcMatch=raw.match(/Source:\s*(https:\/\/[^\s<>]+)/i);
  const licMatch=raw.match(/(?:License|Reuse policy):\s*(https:\/\/[^\s<>]+)/i);
- const sourceUrl=srcMatch?srcMatch[1]:(legacySourceMap[imagePath]||'');
+ const cleanImgPath=String(imagePath||'').split('?')[0];
+ const sourceUrl=srcMatch?srcMatch[1]:(legacySourceMap[cleanImgPath]||'');
  let licenseUrl=licMatch?licMatch[1]:'';
 
  let provider='';
