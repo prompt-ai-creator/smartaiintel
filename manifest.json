@@ -1,0 +1,17 @@
+{
+  "name": "SmartAIIntel — US News & Global Context",
+  "short_name": "SmartAIIntel",
+  "description": "Independent breaking news and analysis across US news, world affairs, security, technology, business, and sports.",
+  "start_url": "/?utm_source=homescreen",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#bb1919",
+  "icons": [
+    {
+      "src": "/assets/sai-push-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
