@@ -32,8 +32,16 @@
       "url": "https://smartaiintel.com/articles/anthropic-ipo-price-range-70-to-78-nasdaq-valuation/"
     },
     {
-      "title": "Archive photograph source and reuse information",
+      "title": "Archive IBM campus photograph source and reuse information",
       "url": "https://commons.wikimedia.org/wiki/File:IBM_Yorktown_Heights.jpg"
+    },
+    {
+      "title": "Archive US Permanent Resident Card specimen source",
+      "url": "https://commons.wikimedia.org/wiki/File:2023_green_card_front.jpg"
+    },
+    {
+      "title": "Archive US Visa specimen source",
+      "url": "https://commons.wikimedia.org/wiki/File:USA_Visa_specimen.jpg"
     },
     {
       "title": "Photograph reuse terms",
@@ -47,9 +55,9 @@
   "coverage_date": "2026-11-11",
   "source_not_before": "2026-11-10T13:37:00-05:00",
   "release_not_before": "2026-11-10T22:15:00-05:00",
-  "image": "/assets/uploads/ibm-yorktown-heights-research-campus-archive.webp",
-  "image_alt": "Curved glass exterior of the IBM Thomas J. Watson Research Center campus in Yorktown Heights, New York at dusk",
-  "image_credit": "Exterior view of the IBM research campus in Yorktown Heights, New York at dusk. Photograph by Simon Greig, via Wikimedia Commons. Licensed under CC BY 2.0. Resized and converted to WebP. Source: https://commons.wikimedia.org/wiki/File:IBM_Yorktown_Heights.jpg License: https://creativecommons.org/licenses/by/2.0/"
+  "image": "/assets/uploads/ibm-us-visa-green-card-sponsorship-archive.webp",
+  "image_alt": "Split illustration pairing the IBM Yorktown Heights campus and logo alongside official US Permanent Resident Green Card and US Visa specimens",
+  "image_credit": "Composite editorial illustration pairing the IBM research campus in Yorktown Heights, New York by Simon Greig under CC BY 2.0 with public domain US Citizenship and Immigration Services Permanent Resident Card and US Customs and Border Protection Visa specimens via Wikimedia Commons. Adapted into split composite and converted to WebP. Source: https://commons.wikimedia.org/wiki/File:IBM_Yorktown_Heights.jpg Source: https://commons.wikimedia.org/wiki/File:2023_green_card_front.jpg Source: https://commons.wikimedia.org/wiki/File:USA_Visa_specimen.jpg License: https://creativecommons.org/licenses/by/2.0/"
 }
 ---
 

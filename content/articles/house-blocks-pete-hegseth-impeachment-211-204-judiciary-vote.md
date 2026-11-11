@@ -33,11 +33,11 @@
     },
     {
       "title": "Archive photograph source and reuse information",
-      "url": "https://commons.wikimedia.org/wiki/File:Thomas_Massie_%2833750448408%29.jpg"
+      "url": "https://commons.wikimedia.org/wiki/File:Pete_Hegseth,_Dan_Caine,_and,_Bryn_MacDonnell_participate_in_a_hearing_with_the_House_Appropriations_Committee_%2854580659568%29.jpg"
     },
     {
       "title": "Photograph reuse terms",
-      "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+      "url": "https://creativecommons.org/licenses/by/2.0/"
     }
   ],
   "editorial_approved": true,
@@ -47,9 +47,9 @@
   "coverage_date": "2026-11-11",
   "source_not_before": "2026-11-10T18:15:00-05:00",
   "release_not_before": "2026-11-10T22:00:00-05:00",
-  "image": "/assets/uploads/thomas-massie-congressman-portrait-archive.webp",
-  "image_alt": "Representative Thomas Massie of Kentucky speaking from a podium on stage",
-  "image_credit": "Representative Thomas Massie of Kentucky addressing an audience on stage. Photograph by Gage Skidmore, via Wikimedia Commons. Licensed under CC BY SA 2.0. Resized and converted to WebP. Source: https://commons.wikimedia.org/wiki/File:Thomas_Massie_%2833750448408%29.jpg License: https://creativecommons.org/licenses/by-sa/2.0/"
+  "image": "/assets/uploads/house-hearing-pete-hegseth-capitol-hill-archive.webp",
+  "image_alt": "Defense Secretary Pete Hegseth seated at the witness table facing US House of Representatives lawmakers on Capitol Hill",
+  "image_credit": "Defense Secretary Pete Hegseth facing members of the US House of Representatives during a Capitol Hill hearing in Washington, DC. Office of the Chairman of the Joint Chiefs of Staff, via Wikimedia Commons. Licensed under CC BY 2.0. Cropped, resized, and converted to WebP. Source: https://commons.wikimedia.org/wiki/File:Pete_Hegseth,_Dan_Caine,_and,_Bryn_MacDonnell_participate_in_a_hearing_with_the_House_Appropriations_Committee_%2854580659568%29.jpg License: https://creativecommons.org/licenses/by/2.0/"
 }
 ---
 

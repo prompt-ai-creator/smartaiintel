@@ -29,11 +29,11 @@
     },
     {
       "title": "Archive photograph source and reuse information",
-      "url": "https://commons.wikimedia.org/wiki/File:United_States_Treasury_Washington_DC_5383075936_o.jpg"
+      "url": "https://commons.wikimedia.org/wiki/File:Scott_Bessent_2025_Official_Portrait.jpg"
     },
     {
       "title": "Photograph reuse terms",
-      "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+      "url": "https://en.wikipedia.org/wiki/Public_domain"
     }
   ],
   "editorial_approved": true,
@@ -43,9 +43,9 @@
   "coverage_date": "2026-11-11",
   "source_not_before": "2026-11-10T21:05:00-05:00",
   "release_not_before": "2026-11-10T22:30:00-05:00",
-  "image": "/assets/uploads/us-treasury-department-building-washington-archive.webp",
-  "image_alt": "Ionic columns and Albert Gallatin statue outside the United States Treasury Department building in Washington",
-  "image_credit": "North portico and Albert Gallatin statue at the United States Department of the Treasury in Washington, DC. Photograph by Tony Webster, via Wikimedia Commons. Licensed under CC BY SA 3.0. Resized and converted to WebP. Source: https://commons.wikimedia.org/wiki/File:United_States_Treasury_Washington_DC_5383075936_o.jpg License: https://creativecommons.org/licenses/by-sa/3.0/"
+  "image": "/assets/uploads/scott-bessent-treasury-secretary-portrait-archive.webp",
+  "image_alt": "Official portrait of United States Treasury Secretary Scott Bessent",
+  "image_credit": "Official portrait of United States Secretary of the Treasury Scott Bessent. United States Department of the Treasury, via Wikimedia Commons. Public domain work of the United States federal government. Cropped, resized, and converted to WebP. Source: https://commons.wikimedia.org/wiki/File:Scott_Bessent_2025_Official_Portrait.jpg License: https://en.wikipedia.org/wiki/Public_domain"
 }
 ---
 
