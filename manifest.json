@@ -1,12 +1,24 @@
 {
-  "name": "SmartAIIntel — US News & Global Context",
-  "short_name": "SmartAIIntel",
+  "name": "SMARTAI News — US News & Global Context",
+  "short_name": "SMARTAI News",
   "description": "Independent breaking news and analysis across US news, world affairs, security, technology, business, and sports.",
   "start_url": "/?utm_source=homescreen",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#bb1919",
+  "theme_color": "#b80000",
   "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/smartai-news-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/assets/sai-push-icon.svg",
       "sizes": "any",

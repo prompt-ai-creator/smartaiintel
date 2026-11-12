@@ -4,10 +4,10 @@ self.addEventListener('activate', event => event.waitUntil(self.clients.claim())
 self.addEventListener('push', event => {
   let data = {};
   try { data = event.data ? event.data.json() : {}; } catch (e) {}
-  const title = data.title || 'BREAKING · SmartAIIntel';
+  const title = data.title || 'BREAKING · SMARTAI News';
   const options = {
-    body: data.body || 'New breaking story published on SmartAIIntel.',
-    icon: '/assets/sai-push-icon.svg',
+    body: data.body || 'New breaking story published on SMARTAI News.',
+    icon: '/favicon-192x192.png',
     badge: '/assets/sai-push-icon.svg',
     image: data.image || undefined,
     data: { url: data.url || '/' },
