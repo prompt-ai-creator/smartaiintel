@@ -21,10 +21,10 @@
 
   function fireBrowserNotification(story) {
     if (!story || !("Notification" in window) || Notification.permission !== "granted") return;
-    var title = "BREAKING · SmartAIIntel";
+    var title = "BREAKING · SMARTAI News";
     var opts = {
       body: story.title,
-      icon: "/assets/sai-push-icon.svg",
+      icon: "/favicon-192x192.png",
       badge: "/assets/sai-push-icon.svg",
       image: story.image || undefined,
       tag: "sai-" + story.slug,
@@ -87,7 +87,7 @@
         '<span class="bbc-ticker-clock" id="bbc-t-clock">' + formatUtcClock() + '</span>' +
         '<div class="bbc-ticker-stage" id="bbc-t-stage">' +
           '<span class="bbc-ticker-sec" id="bbc-t-sec">BREAKING</span>' +
-          '<a class="bbc-ticker-link" id="bbc-t-link" href="/articles/">Latest SmartAIIntel headlines</a>' +
+          '<a class="bbc-ticker-link" id="bbc-t-link" href="/articles/">Latest SMARTAI News headlines</a>' +
           '<span class="bbc-ticker-age" id="bbc-t-age"></span>' +
         '</div>' +
       '</div>';
