@@ -35,8 +35,8 @@
   "image": "/assets/uploads/faa-nationwide-ground-stop-air-traffic-control-sean-duffy.webp",
   "image_width": 1600,
   "image_height": 900,
-  "image_alt": "FAA air traffic controllers monitoring radar consoles inside an Air Route Traffic Control Center alongside U.S. Transportation Secretary Sean Duffy",
-  "image_credit": "Photos: Federal Aviation Administration (left, Public Domain) and U.S. Department of Transportation (right, Public Domain), via Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Air_traffic_controllers_at_the_Washington_ARTCC.jpg",
+  "image_alt": "Delta Airbus A321 parked at Gate B81 with a jet bridge at LaGuardia Airport in New York City",
+  "image_credit": "Photo: Nielsoncaetanosalmeron via Wikimedia Commons, CC BY 4.0. Source: https://commons.wikimedia.org/wiki/File:Delta_Airbus_A321_LaGuardia_Airport_May_2026.jpg",
   "editorial_approved": true,
   "indexable": true,
   "show_on_homepage": true
