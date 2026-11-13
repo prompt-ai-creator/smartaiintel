@@ -31,8 +31,8 @@
   "source_not_before": "2026-11-13T04:16:00Z",
   "release_not_before": "2026-11-13T04:16:00Z",
   "image": "/assets/uploads/paris-place-vendome-de-beers-daylight-jewelry-heist-archive.webp",
-  "image_alt": "Archival street view of the historic Place Vendôme column and luxury jewelry district in central Paris, France",
-  "image_credit": "Photo via Wikimedia Commons (CC BY 2.0)"
+  "image_alt": "Split archival photograph showing a French Police Nationale patrol SUV in Paris alongside a De Beers retail jewelry boutique storefront",
+  "image_credit": "Photos via Wikimedia Commons (CC BY-SA 4.0 / CC BY-SA 3.0)"
 }
 ---
 
