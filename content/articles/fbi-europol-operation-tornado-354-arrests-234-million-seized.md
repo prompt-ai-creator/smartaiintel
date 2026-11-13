@@ -27,6 +27,7 @@
     }
   ],
   "editorial_approved": true,
+  "publication_hold": true,
   "indexable": true,
   "show_on_homepage": true,
   "date_mode": "first-publication",
