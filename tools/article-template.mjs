@@ -199,7 +199,7 @@ export function articlePage(a,extraHead=''){
  const sectionNav={'us-news':'US NEWS',world:'WORLD',security:'SECURITY',technology:'TECHNOLOGY',business:'BUSINESS',sports:'SPORTS'};
  const labelSlug={'US NEWS':'us-news',WORLD:'world',SECURITY:'security',TECHNOLOGY:'technology',BUSINESS:'business',SPORTS:'sports'};
  output=output.replace(/<a(?: class="active")? href="\/articles\/">(US NEWS|WORLD|SECURITY|TECHNOLOGY|BUSINESS|SPORTS)<\/a>/g,(_,label)=>`<a${label===sectionNav[a.section]?' class="active" aria-current="page"':''} href="/${labelSlug[label]}/">${label}</a>`);
- const extras=`<link rel="alternate" type="application/rss+xml" title="SMARTAI News" href="https://smartaiintel.com/rss.xml"><script type="application/ld+json">${JSON.stringify(structured).replace(/</g,'\\u003c')}</script>${a.image?`<meta property="og:image" content="${esc(new URL(a.image,a.url).href)}">`:''}`;
+ const extras=`<link rel="alternate" type="application/rss+xml" title="SMARTAI News" href="https://smartaiintel.com/rss.xml"><script type="application/ld+json">${JSON.stringify(structured).replace(/</g,'\\u003c')}</script>${a.image?`<link rel="preload" as="image" href="${esc(a.image)}" fetchpriority="high"><meta property="og:image" content="${esc(new URL(a.image,a.url).href)}">`:''}`;
  const social=`<meta property="og:description" content="${esc(a.description)}"><meta name="twitter:card" content="${a.image?'summary_large_image':'summary'}">${a.image?`<meta property="og:image:alt" content="${esc(cleanAlt)}">${width&&height?`<meta property="og:image:width" content="${width}"><meta property="og:image:height" content="${height}">`:''}`:''}`;
  return output.replace('</head>',extras+social+extraHead+ownerShieldScript+'</head>');
 }
