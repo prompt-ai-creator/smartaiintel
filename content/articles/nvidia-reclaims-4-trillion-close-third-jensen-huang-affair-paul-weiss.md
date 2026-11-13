@@ -3,7 +3,7 @@
   "title": "Nvidia reclaims $4 trillion close as retail buyers pare crash, Reuters reports third Jensen Huang affair and Paul Weiss hired",
   "summary": "Nvidia shares clawed back more than half of a 14 percent opening plunge to close down 4.34 percent above a $4 trillion market cap on November 12, even as Reuters reported a third extramarital relationship involving a second Nvidia employee and former CEO Jensen Huang retained law firm Paul, Weiss.",
   "description": "Nvidia closed down 4.34% above a $4 trillion valuation on Nov. 12, 2026, after retail buyers pared a 14% crash, while Reuters reported a third Jensen Huang affair and NYT reported Huang hired Paul, Weiss ahead of Nov. 17 earnings.",
-  "seo_title": "Nvidia reclaims $4T close (-4.34%) as Reuters reports third Jensen Huang affair and Paul Weiss hired",
+  "seo_title": "Why Jensen Huang Hired Paul Weiss as 3rd Affair Surfaces",
   "section": "business",
   "author": "Marcus T.",
   "sources": [

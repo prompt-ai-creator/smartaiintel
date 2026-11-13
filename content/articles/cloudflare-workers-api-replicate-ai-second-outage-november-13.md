@@ -3,7 +3,7 @@
   "title": "Cloudflare hit by second Friday outage across Workers API and Replicate AI as cloud disruptions mount",
   "summary": "Cloudflare opened back-to-back Friday afternoon incidents after 5xx server errors crippled its Workers and Pages deployment API and restricted Replicate's AI model registry—capping 24 hours of separate disruptions across Microsoft 365 and Anthropic's Claude.",
   "description": "Cloudflare reported a second Friday, Nov. 13, 2026 outage hitting its Workers API with 503 errors alongside Replicate AI registry restrictions before deploying a fix.",
-  "seo_title": "Cloudflare hit by second Friday outage across Workers API and Replicate AI",
+  "seo_title": "Cloudflare Outage Hits Workers API & Replicate AI Twice Today",
   "section": "technology",
   "author": "Logan M.",
   "key_points": [

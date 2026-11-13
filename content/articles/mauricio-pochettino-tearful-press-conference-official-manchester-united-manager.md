@@ -3,7 +3,7 @@
   "title": "Tearful Mauricio Pochettino breaks silence as Manchester United officially appoints him manager through 2029",
   "summary": "Manchester United officially named Mauricio Pochettino its new men's head coach on a contract through 2029 Friday morning, hours before an emotional Pochettino choked back tears thanking U.S. Soccer ahead of his Nov. 22 Premier League debut at Liverpool.",
   "description": "Manchester United confirmed Mauricio Pochettino as head coach from Nov. 18 on a deal through 2029, as a tearful Pochettino addressed his USMNT exit Friday.",
-  "seo_title": "Tearful Mauricio Pochettino named Manchester United manager through 2029",
+  "seo_title": "Why Pochettino Broke Down in Tears Before Joining Man Utd",
   "section": "sports",
   "author": "Marcus T.",
   "key_points": [

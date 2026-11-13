@@ -3,7 +3,7 @@
   "title": "BMW recalls nearly 721,000 U.S. vehicles over parked fire risk as regulators urge owners to park outside",
   "summary": "Federal safety regulators urged owners of 720,796 BMW cars and SUVs Friday to park outdoors away from homes and garages after 10 fire or smoldering incidents occurred in vehicles that had already received an earlier 2024 water-pump recall repair.",
   "description": "BMW and NHTSA issued an urgent park-outside fire recall Friday, Nov. 13, 2026, covering 720,796 U.S. vehicles across 3 Series, 5 Series, X1, X3, X4, X5, and Z4 models.",
-  "seo_title": "BMW recalls 720,796 U.S. vehicles over fire risk, urges owners to park outside",
+  "seo_title": "BMW Fire Recall: 720,796 Cars Must Park Outside — Full List",
   "section": "business",
   "author": "Elena R.",
   "key_points": [

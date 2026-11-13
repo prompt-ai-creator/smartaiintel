@@ -3,7 +3,7 @@
   "title": "Anthropic IPO hits sixfold oversubscription toward record $90.4 billion raise as Nvidia keeps $10 billion anchor",
   "summary": "Institutional orders for Anthropic's upcoming Nasdaq debut under ticker ANT have surged to roughly six times available share supply, positioning the Claude AI maker to surpass SpaceX's June listing as Nvidia maintains its $10 billion private-placement commitment.",
   "description": "Anthropic's Nasdaq IPO (ANT) is roughly six times oversubscribed ahead of its Nov. 19 debut, targeting up to $90.4 billion across public shares and a $26 billion Big Tech placement.",
-  "seo_title": "Anthropic IPO hits 6x oversubscription toward record $90.4B raise",
+  "seo_title": "Anthropic's $90.4B IPO Is 6x Oversubscribed — Who Gets Cut?",
   "section": "business",
   "author": "Carter B.",
   "key_points": [

@@ -3,7 +3,7 @@
   "title": "Jensen Huang resigns as Nvidia CEO after 33 years as CFO Colette Kress becomes interim chief and Harvey Jones first chair in $601B wipeout",
   "summary": "Nvidia co-founder Jensen Huang resigned immediately as president, CEO, and director on November 12 after 33 years, with CFO Colette Kress named interim chief executive and longtime director Harvey C. Jones appointed Nvidia's first board chair as shares plunged 14 percent.",
   "description": "Nvidia co-founder Jensen Huang resigned immediately as president, CEO and director on Nov. 12, 2026, with CFO Colette Kress named interim CEO and Harvey C. Jones appointed Nvidia's first board chair as shares plunged 14% and erased up to $601 billion.",
-  "seo_title": "Jensen Huang resigns as Nvidia CEO: Colette Kress named interim chief and Harvey Jones chair in $601B drop",
+  "seo_title": "Colette Kress & Harvey Jones Lead Nvidia After Huang Exit",
   "section": "business",
   "author": "Marcus T.",
   "sources": [

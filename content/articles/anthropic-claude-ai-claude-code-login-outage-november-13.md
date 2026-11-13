@@ -3,7 +3,7 @@
   "title": "Anthropic's Claude.ai and Claude Code hit by Friday login outage days before $90.4 billion IPO",
   "summary": "Anthropic opened a major status incident Friday morning after authentication failures locked users out of Claude.ai, Claude Code, and the Claude Console worldwide while its core developer API remained online.",
   "description": "Anthropic reported a major authentication outage across Claude.ai, Claude Code, and platform.claude.com on Friday, Nov. 13, 2026, before deploying a recovery fix.",
-  "seo_title": "Claude.ai and Claude Code hit by Friday login outage before $90.4B IPO",
+  "seo_title": "Claude AI & Claude Code Down: Inside Friday's Login Outage",
   "section": "technology",
   "author": "Logan M.",
   "key_points": [

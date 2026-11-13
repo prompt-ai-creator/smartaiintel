@@ -3,7 +3,7 @@
   "title": "Anthropic sets 70 to 78 dollar IPO price range targeting up to 1.4 trillion dollar valuation alongside 26 billion tech placement",
   "summary": "Artificial intelligence developer Anthropic launched its Nasdaq IPO roadshow Tuesday with an amended SEC filing offering 825 million Class A shares at 70 to 78 dollars apiece to raise up to 64.35 billion dollars publicly alongside a 26 billion dollar private placement from seven chip and cloud giants.",
   "description": "Anthropic set an IPO price range of 70 to 78 dollars per share for 825 million shares on Nasdaq under ticker ANT, targeting up to 90.4 billion dollars in combined proceeds and a 1.4 trillion dollar diluted valuation.",
-  "seo_title": "Anthropic sets 70 to 78 dollar IPO range for up to 1.4 trillion valuation",
+  "seo_title": "Anthropic $1.4T IPO Valuation, $90.4B Size & ANT Share Price",
   "section": "business",
   "author": "Carter B.",
   "sources": [
