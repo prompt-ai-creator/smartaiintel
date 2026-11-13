@@ -6,22 +6,24 @@
   "seo_title": "Pete Crow-Armstrong and Yordan Alvarez win unanimous 2026 MLB MVP awards (30-for-30 votes)",
   "section": "sports",
   "author": "Jordan W.",
+  "key_points": [
+    "Chicago Cubs center fielder Pete Crow-Armstrong and Houston Astros slugger Yordan Alvarez each swept all 30 first-place BBWAA votes on Nov. 12 to win the 2026 NL and AL MVP awards.",
+    "Paired with unanimous Cy Young winners Jacob Misiorowski and Cam Schlittler, 2026 becomes the first season in MLB history with unanimous MVP and Cy Young winners in both leagues.",
+    "Crow-Armstrong, 24, became the seventh 40-40 player in MLB history with 45 home runs, 41 stolen bases, Gold Glove defense, and a MLB-leading 10.6 FanGraphs WAR.",
+    "Alvarez, 29, won the MLB batting title at .316 while hitting 42 home runs with 106 RBIs and a 1.033 OPS across 158 games for Houston."
+  ],
   "sources": [
     {
-      "title": "The Guardian MLB report on Cubs star Pete Crow-Armstrong and Astros slugger Yordan Alvarez winning unanimous 2026 MVP awards",
+      "title": "The Guardian — Cubs star Pete Crow-Armstrong and Astros slugger Yordan Alvarez win unanimous 2026 MLB MVP awards",
       "url": "https://www.theguardian.com/sport/2026/nov/12/pete-crow-armstrong-yordan-alvarez-mlb-mvp-awards"
     },
     {
-      "title": "Sports Capitol DC statistical breakdown of Alvarez's .316 batting title and Crow-Armstrong's 45-homer, 41-steal 40-40 campaign",
+      "title": "Sports Capitol DC — Alvarez's .316 batting title and Crow-Armstrong's 45-homer, 41-steal campaign sweep BBWAA ballots",
       "url": "https://www.sportscapitoldc.com/2026/11/12/yordan-alvarez-pete-crow-armstrong-named-mvps-by-unanimous-vote/"
     },
     {
-      "title": "Yardbarker analysis of 2026 becoming the first MLB season with unanimous MVP and Cy Young Award winners in both leagues",
+      "title": "Yardbarker — 2026 becomes first MLB season with unanimous MVP and Cy Young winners in both leagues",
       "url": "https://www.yardbarker.com/mlb/articles/crow_armstrong_and_alvarez_unanimous_mlb_mvp_winners/s1_17668_44554159"
-    },
-    {
-      "title": "SMARTAI News sports desk coverage of Thursday's top North American and international athletics headlines",
-      "url": "https://smartaiintel.com/articles/commanders-giants-thursday-night-football-injury-report-jj-mccarthy-cam-skattebo/"
     }
   ],
   "editorial_approved": true,
@@ -36,23 +38,18 @@
 }
 ---
 
-Chicago Cubs center fielder Pete Crow-Armstrong and Houston Astros designated hitter Yordan Alvarez each swept all 30 first-place votes on Thursday night, Nov. 12, 2026, to win unanimous National League and American League Most Valuable Player awards.
+NEW YORK — Chicago Cubs center fielder Pete Crow-Armstrong and Houston Astros designated hitter Yordan Alvarez each swept all 30 first-place ballots from the Baseball Writers' Association of America on Thursday night to win unanimous 2026 National League and American League Most Valuable Player awards.
 
-## Key 2026 stats behind MLB's historic unanimous MVP sweep
+Combined with unanimous Cy Young Award winners Jacob Misiorowski of the Milwaukee Brewers and Cam Schlittler of the New York Yankees earlier this week, 2026 stands as the first season in Major League Baseball history in which both MVPs and both Cy Young winners were elected unanimously.
 
-- **Historic BBWAA milestone:** Together with unanimous Cy Young winners Jacob Misiorowski (Brewers, NL) and Cam Schlittler (Yankees, AL), 2026 marks the **first season in Major League Baseball history** in which both MVPs and both Cy Young winners were elected unanimously (`30-for-30`).
-- **NL MVP — Pete Crow-Armstrong (`Cubs`, age `24`):** Hit `.280` with `45 home runs` (tied with Kyle Schwarber for the MLB lead), `41 stolen bases`, `119 runs`, and an MLB-best `10.6 fWAR`—becoming only the **seventh `40-40` player in MLB history** while winning a Gold Glove (`26` Outs Above Average).
-- **AL MVP — Yordan Alvarez (`Astros`, age `29`):** Hit a career-high `.316` to win the MLB batting title alongside `42 home runs`, `106 RBIs`, `109 walks`, a `.432 OBP`, `.601 SLG`, and `1.033 OPS` across `158 games` after injuries limited him to 48 games in 2025.
-- **Franchise droughts ended:** Crow-Armstrong is the Cubs' first NL MVP since Kris Bryant (`2016`), while Alvarez is Houston's first AL MVP since José Altuve (`2017`).
+## Crow-Armstrong joins the 40-40 club and leads baseball in WAR
 
-## How did Pete Crow-Armstrong join MLB's 40-40 club and lead baseball in WAR?
+Six months after signing a six-year, $115 million contract extension with Chicago in March, the 24-year-old Crow-Armstrong delivered one of the finest two-way center-field seasons in modern baseball history to become the Cubs' first NL MVP since Kris Bryant in 2016.
 
-Six months after signing a six-year, $115 million extension with Chicago in March 2026, the 24-year-old former Mets first-round draft pick—acquired by the Cubs in the July 2021 Javier Báez trade—delivered one of the greatest two-way center-field seasons in modern baseball history.
+Acquired from the New York Mets in the July 2021 Javier Báez trade, Crow-Armstrong batted .280 with 45 home runs—tied with Kyle Schwarber for the major-league lead—alongside 41 stolen bases and 119 runs scored to become only the seventh 40-40 player in MLB history. After moving into Chicago's leadoff spot in mid-May, he hit .300 with a .398 on-base percentage, nearly tripled his walk total from 29 to 83, and paired Gold Glove defense (26 Outs Above Average) with a major-league-best 10.6 FanGraphs WAR.
 
-After opening 2026 hitting ninth, Crow-Armstrong shifted into the Cubs' leadoff spot in mid-May and posted a `.300` average with a `.398` on-base percentage atop the lineup, nearly tripling his walk total from `29` in 2025 to `83` in 2026. Combining 45 homers and 41 steals with MLB-best center-field defense (`23` to `32` runs saved across advanced metrics) pushed his `10.6` FanGraphs WAR clear of every player in either league.
+## Alvarez captures the batting crown in a dominant Houston rebound
 
-## Why did Yordan Alvarez win unanimous AL MVP as a primary designated hitter?
+Limited to 48 games by injuries in 2025, the 29-year-old Alvarez bounced back across 158 games to claim Houston's first AL MVP trophy since José Altuve in 2017 while also earning AL Comeback Player of the Year honors.
 
-For Houston, Alvarez flirted with the American League Triple Crown deep into September—winning the batting title outright at `.316` while finishing just one homer and seven RBIs shy of Baltimore's Pete Alonso (`43 HR`, `113 RBIs`).
-
-Alvarez joined Aaron Judge (`2025`) and Miguel Cabrera (`2012`) as the only American League hitters since 1970 to capture a batting crown while belting at least 40 home runs, and became the 31st player in MLB history to win both Rookie of the Year (`2019`) and Most Valuable Player (`2026`) alongside AL Comeback Player of the Year honors.
+Alvarez led all major-league hitters with a career-best .316 batting average while posting 42 home runs, 106 RBIs, 109 walks, a .432 on-base percentage, and a 1.033 OPS, finishing just one home run and seven RBIs shy of Baltimore's Pete Alonso for the American League Triple Crown. He joins Aaron Judge (2025) and Miguel Cabrera (2012) as the only AL players since 1970 to win a batting title in a 40-homer season—matching the awards sweep headline pace across [Thursday night's major North American sports slate](/articles/commanders-stun-giants-24-21-stefon-diggs-td-rasul-douglas-interception-tnf/).

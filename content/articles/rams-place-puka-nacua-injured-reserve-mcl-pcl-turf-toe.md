@@ -6,22 +6,24 @@
   "seo_title": "Rams place WR Puka Nacua on injured reserve (MCL/PCL sprain, turf toe): Return timeline & games missed",
   "section": "sports",
   "author": "Austin J.",
+  "key_points": [
+    "The Los Angeles Rams placed star wide receiver Puka Nacua on injured reserve on Nov. 12 with right knee MCL and PCL sprains plus a turf-toe injury.",
+    "Nacua must miss at least four games—against the Cardinals, Packers, Chiefs, and 49ers—making Week 15 against the Dallas Cowboys on Dec. 20 his earliest eligible return.",
+    "Head coach Sean McVay reversed Wednesday's plan to carry Nacua on the active 53-man roster despite tight limits on the NFL's eight annual IR-return slots.",
+    "With fellow Pro Bowl receiver Davante Adams already on injured reserve with a hamstring injury, Los Angeles will rely on Konata Mumpfield and Tutu Atwell."
+  ],
   "sources": [
     {
-      "title": "The Athletic report on the Los Angeles Rams placing Puka Nacua on injured reserve with MCL/PCL sprains and turf toe",
+      "title": "The Athletic — Los Angeles Rams place Puka Nacua on injured reserve with MCL, PCL and turf-toe injuries",
       "url": "https://www.nytimes.com/athletic/7777600/2026/11/12/rams-puka-nacua-injured-reserve-knee-turf-toe/"
     },
     {
-      "title": "Yahoo Sports / Los Angeles Times breakdown of Sean McVay reversing Wednesday's roster-semantics plan and NFL eight-return IR limit",
+      "title": "Yahoo Sports / Los Angeles Times — Rams change course on roster semantics and move Puka Nacua to IR",
       "url": "https://sports.yahoo.com/articles/rams-change-course-place-wide-010524593.html"
     },
     {
-      "title": "CBS Sports depth-chart update on Rams wideouts Konata Mumpfield, Tutu Atwell, and Davante Adams during Nacua's four-game absence",
+      "title": "CBS Sports — Rams wide receiver depth-chart outlook during Nacua's four-game absence",
       "url": "https://www.cbssports.com/fantasy/football/news/rams-puka-nacua-lands-on-injured-reserve/"
-    },
-    {
-      "title": "SMARTAI News NFL Week 10 injury and roster coverage",
-      "url": "https://smartaiintel.com/articles/commanders-giants-thursday-night-football-injury-report-jj-mccarthy-cam-skattebo/"
     }
   ],
   "editorial_approved": true,
@@ -36,18 +38,18 @@
 }
 ---
 
-The Los Angeles Rams reversed course Thursday night, Nov. 12, 2026, placing star wide receiver Puka Nacua on injured reserve with right knee MCL and PCL sprains plus turf toe—sidelining him for at least the next four games.
+LOS ANGELES — The Los Angeles Rams reversed course Thursday evening and placed star wide receiver Puka Nacua on injured reserve with right knee MCL and PCL sprains plus turf toe, sidelining their top playmaker for at least four games.
 
-## Key details on Puka Nacua's injury and Week 15 return timeline
+Under NFL injured-reserve rules, Nacua will miss upcoming matchups against the Arizona Cardinals, Green Bay Packers, Kansas City Chiefs, and San Francisco 49ers. His earliest eligible return date is Week 15 on Sunday, Dec. 20, when Los Angeles hosts the Dallas Cowboys at SoFi Stadium.
 
-- **Injuries sustained:** MRI scans Monday confirmed sprains to both the medial collateral ligament (`MCL`) and posterior cruciate ligament (`PCL`) in Nacua's right knee alongside a `turf-toe` injury suffered on a jet sweep on the final offensive play of Sunday's 20-13 win at Washington.
-- **Four games missed:** Under NFL injured-reserve rules, Nacua will miss matchups against the **Arizona Cardinals (Week 10)**, **Green Bay Packers**, **Kansas City Chiefs**, and **San Francisco 49ers**.
-- **Earliest return date:** Nacua's first eligible game back is **Week 15 on Sunday, Dec. 20, 2026**, against the Dallas Cowboys at SoFi Stadium.
-- **2026 production:** Despite missing two earlier games with a hip issue, Nacua ranks seventh in the NFL with `715 receiving yards` and `4 touchdowns` on `70 catches` (`93 targets`) across seven appearances, coming off a season-high `14 catches for 150 yards` Sunday.
-- **Depleted WR depth chart:** With fellow star wideout **Davante Adams** already on IR since Week 6 (hamstring), Los Angeles will lean on Konata Mumpfield, Tutu Atwell, CJ Daniels, and Xavier Smith.
+## Why Sean McVay reversed Wednesday's active-roster plan
 
-## Why did Sean McVay reverse Wednesday's decision to keep Puka Nacua off IR?
+Nacua suffered the knee and toe injuries on a jet sweep during the final offensive snap of Sunday's 20-13 road victory in Washington, finishing that afternoon with a season-high 14 receptions for 150 yards. Despite missing two earlier contests with a hip issue, he ranks seventh in the NFL with 715 receiving yards and four touchdowns on 70 catches across seven games.
 
-Head coach Sean McVay had initially told reporters Wednesday that Los Angeles planned to carry Nacua on the active 53-man roster despite a multi-week recovery, citing `"roster semantics"` tied to the NFL's strict cap of **eight injured-reserve return designations per team per season**.
+Head coach Sean McVay initially told reporters Wednesday that Los Angeles intended to keep Nacua on the active 53-man roster because each NFL club is capped at eight injured-reserve return designations per season. With the Rams having already used return slots on pass rusher Myles Garrett, tackle Keagen Trost, and running back Ronnie Rivers—and needing another for hamstring-sidelined receiver Davante Adams—activating Nacua in December will consume a seventh slot, leaving almost no margin for late-season injuries.
 
-The Rams have already burned return designations this season on star pass rusher Myles Garrett, rookie tackle Keagen Trost, and running back Ronnie Rivers—and with Adams also requiring one to return from his hamstring injury, activating Nacua in December would likely consume the club's seventh of eight permitted slots. By Thursday evening, however, immediate roster-spot needs ahead of Sunday's NFC West clash with Arizona forced Los Angeles to make the IR transaction official.
+## Rams receiver depth tested entering NFC West stretch
+
+Immediate 53-man depth needs ahead of Sunday's divisional matchup against Arizona ultimately forced McVay and general manager Les Snead to pull the trigger on Thursday's roster move, echoing roster crunch storylines across [Week 10 NFL injury reports](/articles/commanders-giants-thursday-night-football-injury-report-jj-mccarthy-cam-skattebo/).
+
+With both Nacua and Adams sidelined simultaneously, quarterback Matthew Stafford will lean heavily on rookie wideout Konata Mumpfield, veteran speedster Tutu Atwell, CJ Daniels, and Xavier Smith over the next month of NFC playoff positioning.

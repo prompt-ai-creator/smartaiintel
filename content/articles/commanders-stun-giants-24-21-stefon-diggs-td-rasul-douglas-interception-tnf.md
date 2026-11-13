@@ -6,22 +6,24 @@
   "seo_title": "Commanders beat Giants 24-21 on TNF: Stefon Diggs late TD and Rasul Douglas interception seal upset",
   "section": "sports",
   "author": "Austin J.",
+  "key_points": [
+    "Jayden Daniels connected with Stefon Diggs on a 32-yard touchdown pass with 57 seconds left to lift the Washington Commanders past the New York Giants 24-21 on Thursday Night Football.",
+    "Commanders cornerback Rasul Douglas intercepted J.J. McCarthy near midfield with 25 seconds remaining to clinch the road upset over NFC East-leading New York (5-3-1).",
+    "Daniels finished with three touchdown passes, bouncing back immediately after throwing his first two interceptions of the 2026 NFL season earlier in the fourth quarter.",
+    "Giants running back Cam Skattebo scored two touchdowns in his return from injury, while tight end Isaiah Likely added a 66-yard catch-and-run score."
+  ],
   "sources": [
     {
-      "title": "The Athletic live recap of Stefon Diggs's 32-yard touchdown at 0:57 and Rasul Douglas's game-sealing interception at 0:25",
+      "title": "The Athletic — Commanders vs. Giants Thursday Night Football final score and play-by-play recap",
       "url": "https://www.nytimes.com/athletic/live-blogs/commanders-vs-giants-live-score-updates-nfl-tnf-result/4gQzIpJZBsB4/"
     },
     {
-      "title": "USA Today Sports Thursday Night Football scoring summary on Jayden Daniels, Cam Skattebo, and Isaiah Likely",
+      "title": "USA Today Sports — Jayden Daniels, Stefon Diggs rally Commanders past Giants 24-21 at MetLife Stadium",
       "url": "https://www.usatoday.com/story/sports/nfl/2026/11/12/giants-commanders-score-stats-highlights-thursday-night-football--live/92733606007/"
     },
     {
-      "title": "VAVEL play-by-play breakdown of Washington's 3-play, 71-yard game-winning drive at MetLife Stadium",
+      "title": "VAVEL — Full scoring summary of Washington's 3-play, 71-yard game-winning fourth-quarter drive",
       "url": "https://www.vavel.com/en-us/nfl/2026/11/12/1279026-giants-vs-commanders-live-score-updates-and-play-by-play-nfl.html"
-    },
-    {
-      "title": "SMARTAI News pregame Thursday Night Football injury report on J.J. McCarthy's MetLife debut and Cam Skattebo's return",
-      "url": "https://smartaiintel.com/articles/commanders-giants-thursday-night-football-injury-report-jj-mccarthy-cam-skattebo/"
     }
   ],
   "editorial_approved": true,
@@ -36,24 +38,20 @@
 }
 ---
 
-Jayden Daniels connected with Stefon Diggs for a 32-yard touchdown with 57 seconds left and Rasul Douglas intercepted J.J. McCarthy with 25 seconds remaining as the Washington Commanders stunned the New York Giants 24-21 on Thursday Night Football on Nov. 12, 2026.
+EAST RUTHERFORD, N.J. — Jayden Daniels fired a 32-yard touchdown pass to Stefon Diggs with 57 seconds remaining and cornerback Rasul Douglas intercepted J.J. McCarthy 32 seconds later as the Washington Commanders stunned the NFC East-leading New York Giants 24-21 in a rain-soaked Thursday Night Football finish at MetLife Stadium.
 
-## Key stats and turning points from Commanders 24, Giants 21
+The victory pushed Washington to 3-5-1 and snapped momentum for John Harbaugh's first-place Giants (5-3-1) five weeks after the division rivals played to a 27-27 overtime tie.
 
-- **Final score & NFC East standings:** Washington (`3-5-1`) upset NFC East leader New York (`5-3-1`) at a cold, rain-soaked MetLife Stadium—settling the score five weeks after their chaotic 27-27 overtime tie.
-- **Game-winning drive:** Taking over with `1:46` remaining and one timeout, Washington marched `71 yards` in just `3 plays` and `49 seconds`, sparked by a 33-yard defensive pass interference penalty on Deonte Banks before Daniels hit Diggs in tight third-down coverage for the 32-yard score.
-- **Game-sealing takeaway:** After Malachi Fields's 21-yard reception moved New York across midfield to the Washington 48 with `0:39` left, cornerback Rasul Douglas jumped a McCarthy pass at `0:25` to clinch the win.
-- **Jayden Daniels's rollercoaster night:** Daniels threw `3 touchdown passes` (`1-yard TD` to Ben Sinnott, `31-yard TD` to rookie Antonio Williams, and `32-yard TD` to Diggs), bouncing back immediately after throwing his **first two interceptions of the entire 2026 season** on consecutive fourth-quarter drives.
-- **Giants' standout returnees:** Running back Cam Skattebo scored twice in his return from injury (`1-yard TD run` and `13-yard TD reception`), while tight end Isaiah Likely raced `66 yards` untouched on a fourth-quarter catch-and-run from McCarthy.
+## Daniels erases his first two interceptions of 2026 in 49 seconds
 
-## How did Jayden Daniels and Stefon Diggs erase two fourth-quarter interceptions?
+Daniels entered the fourth quarter as the last starting quarterback in the NFL without an interception this season before throwing picks on back-to-back drives—both intended for tight end Chig Okonkwo—to Giants defenders Jevon Holland at the 5:27 mark and Ar'Darius Washington with 2:19 left.
 
-Through three and a half quarters, Daniels entered elite statistical company as the last starting quarterback in the NFL without an interception in 2026. That streak vanished in a span of three minutes of game clock late in the fourth quarter—both times on throws intended for tight end Chig Okonkwo—first when Giants safety Jevon Holland picked off an underthrown pass with `5:27` remaining, and again at `2:19` when Ar'Darius Washington jumped a route to hand John Harbaugh's Giants the ball with a chance to drain the clock.
+Washington's defense held firm on the ensuing series, stuffing Cam Skattebo to force a punt that handed Daniels the ball at his own 29-yard line with 1:46 remaining and a single timeout. Daniels needed just three plays and 49 seconds to cover 71 yards, drawing a 33-yard defensive pass interference penalty on Deonte Banks before hitting Diggs in tight third-down coverage to break a tackle and reach the end zone with 0:57 left.
 
-Washington's defense refused to fold, stuffing Skattebo and forcing a fourth-down punt that gave Daniels one final lifeline at his own 29-yard line with 106 seconds left. Rather than playing conservatively for overtime after Drew Stevens's earlier 46-yard field goal, Daniels attacked downfield immediately—drawing the 33-yard pass-interference flag on Banks before firing a strike to Diggs, who broke a tackle and punctuated the 32-yard score at `0:57`.
+Daniels finished with three touchdown passes on the night, earlier connecting on a 1-yard score to tight end Ben Sinnott and a 31-yard strike to rookie wideout Antonio Williams alongside a 46-yard field goal from Drew Stevens.
 
-## What cost the New York Giants a home win in J.J. McCarthy's MetLife debut?
+## Costly Giants mistakes spoil J.J. McCarthy's MetLife home debut
 
-After [entering Thursday Night Football with McCarthy making his first home start at MetLife Stadium](/articles/commanders-giants-thursday-night-football-injury-report-jj-mccarthy-cam-skattebo/), New York outgained Washington for much of the night behind Skattebo's physical running and McCarthy's 272-plus passing yards, highlighted by Likely's 66-yard catch-and-run that put Big Blue ahead 21-17 with `8:13` left.
+Making his [first career home start at MetLife Stadium](/articles/commanders-giants-thursday-night-football-injury-report-jj-mccarthy-cam-skattebo/), McCarthy threw for more than 272 yards and put New York ahead 21-17 with 8:13 remaining on a 66-yard catch-and-run touchdown by tight end Isaiah Likely. Skattebo powered the Giants' ground and screen game in his return from injury, scoring on both a 1-yard plunge and a 13-yard reception.
 
-Three self-inflicted mistakes ultimately proved fatal for New York: rookie kicker Dominic Zvada pushing a 33-yard first-quarter field goal wide left, star receiver Malik Nabers losing a third-quarter red-zone fumble forced by Frankie Luvu and recovered by Jeremy Reaves, and Douglas's closing interception with `0:25` on the clock just as New York neared tying field-goal range.
+Three turnovers and special-teams miscues ultimately undid New York. Rookie kicker Dominic Zvada pushed a 33-yard first-quarter field goal wide left, receiver Malik Nabers lost a third-quarter red-zone fumble forced by Frankie Luvu and recovered by Jeremy Reaves, and—after Malachi Fields's 21-yard grab moved New York to the Washington 48 with 39 seconds left—Douglas stepped in front of McCarthy's pass at the 0:25 mark to seal the upset.

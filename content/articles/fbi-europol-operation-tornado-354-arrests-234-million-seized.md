@@ -6,22 +6,24 @@
   "seo_title": "FBI, Europol arrest 354 and seize $234M in cash and crypto in Operation TorNado",
   "section": "security",
   "author": "Elena M.",
+  "key_points": [
+    "Law enforcement agencies across 14 countries arrested 354 suspects—including 132 in the United States—during Operation TorNado, the largest dark-web trafficking takedown in FBI history.",
+    "Investigators seized more than $234 million in combined cash and cryptocurrency worldwide, with over $166 million recovered inside the United States.",
+    "Federal raids netted roughly 5.7 metric tons of illicit drugs—including more than 354 kilograms of fentanyl—along with 38 industrial pill presses and 209 firearms.",
+    "IRS Criminal Investigation and U.S. Postal Inspectors unmasked anonymous vendors on the DrugHub and Archetyp darknet markets by linking blockchain wallets to physical mail parcels."
+  ],
   "sources": [
     {
-      "title": "U.S. Department of Justice Office of Public Affairs announcement on Operation TorNado arrests and $234 million asset seizures",
+      "title": "U.S. Department of Justice — International Operation TorNado results in 354 arrests and over $234 million seized",
       "url": "https://www.justice.gov/opa/pr/international-law-enforcement-operation-targeting-opioid-and-fentanyl-traffickers-dark-web"
     },
     {
-      "title": "Federal Bureau of Investigation official case report and on-scene Evidence Response Team documentation from Operation TorNado",
+      "title": "Federal Bureau of Investigation — Operation TorNado case report and Evidence Response Team raid documentation",
       "url": "https://www.fbi.gov/news/stories/operation-tornado-leads-to-more-than-350-arrests-across-14-countries"
     },
     {
-      "title": "Bitcoin Magazine breakdown of JCODE and Europol financial intelligence tracking across dark-web markets",
+      "title": "Bitcoin Magazine — DOJ and Europol seize $234 million in cash and virtual currencies in darknet sweep",
       "url": "https://bitcoinmagazine.com/news/doj-europol-operation-tornado-234-million"
-    },
-    {
-      "title": "SMARTAI News coverage of cross-border European security and law-enforcement operations",
-      "url": "https://smartaiintel.com/articles/de-beers-paris-place-vendome-1-million-euro-daylight-diamond-heist/"
     }
   ],
   "editorial_approved": true,
@@ -36,24 +38,24 @@
 }
 ---
 
-The U.S. Department of Justice, the FBI, and Europol announced Thursday, Nov. 12, 2026, that coordinated raids across 14 countries under "Operation TorNado" produced 354 arrests and the seizure of more than $234 million in cash and cryptocurrency—the largest dark-web trafficking takedown in agency history.
+WASHINGTON — The U.S. Justice Department, the FBI, and Europol announced Thursday that coordinated raids across 14 countries under "Operation TorNado" resulted in 354 arrests and the seizure of more than $234 million in cash and cryptocurrency, marking the largest dark-web enforcement sweep in federal history.
 
-## Key figures from the FBI and Europol Operation TorNado sweep
+Conducted between May 2025 and October 2026 by the FBI-led Joint Criminal Opioid and Darknet Enforcement (JCODE) team, the operation produced 132 arrests and more than $166 million in seized cash and digital assets inside the United States alone, alongside 59 arrests in the United Kingdom, 45 in Hungary, 41 in Germany, and 23 in France.
 
-- **Total arrests:** `354` suspects detained across `14 countries`, led by **`132` arrests in the United States**, `59` in the United Kingdom, `45` in Hungary, `41` in Germany, `23` in France, `13` in New Zealand, and `12` in the Netherlands.
-- **Financial seizures:** More than **`$234 million`** in combined physical cash and virtual currencies globally, including over **`$166 million`** seized inside the United States alone.
-- **Physical contraband recovered:** Roughly `5.7 metric tons` of illicit substances worldwide (`4.8 metric tons` in the U.S., including more than `354 kilograms` of fentanyl and fentanyl-laced pills), `38` industrial pill presses, and `209` firearms (`152` in U.S. raids).
-- **Targeted darknet markets:** Investigators unmasked vendor and high-volume buyer accounts operating behind encrypted aliases on platforms including **DrugHub** and **Archetyp**.
-- **Operational window:** Executed between May 2025 and October 2026 by the FBI-led Joint Criminal Opioid and Darknet Enforcement (**JCODE**) team alongside IRS Criminal Investigation, DEA, Homeland Security Investigations, and the U.S. Postal Inspection Service.
+## Inside the 14-nation dark-web raid totals
 
-## How did federal agents unmask anonymous dark-web vendors?
+Federal and European search teams recovered roughly 5.7 metric tons of illicit drugs worldwide—including 4.8 metric tons in the United States and more than 354 kilograms of fentanyl and fentanyl-laced pills—alongside 38 industrial pill presses and 209 firearms, FBI Director Kash Patel said Thursday.
 
-FBI Director Kash Patel called Operation TorNado the largest interagency takedown of dark-web vendors and buyers since JCODE's creation in 2018, surpassing last year's Operation RapTor. IRS Criminal Investigation special agents paired blockchain tracing with physical postal-parcel intercepts to tie pseudonymous storefront wallets directly to residential stash houses and clandestine pill-press garages.
+Patel described Operation TorNado as the sixth and largest international enforcement surge since JCODE was established in 2018, eclipsing last year's Operation RapTor. Investigators targeted encrypted vendor storefronts and high-volume wholesale buyers operating on darknet marketplaces including DrugHub and Archetyp.
 
-In one Pennsylvania-linked investigation highlighted by the FBI, U.S. Postal Inspectors, DEA, and HSI agents tracked a California-based dark-web storefront operating under the handle `"SpeedyPharma"` and intercepted roughly `283` domestic mail parcels before execution of federal search warrants. In a separate Midwest trace, Ohio investigators probing two fatal overdoses followed encrypted shipping records back to a vendor operating inside a North Carolina residence.
+## How investigators unmasked anonymous darknet vendors
 
-## What happens next for seized cryptocurrency and international suspects?
+IRS Criminal Investigation cyber analysts paired blockchain wallet tracing with U.S. Postal Inspection Service, DEA, and Homeland Security Investigations parcel intercepts to connect pseudonymous online vendor handles directly to residential stash houses and garage pill-press labs.
 
-Deputy Attorney General Todd Blanche said federal prosecutors across multiple U.S. districts are moving forward with criminal indictments and civil forfeiture complaints targeting the `$166 million` in domestic cash and digital-asset seizures, while European authorities in France, Germany, and the U.K. coordinate parallel prosecutions alongside heightened [European organized-crime enforcement actions](/articles/de-beers-paris-place-vendome-1-million-euro-daylight-diamond-heist/).
+In one Pennsylvania-led investigation detailed by the FBI, federal agents identified a California-based darknet distributor operating under the alias "SpeedyPharma" and intercepted roughly 283 domestic mail packages containing methamphetamine and counterfeit tablets. In Ohio, investigators probing two fatal overdoses traced encrypted shipping records back to a dark-web supplier operating out of a North Carolina home.
 
-FBI cyber and forensic teams emphasized that server images, encrypted messaging logs, and buyer shipping ledgers recovered during the raids remain under active review—warning that additional arrest warrants targeting downstream distributors and money launderers are still being unsealed across all 14 participating countries.
+## Prosecutions and ongoing buyer investigations
+
+Federal prosecutors across multiple U.S. districts are pursuing criminal indictments and civil forfeiture actions against the $166 million in domestic seizures, while European prosecutors coordinate parallel cases amid stepped-up [cross-border organized-crime investigations](/articles/de-beers-paris-place-vendome-1-million-euro-daylight-diamond-heist/).
+
+FBI officials warned that forensic analysis of seized vendor servers, encrypted messaging logs, and customer shipping ledgers remains active across all 14 participating nations, with additional arrest warrants targeting downstream distributors still under seal.
