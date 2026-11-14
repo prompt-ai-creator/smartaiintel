@@ -1,9 +1,9 @@
 ---
 {
-  "title": "McIlroy Fades as Hatton Leads Dubai World Tour Championship",
-  "summary": "Rory McIlroy's hopes of winning a record-equalling eighth Race to Dubai title faded as he fell four shots behind leader Tyrrell Hatton after three rounds of the season-ending DP World Tour Championship in Dubai on Saturday. Hatton leads at nine under heading into Sunday's final round.",
-  "description": "Rory McIlroy fell four shots behind leader Tyrrell Hatton after three rounds of the DP World Tour Championship in Dubai on Saturday, with Hatton at nine under and McIlroy joint fourth at five under. McIlroy's Race to Dubai title hopes now hang on a final-round charge against rival Eugenio Chacarra.",
-  "seo_title": "McIlroy Fades as Hatton Leads Dubai World Tour Championship",
+  "title": "Race to Dubai Showdown: What McIlroy Needs After Falling Four Behind Hatton",
+  "summary": "A run of three straight bogeys on Saturday dropped Rory McIlroy four shots behind Tyrrell Hatton at the DP World Tour Championship. To claim an eighth Race to Dubai title, McIlroy now has to finish in the top four and ahead of Eugenio Chacarra, who is level with him on five under.",
+  "description": "Rory McIlroy's bid for a record-equalling eighth Race to Dubai title is now a two-man duel with Eugenio Chacarra. Both are five under, four shots behind tournament leader Tyrrell Hatton, heading into Sunday's final round on the Earth Course.",
+  "seo_title": "What McIlroy Needs to Win the Race to Dubai on Sunday",
   "section": "sports",
   "author": "Marcus V.",
   "sources": [
@@ -14,18 +14,22 @@
     {
       "title": "Associated Press — McIlroy lets Chacarra back into contention at World Tour Championship",
       "url": "https://apnews.com/article/golf-mcilroy-chacarra-world-tour-championship-dubai-d317d634bbc549e7b35f8141a8ff1f4a"
+    },
+    {
+      "title": "Sky Sports — Rory McIlroy suffers big Race to Dubai setback as Tyrrell Hatton takes lead into final day",
+      "url": "https://www.skysports.com/golf/news/13612175/dp-world-tour-championship-rory-mcilroy-suffers-big-race-to-dubai-setback-as-tyrrell-hatton-takes-lead-into-final-day"
     }
   ],
   "key_points": [
-    "Tyrrell Hatton leads the DP World Tour Championship at nine under after a third-round 68 at the Earth Course in Dubai.",
-    "Rory McIlroy is joint fourth at five under after an even-par 72, four shots off the lead.",
-    "McIlroy started Saturday tied for the lead with Hatton but dropped shots with bogeys on the eighth, ninth and 10th holes.",
-    "Spain's Eugenio Chacarra, the current Race to Dubai leader, is also five under after a 68.",
-    "McIlroy began the tournament trailing Chacarra by more than 500 points in the Race to Dubai standings.",
-    "McIlroy will clinch a record-equalling eighth Race to Dubai title if he finishes ahead of Chacarra and in the top four."
+    "Rory McIlroy went from tied leader to four shots back after a third-round 72, with consecutive bogeys on the eighth, ninth and 10th holes.",
+    "Tyrrell Hatton leads the DP World Tour Championship on nine under after a 68, one shot ahead of France's Victor Perez.",
+    "McIlroy and Race to Dubai leader Eugenio Chacarra are tied on five under, in a four-way share of fourth with Adam Scott and Francesco Laporta.",
+    "McIlroy wins the Race to Dubai if he finishes in the top four and ahead of Chacarra; a tournament win would also guarantee it.",
+    "An eighth season-long title would equal Colin Montgomerie's all-time record.",
+    "Jon Rahm can still take the Race to Dubai by winning, but he is six shots behind on three under."
   ],
   "date": "2026-11-14T15:22:00Z",
-  "updated": "2026-11-14T15:22:00Z",
+  "updated": "2026-11-14T15:52:00Z",
   "image": "/assets/uploads/mcilroy-hatton-dubai-world-tour-2026.webp",
   "image_width": 1600,
   "image_height": 900,
@@ -36,47 +40,55 @@
   "show_on_homepage": true,
   "faq": [
     {
+      "question": "What does Rory McIlroy need to win the Race to Dubai?",
+      "answer": "McIlroy needs to finish in the top four at the DP World Tour Championship and ahead of Eugenio Chacarra. Winning the tournament would also guarantee him the title."
+    },
+    {
       "question": "Who leads the DP World Tour Championship after three rounds?",
-      "answer": "Tyrrell Hatton leads at nine under after a third-round 68 at the Earth Course in Dubai, one shot clear of France's Victor Perez at eight under."
+      "answer": "Tyrrell Hatton leads on nine under after a third-round 68, one shot ahead of Victor Perez (eight under) and three ahead of Mikael Lindberg (six under)."
     },
     {
-      "question": "Where does Rory McIlroy stand in Dubai?",
-      "answer": "Rory McIlroy is joint fourth at five under after an even-par 72 on Saturday, four shots behind leader Tyrrell Hatton."
+      "question": "How many Race to Dubai titles has McIlroy won?",
+      "answer": "McIlroy has won seven. An eighth would equal the record held by Scotland's Colin Montgomerie."
     },
     {
-      "question": "What does McIlroy need to win the Race to Dubai title?",
-      "answer": "McIlroy will clinch a record-equalling eighth Race to Dubai title if he finishes ahead of Eugenio Chacarra and in the top four in the final round on Sunday."
-    },
-    {
-      "question": "Who is leading the Race to Dubai standings?",
-      "answer": "Spain's Eugenio Chacarra leads the Race to Dubai standings. He began the season-ending DP World Tour Championship more than 500 points ahead of Rory McIlroy."
+      "question": "Can Jon Rahm still win the Race to Dubai?",
+      "answer": "Yes. Rahm takes the season-long title if he wins the DP World Tour Championship, but after three straight rounds of 71 he is six shots off the lead on three under."
     }
   ]
 }
 ---
 
-# McIlroy Fades as Hatton Leads Dubai World Tour Championship
+# Race to Dubai Showdown: What McIlroy Needs After Falling Four Behind Hatton
 
-Rory McIlroy's hopes of winning a record-equalling eighth Race to Dubai title faded on Saturday as he fell four shots behind leader Tyrrell Hatton after three rounds of the season-ending DP World Tour Championship at the Earth Course in Dubai. Hatton holds a one-shot lead heading into Sunday's final round, while McIlroy faces a steep climb to overhaul rival Eugenio Chacarra in the season-long standings.
+Rory McIlroy held the outright lead of the DP World Tour Championship for part of Saturday's third round. Three bogeys in a row then changed the picture. He now goes into Sunday four shots behind Tyrrell Hatton, and his chance of an eighth Race to Dubai title has become a straight contest with one rival: Eugenio Chacarra, who is level with him on five under.
 
-## Hatton holds firm at the top
+## The three holes that changed Saturday
 
-Hatton, on nine under for the tournament, remained at the top of the field with a four-under-par 68 on Saturday. The Englishman holds a one-shot lead over France's Victor Perez, who carded a 67, as he bids for a first DP World Tour Championship. Sweden's Mikael Lindberg is third on six under.
+McIlroy's round at the Earth Course turned in the space of a few holes. An eagle on the par-five seventh put him one clear of the field. He then dropped shots on the eighth, ninth and 10th, which took him from the outright lead to chasing the leaders.
 
-Hatton scrambled a par at the last after driving into the water and finding a greenside bunker with his approach shot. He will play alongside Perez on the final day. "It would mean a lot to go on and win tomorrow," said Hatton. "There is a lot that can change. The course is playing difficult this week and there's a lot of fantastic players just behind. It is going to be a tough day."
+He birdied the 14th but gave the shot back on the 15th. On the 18th he nearly holed a six-foot eagle putt and settled for a birdie and an even-par 72. That round was four shots worse than Hatton's on the same day, and it is the difference between them going into Sunday.
 
-## McIlroy's day to forget
+Hatton's 68 was hardly smooth. He found the water from the 18th tee, put his approach in a greenside bunker and still made par. He leads on nine under, one ahead of Victor Perez, with Mikael Lindberg third on six under. "There is a lot that can change," Hatton said. "The course is playing difficult this week and there's a lot of fantastic players just behind."
 
-McIlroy started Saturday tied for the lead with Hatton but fell away with a 72. The Northern Irishman took the outright lead with an eagle three on the par-five seventh, before bogeys on the eighth, ninth and 10th holes undid his good work. A birdie on the 14th was followed by another dropped shot on the 15th, but McIlroy finished with a birdie at the par-five 18th after narrowly missing a six-foot eagle putt.
+## Why the Race to Dubai is now a two-man contest
 
-McIlroy is joint fourth in a group of four players at five under, which includes Spain's Eugenio Chacarra, the current leader in the Race to Dubai standings. Chacarra carded a 68 that included nine birdies, three bogeys and a double bogey. Spain's Jon Rahm, who could clinch the Race to Dubai title with victory on Sunday, fell six shots off the lead with a third consecutive 71.
+McIlroy arrived in Dubai more than 500 points behind Chacarra in the season-long standings. The winner of this event takes 2,000 points, so the tournament decides the title. McIlroy's route is simple to state but hard to achieve: finish in the top four and finish ahead of Chacarra.
 
-## The Race to Dubai permutations
+Right now he does neither on his own. He and Chacarra share fourth place on five under with Adam Scott and Francesco Laporta. That makes Sunday a contest between two players in different groups. McIlroy will play alongside Dan Bradbury, who shot a 66 on Saturday, while Chacarra plays elsewhere on the course. Each will be watching the leaderboard as much as his own card.
 
-Six-time major champion McIlroy began the tournament trailing Chacarra by more than 500 points, but knowing a win would guarantee him an eighth season-long crown to equal the tally set by Scotland's Colin Montgomerie. McIlroy will clinch the title if he finishes ahead of Chacarra and in the top four.
+Chacarra's Saturday shows how unpredictable he can be. His 68 included nine birdies, three bogeys and a double bogey. He started the day four shots behind and finished it level with the man chasing him for the title.
 
-With 2,000 points on offer for the winner, the final round in Dubai sets up a dramatic Sunday showdown. McIlroy will play alongside Englishman Dan Bradbury, who climbed to four under with a stunning 66. Lindberg will play in the penultimate group alongside Australia's 2013 Masters winner Adam Scott, who went round in 67.
+## The other possible champions
+
+Jon Rahm is still mathematically alive. A win on Sunday would give the Spaniard the Race to Dubai, but rounds of 71, 71 and 71 leave him on three under, six shots behind Hatton. He would need one of the best rounds of the week, and help from the players above him.
+
+Hatton, meanwhile, is chasing his first DP World Tour Championship and goes out in the final group alongside Perez, who shot a 67. Lindberg and 2013 Masters champion Adam Scott, who also shot a 67, play in the group ahead of them.
+
+## What an eighth title would mean
+
+A win for McIlroy on Sunday would give him his eighth Race to Dubai crown, which would equal Colin Montgomerie's all-time record. Saturday's back-to-back bogeys made that harder but not unrealistic: he is four shots back, with one round to play, on a course that Hatton himself says is playing difficult.
 
 ---
 
-**Sources:** BBC Sport coverage of the DP World Tour Championship third round (November 14, 2026); Associated Press report from Dubai (November 14, 2026).
+**Sources:** BBC Sport, DP World Tour Championship third-round report (November 14, 2026); Associated Press report from Dubai (November 14, 2026); Sky Sports golf coverage (November 14, 2026).
