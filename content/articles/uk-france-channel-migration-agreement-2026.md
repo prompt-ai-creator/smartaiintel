@@ -67,12 +67,7 @@ The renewal comes as 2026 becomes the deadliest year on record for Channel cross
 
 ## The human cost
 
-In the latest week of data, ending 8 November, the UK government reported that **903 migrants arrived by small boat into the UK in 14 boats**. Each crossing attempt carries significant risk:
-
-- **Overcrowded vessels:** Dinghies designed for a few people often carry 30-50 migrants
-- **Dangerous conditions:** Crossings happen at night in cold waters, often in poor weather
-- **Hypothermia:** Even in summer, Channel water temperatures can cause hypothermia within minutes
-- **Drowning:** Capsized vessels in one of the world's busiest shipping lanes
+In the latest week of data, ending 8 November, the UK government reported that **903 migrants arrived by small boat into the UK in 14 boats**. Each crossing attempt carries significant risk. Dinghies designed for a few people often carry 30 to 50 migrants. Crossings happen at night in cold waters, often in poor weather. Even in summer, Channel water temperatures can cause hypothermia within minutes. Capsized vessels in one of the world's busiest shipping lanes pose a constant drowning risk.
 
 On Saturday, November 14, a man in his 20s died attempting the crossing. His body was found on **Sainte-Cecile beach** near Le Touquet after French authorities stopped an overloaded dinghy from departing. Five other migrants were treated for hypothermia at the scene.
 
@@ -84,11 +79,7 @@ However, the sheer volume of attempts has overwhelmed enforcement capabilities. 
 
 ## Political sensitivity
 
-Channel migration has become one of the most politically sensitive issues in both the UK and France:
-
-- **UK governments** have faced pressure from voters to "stop the boats" and reduce irregular migration
-- **French authorities** have resisted UK pressure to take unilateral action on French soil
-- **Human rights organizations** have criticized both countries for prioritizing enforcement over migrant safety
+Channel migration has become one of the most politically sensitive issues in both the UK and France. UK governments have faced pressure from voters to "stop the boats" and reduce irregular migration. French authorities have resisted UK pressure to take unilateral action on French soil. Human rights organizations have criticized both countries for prioritizing enforcement over migrant safety.
 
 Previous agreements between the two countries have failed to significantly reduce crossing numbers or deaths, and the renewed pact faces skepticism from critics on all sides.
 

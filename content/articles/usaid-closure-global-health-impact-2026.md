@@ -67,7 +67,7 @@ The Trump administration closed the agency as part of a broader effort to reduce
 
 ## Programs disrupted worldwide
 
-The closure has hit multiple sectors:
+The closure has hit multiple sectors.
 
 **HIV treatment:** In sub-Saharan Africa, USAID-funded programs provided antiretroviral treatment to millions of people living with HIV. South Africa, which operates the world's largest HIV treatment program, has reported significant disruptions to drug supply chains.
 
@@ -77,13 +77,7 @@ The closure has hit multiple sectors:
 
 ## Countries most affected
 
-The countries most heavily affected by the USAID closure include:
-
-- **South Africa:** HIV treatment and maternal health programs
-- **Nigeria:** Malaria prevention and maternal health services
-- **Ethiopia:** Famine relief and health system support
-- **Bangladesh:** Maternal and child health programs
-- **Democratic Republic of Congo:** Ebola surveillance and health system strengthening
+The countries most heavily affected by the USAID closure include South Africa, where HIV treatment and maternal health programs face disruption; Nigeria, where malaria prevention and maternal health services are at risk; Ethiopia, which relies on famine relief and health system support; Bangladesh, where maternal and child health programs have been affected; and the Democratic Republic of Congo, where Ebola surveillance and health system strengthening programs are under pressure.
 
 ## Legal and political fallout
 

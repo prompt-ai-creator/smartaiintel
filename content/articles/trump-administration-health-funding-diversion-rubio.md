@@ -83,20 +83,7 @@ Tens of millions of the family planning funding are being diverted to support th
 
 ## Countries hit hardest: Eight nations at zero funding
 
-Eight countries have had their health funding cut to zero since 2024:
-
-- **Afghanistan**
-- **Central African Republic**
-- **Gambia**
-- **South Africa**
-- **Somalia**
-- **Sudan**
-- **Timor-Leste**
-- **Yemen**
-
-South Africa, Tanzania, and Zimbabwe each face **more than $100 million in cuts** to their health programs.
-
-These countries include some of the world's most vulnerable populations. South Africa has the largest HIV treatment program globally. Yemen faces one of the world's worst humanitarian crises. Sudan is in the midst of a devastating civil war. Somalia faces famine conditions.
+Eight countries have had their health funding cut to zero since 2024: Afghanistan, Central African Republic, Gambia, South Africa, Somalia, Sudan, Timor-Leste, and Yemen. South Africa, Tanzania, and Zimbabwe each face **more than $100 million in cuts** to their health programs. These countries include some of the world's most vulnerable populations. South Africa has the largest HIV treatment program globally. Yemen faces one of the world's worst humanitarian crises. Sudan is in the midst of a devastating civil war. Somalia faces famine conditions.
 
 ## Congressional backlash and legal challenge
 
@@ -122,13 +109,7 @@ Public Citizen's analysis of the leaked budget document — conducted in conjunc
 
 ## Broader context: A pattern of health funding cuts
 
-The Trump administration's diversion of family planning funds is part of a broader pattern. Since returning to office, the administration has made several efforts to assume more control over US global health funding and make spending reductions:
-
-- **$1.35 billion** previously redirected in global health funding to cover the cost of closing the US Agency for International Development (USAID)
-- Multiple efforts to stop transferring certain funds to the Centers for Disease Control
-- Previous reporting on redirection of global health programs to cover USAID closure costs
-
-Many of those changes have lacked public announcements or transparency, according to CNN reporting.
+The Trump administration's diversion of family planning funds is part of a broader pattern. Since returning to office, the administration has made several efforts to assume more control over US global health funding and make spending reductions. The administration previously redirected **$1.35 billion** in global health funding to cover the cost of closing the US Agency for International Development (USAID). There have been multiple efforts to stop transferring certain funds to the Centers for Disease Control. Previous reporting has covered the redirection of global health programs to cover USAID closure costs. Many of those changes have lacked public announcements or transparency, according to CNN reporting.
 
 ## What happens next
 
