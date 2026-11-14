@@ -190,6 +190,21 @@ let headers=await fs.readFile(dest+'/_headers','utf8').catch(()=>'/*\n  Cache-Co
 headers+=`\n/favicon.ico\n  Cache-Control: public, max-age=86400\n/favicon-48x48.png\n  Cache-Control: public, max-age=86400\n/favicon-96x96.png\n  Cache-Control: public, max-age=86400\n/favicon-192x192.png\n  Cache-Control: public, max-age=86400\n/apple-touch-icon.png\n  Cache-Control: public, max-age=86400\n/ads.txt\n  Cache-Control: no-cache\n/sw.js\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n/manifest.json\n  Cache-Control: no-cache\n/schedule-manifest.json\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n  X-Robots-Tag: noindex, nofollow\n/news-sitemap.xml\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n/sitemap.xml\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n/rss.xml\n  Cache-Control: no-store, no-cache, must-revalidate, max-age=0\n  Link: <https://pubsubhubbub.appspot.com/>; rel="hub", <${origin}/rss.xml>; rel="self"\n/admin/*\n  X-Robots-Tag: noindex, nofollow\n  Cache-Control: no-store\n`;await fs.writeFile(dest+'/_headers',headers);
 // A top-level 404.html disables Cloudflare Pages SPA fallback for missing routes.
 await fs.writeFile(dest+'/404.html',shell('Page not found',`<section style="min-height:50vh;max-width:760px;margin:50px auto"><span class="eyebrow">404</span><h1>Page not found</h1><p>This address is no longer available or does not exist. Older articles from our previous website have been retired.</p><p><a href="/">Visit the SMARTAI News homepage</a> or <a href="/articles/">browse our published articles</a>.</p></section>`,'<meta name="robots" content="noindex,follow">',false));
+// GA4 (G-4E4MC6SCN9): inject into every public HTML page, just before </head> so the
+// owner-shield script runs first and keeps owner visits out of analytics. /admin/ is skipped.
+{
+ const GA4_ID='G-4E4MC6SCN9';
+ const ga4Head=`<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA4_ID}');</script>`;
+ const walk=async d=>{const out=[];for(const e of await fs.readdir(d,{withFileTypes:true})){const p=`${d}/${e.name}`;if(e.isDirectory()){if(p===`${dest}/admin`)continue;out.push(...await walk(p));}else if(e.name.endsWith('.html'))out.push(p);}return out;};
+ let ga4Count=0;
+ for(const f of await walk(dest)){
+  let h=await fs.readFile(f,'utf8');
+  if(h.includes(GA4_ID)||!h.includes('</head>'))continue;
+  const i=h.lastIndexOf('</head>');
+  await fs.writeFile(f,h.slice(0,i)+ga4Head+h.slice(i));ga4Count++;
+ }
+ console.log(`GA4 ${GA4_ID} added to ${ga4Count} pages.`);
+}
 if(process.env.CF_PAGES==='1'){
  try{
   const freshUrls=Array.from(new Set(indexableArticles.slice(0,5).flatMap(a=>[a.url,`${origin}/${a.section}/`])));
