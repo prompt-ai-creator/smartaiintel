@@ -179,8 +179,41 @@ const nowMs=Date.now(),newsWindowMs=48*60*60*1000;
 const recentNews=indexableArticles.filter(a=>{const publishedMs=new Date(a.date).getTime();return publishedMs<=nowMs&&(nowMs-publishedMs)<=newsWindowMs}).slice(0,1000);
 const newsEntries=recentNews.map(a=>`<url><loc>${esc(a.url)}</loc><lastmod>${a.updated}</lastmod><news:news><news:publication><news:name>SMARTAI News</news:name><news:language>en</news:language></news:publication><news:publication_date>${esc(a.date)}</news:publication_date><news:title>${esc(a.title)}</news:title></news:news></url>`).join('');
 await fs.writeFile(dest+'/news-sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">${newsEntries}</urlset>`);
-const rssItems=indexableArticles.slice(0,30).map(a=>`<item><title>${esc(a.title)}</title><link>${esc(a.url)}</link><guid isPermaLink="true">${esc(a.url)}</guid><pubDate>${esc(new Date(a.date).toUTCString())}</pubDate><atom:updated>${esc(a.updated)}</atom:updated><category>${esc(a.sectionLabel)}</category><description>${esc(a.description)}</description>${a.image?`<media:content url="${esc(origin+a.image)}" medium="image" type="image/webp"/>`:''}</item>`).join('');
-await fs.writeFile(dest+'/rss.xml',`<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>SMARTAI News</title><link>${origin}/</link><description>Breaking US news, world affairs, security, technology, business and sports from SMARTAI News.</description><language>en-us</language><atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/><atom:link href="${origin}/rss.xml" rel="self" type="application/rss+xml"/>${latestMod?`<lastBuildDate>${esc(new Date(latestMod).toUTCString())}</lastBuildDate>`:''}${rssItems}</channel></rss>`);
+// ---- RSS feed (Flipboard RSS guidelines: dc:creator, enclosure image >=500px, description >=300 chars, full content) ----
+const cdata=s=>'<![CDATA['+String(s).replace(/\]\]>/g,']]]]><![CDATA[>')+']]>';
+const decodeEnt=s=>s.replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&nbsp;/g,' ').replace(/&amp;/g,'&');
+const plainText=h=>decodeEnt(String(h).replace(/<[^>]+>/g,' ')).replace(/\s+/g,' ').trim();
+const absoluteLinks=h=>String(h).replace(/(href|src)="\/(?!\/)/g,`$1="${origin}/`);
+function jpegSize(buf){let i=2;while(i<buf.length){if(buf[i]!==0xFF){i++;continue}const m=buf[i+1];if(m>=0xC0&&m<=0xCF&&![0xC4,0xC8,0xCC].includes(m))return{height:buf.readUInt16BE(i+5),width:buf.readUInt16BE(i+7)};i+=2+buf.readUInt16BE(i+2)}return null}
+function rssDescription(a){
+ let text=String(a.summary||a.description).trim();
+ if(text.length<300){
+  const paras=[...a.html.matchAll(/<p>([\s\S]*?)<\/p>/g)].map(m=>plainText(m[1])).filter(p=>p.length>40&&!/^Sources?:/i.test(p));
+  for(const p of paras){if(text.length>=300)break;if(!text.includes(p.slice(0,40)))text+=' '+p}
+ }
+ return text;
+}
+async function rssImage(a){
+ if(!a.image)return null;
+ const base=a.image.split('?')[0];
+ const name=path.basename(base).replace(/\.[a-z0-9]+$/i,'');
+ const jpgPath=`/assets/rss/${name}.jpg`;
+ try{
+  const buf=await fs.readFile(path.join(dest,jpgPath.slice(1)));
+  const dim=jpegSize(buf)||{width:1200,height:675};
+  return {url:origin+jpgPath,type:'image/jpeg',length:buf.length,...dim};
+ }catch{
+  const st=await fs.stat(path.join(dest,base.slice(1)));
+  return {url:origin+a.image,type:'image/webp',length:st.size,width:a.image_width||1600,height:a.image_height||900};
+ }
+}
+const rssItems=(await Promise.all(indexableArticles.slice(0,30).map(async a=>{
+ const img=await rssImage(a);
+ const lead=img?`<figure><img src="${esc(img.url)}" alt="${esc(a.image_alt||a.title)}" width="${img.width}" height="${img.height}"/>${a.image_credit?`<figcaption>${esc(a.image_credit)}</figcaption>`:''}</figure>`:'';
+ const media=img?`<enclosure url="${esc(img.url)}" length="${img.length}" type="${img.type}"/><media:content url="${esc(img.url)}" medium="image" type="${img.type}" width="${img.width}" height="${img.height}"/>`:'';
+ return `<item><title>${esc(a.title)}</title><link>${esc(a.url)}</link><guid isPermaLink="true">${esc(a.url)}</guid><pubDate>${esc(new Date(a.date).toUTCString())}</pubDate><atom:updated>${esc(a.updated)}</atom:updated><dc:creator>${esc(a.author)}</dc:creator><category>${esc(a.sectionLabel)}</category><description>${esc(rssDescription(a))}</description><content:encoded>${cdata(lead+absoluteLinks(a.html))}</content:encoded>${media}</item>`;
+}))).join('');
+await fs.writeFile(dest+'/rss.xml',`<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>SMARTAI News</title><link>${origin}/</link><description>Breaking US news, world affairs, security, technology, business and sports from SMARTAI News.</description><language>en-us</language><image><url>${origin}/assets/smartai-news-icon-512.png</url><title>SMARTAI News</title><link>${origin}/</link></image><atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/><atom:link href="${origin}/rss.xml" rel="self" type="application/rss+xml"/>${latestMod?`<lastBuildDate>${esc(new Date(latestMod).toUTCString())}</lastBuildDate>`:''}${rssItems}</channel></rss>`);
 await fs.writeFile(dest+'/schedule-manifest.json',JSON.stringify({generatedAt:new Date().toISOString(),articleCount:indexableArticles.length,heldArticles,latestArticles:indexableArticles.slice(0,10).map(a=>({url:a.url,section:a.section,date:a.date,updated:a.updated}))}));
 const indexNowKey='8f4a2c91e7b04d63a5c8192e0f3b7d4a';
 await fs.writeFile(`${dest}/${indexNowKey}.txt`,indexNowKey);
