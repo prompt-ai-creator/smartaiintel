@@ -10,11 +10,17 @@
     {
       "title": "Financial Times — US floats NATO membership for Donbas withdrawal deal, Zelenskyy says",
       "url": "https://www.ft.com/content/24319e2d-1a34-4a72-8c91-008d974234f9"
+    },
+    {
+      "title": "BBC News — US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+      "url": "https://www.bbc.com/news/articles/cwvg2l312ylqo"
     }
   ],
   "key_points": [
     "US negotiators Jared Kushner and Steve Witkoff asked Ukraine whether Kyiv would concede the part of Donbas still under its control to Moscow in exchange for NATO membership—the first time Washington has raised such a proposal.",
     "Zelenskyy said he would put any such deal to the Ukrainian people through dialogue and would not recognise occupied territories as Russian.",
+    "Washington has not confirmed Zelenskyy's account; a US official told the BBC that many ideas were still being discussed and any final deal would need the agreement of both sides.",
+    "US envoy Jared Kushner later called for confidentiality, criticising 'maximalist' proposals and 'strong political rhetoric' reported from the negotiations.",
     "Ukraine controls about 20% of the Donbas, where Russian forces have sustained tens of thousands of casualties trying to seize the remaining 'fortress belt' of cities.",
     "The proposal emerged during the first trilateral Russia-Ukraine-US talks since discussions paused in February after the war with Iran erupted.",
     "EU leaders agreed that a coalition of officials from France, Germany, Italy, Poland and the UK—plus the EU and NATO—would represent Europe at technical-level talks.",
@@ -23,7 +29,7 @@
     "Zelenskyy criticised speed limits on Starshield satellite systems; SpaceX denied the claim, calling it false."
   ],
   "date": "2026-11-14T12:00:00Z",
-  "updated": "2026-11-14T12:00:00Z",
+  "updated": "2026-11-15T07:21:00Z",
   "image": "/assets/uploads/us-floats-nato-membership-donbas-withdrawal-zelenskyy.webp",
   "image_width": 1600,
   "image_height": 900,
@@ -42,6 +48,16 @@ The United States has floated offering Ukraine NATO membership in exchange for w
 US negotiators Jared Kushner and Steve Witkoff asked Ukraine whether Kyiv would concede the part of Donbas still under its control to Moscow in exchange for NATO membership, Zelenskyy told reporters. It is the first time Washington has raised such a proposal, the Financial Times reported.
 
 "If the American side confirms precisely this to us, together with other NATO partners, then I will ask our Ukrainian society what it thinks: do we accept it or not?" Zelenskyy said. He added that he had no right to make such a decision unilaterally and that Kyiv would not recognise the occupied territories within Ukraine's internationally recognised borders, including the Donbas, as Russian.
+
+## Washington plays down the idea
+
+The United States has not confirmed Zelenskyy's account. Asked about it, a US official told the BBC that "many ideas continue to be discussed but any final deal will have to be agreed to by both parties" — stopping well short of endorsing a NATO-for-Donbas swap.
+
+Hours after Zelenskyy went public, Jared Kushner moved to cool the speculation. The envoy appealed for "confidentiality" in what he described as a sensitive process, complained that "maximalist" proposals and "strong political rhetoric" had leaked from the talks, and said the aim of "private discussions" was to test new ideas that might lead to a breakthrough in what he called a "horrible war."
+
+His remarks were widely read as a rebuke to Kyiv for making the idea public. The BBC's Kyiv correspondent suggested Zelenskyy may have done so deliberately: Ukraine sees NATO as its only reliable protection, and airing the question puts back on the table an option many considered closed. Zelenskyy himself said the issue was now "back on the agenda" in an "extremely difficult conversation" about European security.
+
+Several NATO members besides the US remain wary of Ukrainian membership, and Russia has repeatedly said it will not accept another alliance member on its border. Moscow insists any ceasefire must follow a final settlement under which Ukraine hands over the parts of the Donbas Russian troops have not captured.
 
 ## What is at stake
 
@@ -69,4 +85,4 @@ Zelenskyy also criticised speed limits imposed on Starshield satellite systems u
 
 Kyiv believes the restrictions were imposed to put pressure on Kyiv during the latest peace talks with Russia and strengthen Moscow's position. SpaceX denied the claim in an email, calling it "false. There has been no change."
 
-*This is a developing story and will be updated as Washington, Kyiv and NATO release further details.*
+*Updated November 15, 2026: adds the US official's response and Jared Kushner's call for confidentiality. This is a developing story.*
