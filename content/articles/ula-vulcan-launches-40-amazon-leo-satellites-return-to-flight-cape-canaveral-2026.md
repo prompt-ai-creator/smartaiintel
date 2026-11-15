@@ -1,39 +1,47 @@
 ---
 {
-  "title": "ULA's Vulcan Rocket Launches 40 Amazon Leo Satellites in Return to Flight from Cape Canaveral",
-  "summary": "United Launch Alliance's Vulcan rocket lifted off from Cape Canaveral with 40 Amazon Leo broadband satellites, its first flight since a booster problem in February and the first of 38 Vulcan launches Amazon has booked to take on SpaceX's Starlink.",
-  "description": "ULA's Vulcan VC6L lifted off at 12:40 p.m. ET on November 15, 2026, carrying 40 Amazon Leo satellites. It was the rocket's return to flight after a February booster anomaly and its first six-booster mission.",
-  "seo_title": "Vulcan Launches 40 Amazon Leo Satellites in Return to Flight",
+  "title": "ULA's Vulcan Rocket Fails 10 Minutes After Launch, 40 Amazon Leo Satellites Lost in Return to Flight",
+  "summary": "United Launch Alliance's Vulcan rocket suffered an anomaly about 10 minutes after lifting off from Cape Canaveral and failed to put 40 Amazon Leo broadband satellites into orbit, a major blow to ULA and to Amazon's race against SpaceX's Starlink.",
+  "description": "ULA's Vulcan lifted off at 12:40 p.m. ET on November 15, 2026, but an anomaly about 10 minutes into flight meant 40 Amazon Leo satellites never reached orbit. It was Vulcan's first flight since a February booster problem.",
+  "seo_title": "Vulcan Rocket Fails, 40 Amazon Leo Satellites Lost",
   "section": "technology",
   "author": "Logan M.",
   "sources": [
     {
-      "title": "Florida Today — Live updates: Vulcan to launch Amazon mission from Cape Canaveral",
+      "title": "Space.com — Vulcan Centaur rocket fails during return-to-flight launch, 40 Amazon satellites lost",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch"
+    },
+    {
+      "title": "SpaceNews — Vulcan launch of Amazon Leo satellites fails",
+      "url": "https://spacenews.com/vulcan-launch-of-amazon-leo-satellites-fails/"
+    },
+    {
+      "title": "Florida Today — Live updates from unsuccessful ULA Vulcan launch from Cape Canaveral",
       "url": "https://www.floridatoday.com/story/tech/science/space/2026/11/15/ula-vulcan-launch-day-heres-information-on-todays-amazon-satellite-launch-at-cape-canaveral-florida--live/92779455007/"
+    },
+    {
+      "title": "Spaceflight Now — ULA suffers first total mission failure with loss of Vulcan rocket carrying 40 Amazon Leo satellites",
+      "url": "https://spaceflightnow.com/"
+    },
+    {
+      "title": "United Launch Alliance on X — Vulcan anomaly statement",
+      "url": "https://x.com/ulalaunch/status/2122034531658076417"
     },
     {
       "title": "About Amazon — Amazon Leo to launch 40 satellites on its first Vulcan mission",
       "url": "https://www.aboutamazon.com/news/amazon-leo/amazon-leo-vulcan-satellites-launch"
-    },
-    {
-      "title": "United Launch Alliance — Vulcan Leo 1 mission page",
-      "url": "https://www.ulalaunch.com/missions/next-launch/vulcan-leo-1"
-    },
-    {
-      "title": "The Space Devs Launch Library — Vulcan VC6L, Amazon Leo (LV-01)",
-      "url": "https://ll.thespacedevs.com/2.3.0/launches/?search=Leo%20LV-01"
     }
   ],
   "key_points": [
-    "A United Launch Alliance Vulcan rocket lifted off from Space Launch Complex 41 at Cape Canaveral Space Force Station at 12:40 p.m. ET (17:40 GMT) on Sunday, November 15, 2026.",
-    "It carried 40 Amazon Leo internet satellites, the largest batch Amazon has launched at once.",
-    "The flight came at the very end of a 29-minute window after a late countdown hold, and followed scrubs on Friday and Saturday.",
-    "It was Vulcan's first flight since February 12, when a solid rocket booster nozzle failed shortly after liftoff.",
-    "The mission debuted Vulcan's six-booster VC6L configuration and a shorter Centaur V upper stage.",
-    "Satellite deployment was scheduled to begin about 70 minutes after launch, with 16 separation events over about 25 minutes."
+    "A United Launch Alliance Vulcan rocket lifted off from Cape Canaveral Space Force Station at 12:40 p.m. ET (17:40 GMT) on Sunday, November 15, 2026, carrying 40 Amazon Leo internet satellites.",
+    "ULA said the rocket suffered an anomaly about 10 minutes into the flight and failed to deliver the satellites to orbit. The satellites were lost.",
+    "The six solid rocket boosters, redesigned after earlier nozzle failures, separated normally less than two minutes after liftoff. The fault came later, after the Centaur V upper stage had taken over.",
+    "ULA said it did not yet have data on the cause and would work with Amazon to find it. 'Today, we did not meet that standard,' the company said.",
+    "Spaceflight Now described it as ULA's first total mission failure. It was Vulcan's first flight since February 12 and the first of 38 Vulcan launches Amazon has booked.",
+    "The loss is a setback for Amazon Leo, which had about 400 satellites in orbit and must launch its full 3,232-satellite first-generation network by July 2029."
   ],
   "date": "2026-11-15T17:49:00Z",
-  "updated": "2026-11-15T17:49:00Z",
+  "updated": "2026-11-15T19:33:00Z",
   "image": "/assets/uploads/ula-vulcan-rocket-launch-cape-canaveral-amazon-leo-2026.webp",
   "image_width": 1600,
   "image_height": 900,
@@ -44,67 +52,75 @@
   "show_on_homepage": true,
   "faq": [
     {
-      "question": "Did the Vulcan rocket launch today?",
-      "answer": "Yes. ULA's Vulcan lifted off from Cape Canaveral Space Force Station at 12:40 p.m. ET on Sunday, November 15, 2026, carrying 40 Amazon Leo satellites."
+      "question": "Did the Vulcan launch fail?",
+      "answer": "Yes. ULA's Vulcan lifted off at 12:40 p.m. ET on November 15, 2026, but suffered an anomaly about 10 minutes into the flight and failed to deliver its 40 Amazon Leo satellites to orbit."
     },
     {
-      "question": "What is Amazon Leo?",
-      "answer": "Amazon Leo, formerly called Project Kuiper, is Amazon's satellite internet network in low Earth orbit. It is designed to compete with SpaceX's Starlink and is planned to grow to more than 3,000 satellites."
+      "question": "What happened to the Amazon Leo satellites?",
+      "answer": "All 40 satellites were lost because the rocket did not reach orbit. ULA has not said exactly where the vehicle and satellites came down."
     },
     {
-      "question": "Why was the Vulcan launch delayed?",
-      "answer": "Friday's attempt was called off after a power problem at the plant that supplies gaseous nitrogen, and Saturday's after a communication issue between ground equipment and the rocket. On Sunday a computer-flagged limit violation caused a hold that pushed liftoff to the end of the window."
+      "question": "What caused the Vulcan failure?",
+      "answer": "ULA says it does not yet know. The redesigned solid rocket boosters separated normally, and the problem came about 10 minutes into the flight, while the Centaur V upper stage was firing. An investigation is starting."
     },
     {
-      "question": "Why had Vulcan not flown since February?",
-      "answer": "On February 12, 2026, a nozzle on one of Vulcan's solid rocket boosters burned through and fell off shortly after liftoff. The same problem happened in October 2024. Both missions still reached orbit, but the US Space Force paused national security launches on Vulcan until the issue is fixed."
+      "question": "Is this ULA's first launch failure?",
+      "answer": "Spaceflight Now called it ULA's first total mission failure. The company, a joint venture of Boeing and Lockheed Martin, has flown more than 150 Atlas, Delta and Vulcan missions since 2006."
     },
     {
-      "question": "How many Amazon Leo launches will Vulcan fly?",
-      "answer": "Amazon has 38 Vulcan launches under contract with ULA, which together will carry more than 1,500 first-generation Leo satellites."
+      "question": "What does the Vulcan failure mean for Amazon Leo?",
+      "answer": "It delays Amazon's plans to grow its Starlink rival. Vulcan was meant to carry more than 1,500 Leo satellites across 38 launches, and the second Vulcan mission was planned within weeks. Amazon's next scheduled Leo launch is on an Ariane 6, targeted for no earlier than November 23."
     }
   ]
 }
 ---
 
-United Launch Alliance's Vulcan rocket roared off its Florida launch pad on Sunday carrying 40 Amazon Leo broadband satellites, returning to flight nine months after a booster problem grounded it.
+*Updated at 19:33 GMT: This story was first published after liftoff. It has been rewritten after ULA confirmed the rocket failed to reach orbit.*
 
-The 215-foot rocket lifted off from Space Launch Complex 41 at Cape Canaveral Space Force Station at 12:40 p.m. ET, the very last moment of its 29-minute launch window. It was ULA's third attempt in three days.
+United Launch Alliance's Vulcan rocket failed on Sunday about 10 minutes after lifting off from Florida, and all 40 Amazon Leo internet satellites on board were lost.
 
-The mission, called Leo Vulcan 1 or LV-01, is the first of 38 launches Amazon has bought on Vulcan to build out its satellite internet network, a rival to SpaceX's Starlink.
+The 215-foot rocket rose from Space Launch Complex 41 at Cape Canaveral Space Force Station at 12:40 p.m. ET, at the very end of its launch window. It was Vulcan's first flight in nine months and was meant to show the rocket was ready to fly reliably again.
 
-## A hold, then liftoff at the buzzer
+"Based on data received by our Launch Director, we confirm that the Vulcan vehicle launched from Space Launch Complex 41 suffered an anomaly 10 minutes into the flight and failed to deliver the Amazon mission to orbit," ULA said about 50 minutes after launch.
 
-The launch had been set for 12:11 p.m., the opening of the window. With just minutes to go, the countdown stopped and the clock was reset to seven minutes and held.
+Spaceflight Now described the loss as ULA's first total mission failure.
 
-ULA later said a computer-checked "redline" limit had been breached, a reading outside the expected range on one of the many systems the computers monitor. Once engineers cleared it, the team set a new target of 12:40 p.m. and a second poll of the launch team came back "go".
+## What went wrong
 
-The earlier attempts were called off on Friday, when a power problem hit the plant that supplies gaseous nitrogen to the rocket, and on Saturday, when there was a communication issue between ground equipment and the vehicle.
+The early part of the flight looked normal. The six solid rocket boosters, whose nozzles had been redesigned after failures on two earlier Vulcan flights, burned and separated about one minute and 45 seconds after liftoff at an altitude of around 22 miles.
 
-## Back after the booster scare
+ULA's last public update during the flight said the Centaur V upper stage had ignited and the payload fairing had been jettisoned about six minutes into the flight. At that point the rocket was around 95 miles up, east of Charleston, South Carolina, and moving faster than 11,000 mph.
 
-Sunday's flight is Vulcan's first since February 12. On that mission, a nozzle on one of the solid rocket boosters burned through and fell off about 30 seconds after launch. The same thing had happened in October 2024.
+The Centaur's first burn was planned to last nearly 12 minutes. The anomaly came around the 10-minute mark, which suggests the problem occurred during that burn. ULA has not confirmed the cause.
 
-Vulcan still delivered its payloads to the right orbits both times. But the US Space Force paused national security launches on Vulcan until ULA solves the problem. In an October update, ULA said it had identified several possible causes and made design and process changes to the nozzle. This flight uses the improved design.
+"Every flight generates data, and every flight teaches us something. Since the anomaly just occurred, we don't have any specific data yet to understand what occurred today," the company said.
 
-How the boosters performed will be closely watched by the Pentagon, which relies on Vulcan for many of its most important satellites.
+## "We did not meet that standard"
 
-## Biggest Vulcan yet
+ULA, a joint venture of Boeing and Lockheed Martin, built its reputation on reliability with its Atlas V and Delta rockets.
 
-The rocket flew in its most powerful configuration, called VC6L, with six Northrop Grumman solid rocket boosters strapped to its core stage. That is the first time Vulcan has flown with six boosters. Together they produce about 3.9 million pounds of thrust at liftoff.
+"ULA exists to provide assured access to space for our nation and for the customers who depend on us," the company said. "That purpose is why we take on some of the hardest missions in spaceflight, and why we hold ourselves to the standard of mission success. Today, we did not meet that standard."
 
-It also debuted a shorter version of the Centaur V upper stage, tuned for low Earth orbit so the rocket can carry more satellites. The satellites rode inside a 70-foot payload fairing.
+It said it would work with Amazon and other organizations "to find the cause, determine the appropriate corrective action, and return to flight as quickly as possible." The USA Today Network's Florida newspapers reported that NASA's administrator offered to help with the investigation.
 
-According to ULA's flight plan, the Centaur V fires once to reach an elliptical orbit, coasts for about 50 minutes, then fires again south of New Zealand to circle up at around 285 miles. Satellite deployment was set to begin about 70 minutes into the flight, with 16 separation events over about 25 minutes as the stage crosses the Pacific.
+## A troubled return to flight
 
-## What it means for Amazon
+Vulcan had flown four times before Sunday. On two of those flights, in October 2024 and February 2026, a nozzle on one of the solid rocket boosters burned through and fell off about 30 seconds after liftoff. Both times the rocket still reached the correct orbit, but the US Space Force paused national security launches on Vulcan.
 
-Amazon Leo, previously known as Project Kuiper, had about 400 satellites in orbit before Sunday after 15 missions on ULA's Atlas V, SpaceX's Falcon 9 and Arianespace's Ariane 6. It had not launched any satellites since early July.
+ULA spent nine months on fixes. The boosters appeared to work as designed on Sunday, but a new and more serious problem ended the mission.
 
-The company is under pressure. It missed a Federal Communications Commission milestone to have about half its constellation, 1,616 satellites, in orbit by July 30, 2026. Its license requires the full constellation to be launched by July 2029.
+The flight was also full of firsts. It was the first Vulcan to fly with six boosters, the first to use a shorter version of the Centaur V upper stage built for low Earth orbit, and the first to use new Amazon-funded facilities at the Cape. It came after scrubs on Friday, caused by a power problem at a nitrogen supply plant, and on Saturday, caused by a communication fault between ground equipment and the rocket.
 
-Amazon says it has built more than 1,000 satellites and has hundreds ready to fly. It plans to start service before the end of 2026 in the US, UK, France, Germany and Canada.
+The failure is likely to keep Vulcan off national security missions for longer and to raise fresh questions for the Space Force, which depends on ULA and SpaceX to launch its most important satellites.
 
-New Amazon-funded facilities at the Cape, including a dedicated rocket assembly building and a new mobile launch platform, let ULA prepare two Vulcans at once. Amazon expects the next flight, LV-02, within weeks. An Ariane 6 carrying 36 more Leo satellites is targeted for no earlier than November 23 from French Guiana.
+## A blow to Amazon's Starlink rival
 
-**Sources:** Florida Today; About Amazon; United Launch Alliance; The Space Devs Launch Library.
+The mission, Leo Vulcan 1, was the first of 38 Vulcan launches Amazon has bought to build Amazon Leo, formerly called Project Kuiper. Those flights were meant to carry more than 1,500 satellites, close to half of the first-generation network.
+
+Amazon had about 400 Leo satellites in orbit before Sunday, from 15 missions on ULA's Atlas V, SpaceX's Falcon 9 and Arianespace's Ariane 6. It had not launched any since early July. SpaceX has more than 11,000 Starlink satellites in orbit.
+
+Amazon missed a Federal Communications Commission milestone to have 1,616 satellites up by July 30, 2026, and was granted a limited waiver. It must still launch all 3,232 first-generation satellites by July 2029. It has said it plans to begin service before the end of 2026 in the US, UK, France, Germany and Canada.
+
+Amazon had planned a second Vulcan flight within weeks of a successful first mission. That now looks unlikely until the cause is found. Its next scheduled Leo launch is on an Ariane 6 from French Guiana, carrying 36 satellites and targeted for no earlier than November 23.
+
+**Sources:** Space.com; SpaceNews; Florida Today; Spaceflight Now; United Launch Alliance; About Amazon.
