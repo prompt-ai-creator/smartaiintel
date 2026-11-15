@@ -1,18 +1,34 @@
 ---
 {
-  "title": "Microsoft 365 outage stretches into Friday as server failures disrupt Outlook, Teams and Copilot worldwide",
-  "summary": "Millions of business and enterprise users faced hours of email lockouts, sluggish Teams calendars, and unresponsive Copilot tools after Exchange Online server failures triggered a cascading global Microsoft 365 disruption that stretched past midnight Friday.",
-  "description": "A widespread Microsoft 365 outage disrupted Outlook, Exchange Online, Teams, SharePoint, and Copilot into Friday, Nov. 13, 2026, after backend servers unexpectedly went unresponsive.",
-  "seo_title": "Microsoft 365 outage disrupts Outlook, Teams & Copilot into Friday",
+  "title": "Microsoft resolves global outage that hit Outlook, Teams and Copilot in 70 countries, blames network capacity upgrade",
+  "summary": "Microsoft says Outlook, Teams, Copilot and other Microsoft 365 services are fully restored after a day-long outage that hit users in more than 70 countries. The company apologised and blamed an issue introduced during a network capacity upgrade, ruling out a cyberattack or AI agents.",
+  "description": "Microsoft has resolved the global Microsoft 365 outage that knocked out Outlook, Teams and Copilot in more than 70 countries, apologising and blaming an issue from an earlier network capacity upgrade.",
+  "seo_title": "Microsoft Resolves Global Outage, Blames Network Capacity Upgrade",
   "section": "technology",
   "author": "Logan M.",
   "key_points": [
+    "Microsoft says all Microsoft 365 products are operational again and the backlog of email messages has been processed.",
+    "The company blamed an issue introduced during an earlier network capacity upgrade that surfaced after a later network change. It said the outage was 'not related to cyber or AI / agents'.",
+    "'We are deeply sorry for the disruption this incident has caused our customers and partners,' Microsoft said, promising a detailed post-incident report.",
+    "The outage began around midday Eastern Time on Thursday, November 12, and lasted roughly a day, with users in more than 70 countries affected.",
+    "Downdetector reports for Outlook peaked at about 138,000. Governments, courts, hospitals, rail services and the US House of Representatives reported disruption.",
     "Microsoft 365 suffered a multi-hour global disruption stretching into Friday morning that locked business customers out of Outlook inboxes, Teams calendars, SharePoint, and Copilot.",
     "Downdetector logged roughly 130,000 peak outage reports as IT administrators tracked service advisories MO1550821 and EX1550543 across North America, Europe, and Asia.",
-    "Microsoft ruled out any cyberattack or malicious intrusion, blaming an overloaded secure-connection process and a configuration update that left servers unresponsive under traffic.",
-    "Engineers froze all global software deployments and began rerouting Exchange Online traffic in stages, though restored server clusters intermittently dropped offline again under heavy load."
+    "Microsoft ruled out any cyberattack or malicious intrusion, blaming an overloaded secure-connection process and a configuration update that left servers unresponsive under traffic."
   ],
   "sources": [
+    {
+      "title": "BBC News — Microsoft says services fully restored after day-long global outage",
+      "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o"
+    },
+    {
+      "title": "Newsweek — Microsoft blames 'technical issue' after outage impacts global operations",
+      "url": "https://www.newsweek.com/microsoft-outage-hits-global-operations-from-airlines-to-visas-12708940"
+    },
+    {
+      "title": "Mint — 'Deeply sorry': Microsoft restores services after mega outage",
+      "url": "https://www.livemint.com/companies/news/deeply-sorry-microsoft-restores-services-after-mega-outage-what-happened-and-which-apps-are-back-online-11794646245141.html"
+    },
     {
       "title": "BleepingComputer — Massive Microsoft 365 outage disrupts Outlook, Teams, and Copilot worldwide",
       "url": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/"
@@ -34,9 +50,49 @@
   "release_not_before": "2026-11-13T08:50:00Z",
   "image": "/assets/uploads/microsoft-redmond-campus-365-outlook-teams-outage.webp",
   "image_alt": "Exterior view of Building 92 and the Microsoft corporate sign on the Microsoft headquarters campus in Redmond, Washington",
-  "image_credit": "Photo by Jiaqian AirplaneFan via Wikimedia Commons (CC BY 3.0)"
+  "image_credit": "Photo by Jiaqian AirplaneFan via Wikimedia Commons (CC BY 3.0)",
+  "updated": "2026-11-15T20:24:00Z",
+  "faq": [
+    {
+      "question": "Is the Microsoft outage fixed?",
+      "answer": "Yes. Microsoft says all Microsoft 365 products, including Outlook, Teams and Copilot, are operational and the backlog of email has been processed."
+    },
+    {
+      "question": "What caused the Microsoft outage?",
+      "answer": "Microsoft said the problem was introduced during an earlier network capacity upgrade and surfaced after a later network change. Exchange servers would start up but quickly use up their resources and become unresponsive. Microsoft said it was not a cyberattack and was not caused by AI agents."
+    },
+    {
+      "question": "How many countries were affected by the Microsoft outage?",
+      "answer": "Users in more than 70 countries reported problems, according to Microsoft and outage trackers."
+    }
+  ]
 }
 ---
+
+> **Update, November 15, 2026:** Microsoft has resolved the outage. It says all Microsoft 365 products are operational again and the email backlog has been cleared. The company apologised and blamed an issue introduced during a network capacity upgrade. Details below; our original report follows.
+
+## Microsoft resolves global outage
+
+Microsoft says its services are fully restored after the outage that knocked out Outlook, Teams, Copilot and other Microsoft 365 tools for roughly a day. Its service health page now lists all products as operational, and the backlog of email messages built up during the disruption has been processed.
+
+"We are deeply sorry for the disruption this incident has caused our customers and partners," the company said, adding that it takes the trust customers place in its services "extremely seriously".
+
+### What Microsoft says went wrong
+
+Microsoft said the failure was "a technical issue not related to cyber or AI / agents". In a statement to Newsweek, a spokesperson said the incident "was introduced by an issue during an earlier network capacity upgrade that surfaced following a recent network change."
+
+Bloomberg reported that Exchange, the service behind Outlook email and calendars, would start on a server but then rapidly use up that machine's resources and stop responding. That pushed load onto other servers, spreading the problem.
+
+Microsoft brought services back gradually, region by region, to keep systems stable. It has promised a detailed post-incident report once its review is complete.
+
+### How big it was
+
+Problems were first reported around midday Eastern Time on Thursday, November 12. Outlook reports on Downdetector peaked at about 138,000, and users in more than 70 countries were affected. Microsoft has said more than 430 million people use the affected products.
+
+The disruption reached the Japanese government, the Philippine Supreme Court, hospitals and rail services in Canada, and courts and jails in the US. Staff in the US House of Representatives told Politico it cost them an entire day of legislative work.
+
+## Original report: outage stretches into Friday
+
 
 REDMOND, Wash. — Corporate offices across North America, Europe, and Asia opened Friday still contending with lingering email delays and login timeouts after a sweeping Microsoft 365 outage knocked Outlook, Exchange Online, Microsoft Teams features, SharePoint Online, and Copilot offline for more than seven hours.
 
