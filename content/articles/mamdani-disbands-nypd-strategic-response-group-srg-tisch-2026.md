@@ -32,9 +32,9 @@
     "New limits cover crowd-control tactics, including pepper spray, kettling and the volume of long-range acoustic devices.",
     "City Hall says the change will not raise or cut NYPD headcount and will come at no extra cost. ABC7 reported the unit is expected to be dissolved in spring 2027."
   ],
-  "image": "/assets/uploads/mayor-zohran-mamdani-sworn-in-nypd-srg-disbanded-2026.webp",
-  "image_alt": "File photo: Zohran Mamdani takes the oath of office as New York City mayor, administered by Sen. Bernie Sanders, on January 1, 2026",
-  "image_credit": "File photo: Zohran Mamdani is sworn in as New York City mayor by Sen. Bernie Sanders, January 1, 2026. Photo: NYC Mayor's Office, CC BY 4.0, via Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Zohran_Mamdani_swearing_in,_2026.png",
+  "image": "/assets/uploads/mamdani-nypd-strategic-response-group-protest-split-2026.webp",
+  "image_alt": "Left: New York City Mayor Zohran Mamdani seated at a desk between the US and NYC flags. Right: NYPD Strategic Response Group officers lined up near a protest sit-in in Manhattan",
+  "image_credit": "Left: Mayor Zohran Mamdani, October 10, 2026 (NYC Mayor's Office, CC BY 4.0). Right: NYPD Strategic Response Group officers near a protest sit-in at First Avenue and East 39th Street, Manhattan, September 24, 2026. Photo: Tessa Bury and NYC Mayor's Office, CC BY 4.0, via Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:NYPD_Strategic_Response_Group_at_First_Avenue_sit-in.jpg",
   "faq": [
     {
       "question": "What is the NYPD Strategic Response Group?",
