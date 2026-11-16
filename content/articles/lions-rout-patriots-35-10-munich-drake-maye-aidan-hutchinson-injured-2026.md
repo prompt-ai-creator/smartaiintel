@@ -1,12 +1,20 @@
 ---
 {
   "title": "Lions Rout Patriots 35-10 in Munich as Drake Maye and Aidan Hutchinson Are Hurt on the Same Play",
-  "summary": "The Detroit Lions beat the New England Patriots 35-10 at Munich's Allianz Arena, but the game was overshadowed by injuries to Patriots quarterback Drake Maye and Lions star pass rusher Aidan Hutchinson, both hurt on the same opening-drive sack.",
-  "description": "Detroit beat New England 35-10 in Munich as Jahmyr Gibbs ran for two touchdowns and Amon-Ra St. Brown caught two. Drake Maye (ankle) and Aidan Hutchinson (knee) were both injured on a third-down sack.",
+  "summary": "The Detroit Lions beat the New England Patriots 35-10 at Munich's Allianz Arena, but the game was overshadowed by injuries to Patriots quarterback Drake Maye and Lions star pass rusher Aidan Hutchinson, both hurt on the same opening-drive sack. Update: Maye is believed to have suffered a significant lower leg injury and could miss the rest of the season.",
+  "description": "Update: Drake Maye is expected to miss extended time with a significant ankle and lower leg injury and could miss the rest of the season, reports say. Detroit beat New England 35-10 in Munich.",
   "seo_title": "Lions 35, Patriots 10: Maye and Hutchinson Hurt in Munich",
   "section": "sports",
   "author": "Jordan W.",
   "sources": [
+    {
+      "title": "NBC Boston — Drake Maye could miss the rest of season with leg injury: Report",
+      "url": "https://www.nbcboston.com/news/local/drake-maye-could-miss-the-rest-of-season-with-ankle-injury-report/4049972/"
+    },
+    {
+      "title": "The Athletic — Drake Maye suffers serious ankle injury, set to miss extended time",
+      "url": "https://www.nytimes.com/athletic/7786430/2026/11/16/drake-maye-injury-update-patriots/"
+    },
     {
       "title": "ESPN — Lions vs. Patriots game summary, November 15, 2026",
       "url": "https://www.espn.com/nfl/game/_/gameId/401873053"
@@ -25,6 +33,7 @@
     }
   ],
   "key_points": [
+    "Update, November 16: Drake Maye is believed to have suffered a significant lower leg injury and is expected to miss an extended period, possibly the rest of the season, according to NFL Network's Ian Rapoport and The Athletic. He will have more tests on Monday.",
     "The Detroit Lions beat the New England Patriots 35-10 at the Allianz Arena in Munich on Sunday, November 15, 2026, in front of 70,225 fans.",
     "Patriots quarterback Drake Maye hurt his right ankle when Aidan Hutchinson sacked him on the opening drive and was ruled out in the second quarter.",
     "Hutchinson's right knee buckled as he landed while celebrating the same sack. He was listed as questionable and did not return.",
@@ -33,7 +42,7 @@
     "Detroit improves to 7-2. New England drops to 5-5 and heads into its bye week."
   ],
   "date": "2026-11-15T17:44:00Z",
-  "updated": "2026-11-15T17:44:00Z",
+  "updated": "2026-11-16T13:00:00Z",
   "image": "/assets/uploads/aidan-hutchinson-lions-celebrates-file-2026.webp",
   "image_width": 1600,
   "image_height": 900,
@@ -48,8 +57,12 @@
       "answer": "The Detroit Lions won 35-10 over the New England Patriots at the Allianz Arena in Munich, Germany, on Sunday, November 15, 2026."
     },
     {
+      "question": "Will Drake Maye miss the rest of the season?",
+      "answer": "It is possible. Reports on Monday said Maye is expected to miss extended time and could miss the rest of the season. The Patriots have not given an official timeline and planned more tests on Monday."
+    },
+    {
       "question": "What happened to Drake Maye?",
-      "answer": "Maye injured his right ankle when Aidan Hutchinson sacked him on third-and-goal during New England's opening drive. He was ruled out in the second quarter. The Patriots have not yet given an update on how serious it is."
+      "answer": "Maye hurt his right ankle when Aidan Hutchinson sacked him on the opening drive and did not return. On Monday, NFL Network's Ian Rapoport reported he is believed to have a significant lower leg injury that will keep him out for an extended period, and he could miss the rest of the season. The Patriots planned more tests."
     },
     {
       "question": "What happened to Aidan Hutchinson?",
@@ -72,6 +85,16 @@ The Detroit Lions cruised to a 35-10 win over the New England Patriots in Munich
 On New England's opening drive, Lions pass rusher Aidan Hutchinson got past Patriots left tackle Will Campbell on third-and-goal and brought down quarterback Drake Maye. Maye came up hurting his right ankle. Hutchinson jumped to celebrate, and his right knee buckled as he landed.
 
 Neither star came back. Maye was ruled out in the second quarter. Hutchinson was listed as questionable and stayed on the sideline for the rest of the afternoon.
+
+## Update: Maye could miss the rest of the season
+
+*Updated Monday, November 16.* The news on Drake Maye has turned worse. Maye is believed to have suffered a significant lower leg injury that will keep him out for an extended period, and it is possible he will miss the rest of the season, NFL Network's Ian Rapoport reported on Monday. Maye has returned from Germany and will seek more medical information.
+
+A team source told The Athletic that Maye has a serious ankle injury and is expected to miss extended time. He was set for more tests on Monday to get a clearer timeline.
+
+Before Sunday, Maye had made 43 straight starts and had never missed a regular-season start because of injury. The Patriots, now 5-5, have a bye this week and next play the Los Angeles Chargers on November 29. Tommy DeVito, who completed 12 of 24 passes for 81 yards with a touchdown and an interception after replacing Maye, is in line to start if Maye is out.
+
+Officials ruled the sack did not meet the standard for a flag under the NFL's hip-drop tackle ban. "I don't think it was anything intentional," Patriots coach Mike Vrabel said. "That's part of the game."
 
 ## One sack, two injuries
 
@@ -119,4 +142,4 @@ The game was the NFL's latest regular-season game in Germany and drew 70,225 fan
 - **Q4, 12:40** — NE: Lan Larison 10-yard pass from Tommy DeVito, Borregales kick (DET 28-10)
 - **Q4, 8:56** — DET: Gibbs 28-yard run, Bates kick (DET 35-10)
 
-**Sources:** ESPN game summary and box score; NBC Sports Pro Football Talk; USA Today Sports; Yahoo Sports.
+**Sources:** NFL Network via NBC Boston; The Athletic; ESPN game summary and box score; NBC Sports Pro Football Talk; USA Today Sports; Yahoo Sports.
