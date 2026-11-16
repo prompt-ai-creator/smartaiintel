@@ -1,2 +1,8 @@
 /*
   Cache-Control: no-cache
+
+https://smartaiintel.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.smartaiintel.pages.dev/*
+  X-Robots-Tag: noindex
