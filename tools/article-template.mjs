@@ -56,7 +56,7 @@ function formatCreditLine(credit,imagePath){
  else if(sourceUrl)provider='Source';
 
  let author='';
- const safeRaw=raw.replace(/\b(Jr|Sr|Dr|Mr|Ms|St)\./g,'$1\u0000');
+ const safeRaw=raw.replace(/\b(Jr|Sr|Dr|Mr|Ms|St)\./g,'$1\u0000').replace(/(\d)\.(\d)/g,'$1\u0000$2').replace(/(?<!\.)\b([A-Z])\.(?=\s+[A-Z][a-z])/g,'$1\u0000');
  const viaMatch=safeRaw.match(/(?:^|\.\s*|:\s*)([^.:]+?),\s*via\s+(?:Wikimedia Commons|CDC)/i);
  if(viaMatch)author=viaMatch[1].replace(/\u0000/g,'.').trim();
  const cropAfter=raw.match(/Cropped version by\s+([^.,]+)/i);
@@ -68,6 +68,8 @@ function formatCreditLine(credit,imagePath){
   .replace(/,\s*Executive Office of the President$/i,' / White House')
   .replace(/^US Department of State$/i,'US Dept. of State')
   .replace(/\s*\([^)]*\)/g,'')
+  .replace(/,\s*(?:CC BY(?:-SA)?|CC0|Creative Commons|public domain|Open Government Licen[cs]e)[^,]*$/i,'')
+  .replace(/^\(+|\)+$/g,'')
   .trim();
 
  let licenseLabel='';
