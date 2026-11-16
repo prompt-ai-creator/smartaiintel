@@ -230,9 +230,12 @@
             slug: slug,
             image: img,
             age: timeAgo(pub),
-            section: shortCategory(cat, slug)
+            section: shortCategory(cat, slug),
+            ts: Date.parse(pub) || 0
           };
         });
+
+        items.sort(function (x, y) { return (y.ts || 0) - (x.ts || 0); });
 
         renderTickerItem(false);
 

@@ -207,7 +207,9 @@ async function rssImage(a){
   return {url:origin+a.image,type:'image/webp',length:st.size,width:a.image_width||1600,height:a.image_height||900};
  }
 }
-const rssItems=(await Promise.all(indexableArticles.slice(0,30).map(async a=>{
+const lastActivity=a=>Math.max(Date.parse(a.date)||0,Date.parse(a.updated)||0);
+const rssOrder=[...indexableArticles].sort((x,y)=>lastActivity(y)-lastActivity(x));
+const rssItems=(await Promise.all(rssOrder.slice(0,30).map(async a=>{
  const img=await rssImage(a);
  const lead=img?`<figure><img src="${esc(img.url)}" alt="${esc(a.image_alt||a.title)}" width="${img.width}" height="${img.height}"/>${a.image_credit?`<figcaption>${esc(a.image_credit)}</figcaption>`:''}</figure>`:'';
  const media=img?`<enclosure url="${esc(img.url)}" length="${img.length}" type="${img.type}"/><media:content url="${esc(img.url)}" medium="image" type="${img.type}" width="${img.width}" height="${img.height}"/>`:'';
