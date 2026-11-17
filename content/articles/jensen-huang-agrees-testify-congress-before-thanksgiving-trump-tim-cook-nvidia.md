@@ -8,6 +8,10 @@
   "author": "Logan M.",
   "sources": [
     {
+      "title": "CNBC — Jensen Huang to appear before House Foreign Affairs panel Dec. 1; Nvidia lawyer slated for Dec. 2",
+      "url": "https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-house-committee.html"
+    },
+    {
       "title": "CNBC live report on House Foreign Affairs Chair Brian Mast confirming Jensen Huang agreed to testify before Congress ahead of Thanksgiving",
       "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html"
     },
@@ -32,11 +36,22 @@
   "release_not_before": "2026-11-12T16:51:00Z",
   "image": "/assets/uploads/jensen-huang-testify-congress-tim-cook-capitol-archive.webp",
   "image_alt": "Three-panel archival composite showing former Nvidia CEO Jensen Huang on the left, the United States Capitol in Washington in the center, and Apple executive chairman Tim Cook on the right",
-  "image_credit": "Photos via Wikimedia Commons (CC BY-SA 4.0 / Public domain / CC BY 4.0)"
+  "image_credit": "Photos via Wikimedia Commons (CC BY-SA 4.0 / Public domain / CC BY 4.0)",
+  "updated": "2026-11-17T15:35:00Z"
 }
 ---
 
 Former Nvidia CEO Jensen Huang agreed to testify before Congress ahead of Thanksgiving (`Nov. 26`), House Foreign Affairs Chairman Brian Mast announced Thursday, Nov. 12, 2026, hours after Huang resigned and President Donald Trump pitched Apple's Tim Cook to replace him.
+
+## Update: Huang to appear before House committees on Dec. 1
+
+*Updated Nov. 17, 2026.* Former Nvidia CEO Jensen Huang will appear before the House Foreign Affairs, Intelligence and China Select committees on Tuesday, Dec. 1, the leaders of those panels said on Tuesday. Nvidia general counsel Tim Teter will appear on Dec. 2, according to the statement from the lawmakers.
+
+The announcement from Foreign Affairs Chair Brian Mast, China Select Committee Chair John Moolenaar and Intelligence Committee Chair Rick Crawford settles a date that had been under negotiation since Huang agreed to cooperate. Their Nov. 12 letter had asked Huang and Teter to sit for closed-door, transcribed interviews on Dec. 1 and Dec. 2, warning that subpoenas would follow if they refused.
+
+The date means Huang's appearance will come after Thanksgiving, not before it as Mast first suggested. Separately, Senate Banking Committee Chairman Tim Scott has asked Huang and Commerce Secretary Howard Lutnick to testify before his committee, and House Foreign Affairs has asked Commerce Under Secretary Jeffrey Kessler to appear at a Dec. 3 hearing on chip export controls.
+
+The news landed hours before Nvidia reports its third-quarter earnings after the market closes on Tuesday. It will be the company's first earnings report under interim CEO Colette Kress.
 
 ## Key facts on Jensen Huang's Congressional testimony and CEO succession talk
 
