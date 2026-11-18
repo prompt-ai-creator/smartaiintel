@@ -7,6 +7,7 @@
   "section": "technology",
   "author": "Logan M.",
   "key_points": [
+    "Update: On the earnings call, board chair Harvey Jones said the board 'does not intend to reinstate Jensen as CEO.' Nvidia shares rose about 4.8% after hours to $162.95.",
     "Nvidia's revenue for the quarter ended Oct. 25 was $115.8 billion, up 103% from a year earlier and 20% from the previous quarter. Analysts expected about $109.15 billion.",
     "Adjusted earnings were $2.68 per share, compared with Wall Street estimates of about $2.47.",
     "Nvidia expects fourth-quarter revenue of $130 billion, plus or minus 3%, above the roughly $125 billion analysts had expected. The outlook assumes no data center compute sales to China.",
@@ -25,9 +26,25 @@
     {
       "title": "TheStreet — NVIDIA Q3 2027 earnings live updates",
       "url": "https://www.thestreet.com/latest-news/nvda-nvidia-corporation-q3-2027-earnings-stock-updates"
+    },
+    {
+      "title": "NBC News — Nvidia enters the post-Jensen Huang era with a bang",
+      "url": "https://www.nbcnews.com/business/corporations/nvidia-post-jensen-huang-kress-earnings-rcna609782"
+    },
+    {
+      "title": "CRN — Nvidia boosts next year's revenue forecast as board rules out Huang's return",
+      "url": "https://www.crn.com/news/components-peripherals/2026/nvidia-boosts-next-year-s-revenue-forecast-as-board-rules-out-huang-s-return"
+    },
+    {
+      "title": "Benzinga — Nvidia posts $116 billion quarter as analysts weigh Kress leadership",
+      "url": "https://www.benzinga.com/markets/tech/26/11/63375797/nvidia-colette-kress-jensen-huang-exit"
     }
   ],
   "faq": [
+    {
+      "question": "Will Jensen Huang return as Nvidia CEO?",
+      "answer": "Not according to Nvidia's board. On the Nov. 17, 2026, earnings call, board chair Harvey Jones said the board unanimously accepted Huang's resignation and 'does not intend to reinstate Jensen as CEO,' hours after Huang said he would be honored to return."
+    },
     {
       "question": "How much revenue did Nvidia report for Q3 fiscal 2027?",
       "answer": "Nvidia reported revenue of $115.8 billion for the quarter ended Oct. 25, 2026, up 103% from $57.0 billion a year earlier and above analyst estimates of about $109 billion."
@@ -48,7 +65,7 @@
   "indexable": true,
   "show_on_homepage": true,
   "date": "2026-11-17T21:25:00Z",
-  "updated": "2026-11-17T21:25:00Z",
+  "updated": "2026-11-18T05:19:00Z",
   "image_width": 1600,
   "image_height": 900
 }
@@ -59,6 +76,22 @@ Nvidia blew past Wall Street's forecasts on Tuesday in its first earnings report
 The chipmaker reported revenue of $115.8 billion for its fiscal third quarter, which ended Oct. 25. That is up 103% from $57.0 billion a year earlier and 20% from the previous quarter. Analysts had expected about $109.15 billion, according to Bloomberg consensus estimates cited by Yahoo Finance.
 
 Nvidia shares rose about 3.6% in early after-hours trading, wiping out the day's losses, according to TheStreet.
+
+## Update: Board rules out Huang's return; shares jump after hours
+
+*Updated Nov. 18, 2026.* Nvidia's board used the earnings call to shut the door on a comeback by Jensen Huang, hours after the former CEO said he would be "honored" to return if the board asked him.
+
+"The Nvidia board unanimously accepted his resignation and does not intend to reinstate Jensen as CEO," board chair Harvey Jones said at the start of the call. "While this was an unexpected transition, the board acted deliberately and in the best interest of the company's employees, customers, partners and shareholders."
+
+Jones said Huang's resignation followed the "disclosure of personal behavior inconsistent with the company's code of conduct, standards and cultural norms." Nvidia said it would not take questions about the circumstances of his exit.
+
+Earlier on Tuesday, Huang said in his first statement since leaving that he would return, citing an "outpouring of calls from Nvidia's employees, investors, business partners, and customers for me to return as CEO."
+
+Nvidia also raised its revenue growth forecast for next fiscal year by 5 points to about 75%, according to CRN. "From a business perspective, it's business as usual," Kress said. She closed the call by telling analysts: "We've got this."
+
+Nvidia shares closed Tuesday's regular session down 0.44% at $155.46, then rose 4.82% in after-hours trading to $162.95, according to Benzinga. The stock briefly dipped after Jones' comments before climbing as the call went on. It remains about 30% below its October record.
+
+The company still faces other questions. The Wall Street Journal has reported that the Securities and Exchange Commission is investigating Nvidia, including whether its disclosures misled investors, and Treasury Secretary Scott Bessent has said he wants answers from the board within 10 days.
 
 ## Nvidia Q3 results vs. expectations
 
@@ -103,4 +136,4 @@ The quarter itself ended before Huang resigned, so investors were watching the o
 
 Kress leads Nvidia's conference call with analysts at 5 p.m. ET.
 
-**Sources:** NVIDIA earnings release via GlobeNewswire; Yahoo Finance; TheStreet; Bloomberg consensus estimates.
+**Sources:** NVIDIA earnings release via GlobeNewswire; NBC News; CRN; Benzinga; Yahoo Finance; TheStreet; Bloomberg consensus estimates.
