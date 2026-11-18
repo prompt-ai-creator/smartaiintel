@@ -1,9 +1,9 @@
 ---
 {
-  "title": "Carney to Meet Trump in Shenzhen: What's on the Table, the Critics and What's at Stake",
+  "title": "Carney Meets Trump in Shenzhen: What They Discussed, the Critics and What's at Stake",
   "summary": "Update: Prime Minister Mark Carney and President Donald Trump met for just under 20 minutes on the sidelines of the APEC summit in Shenzhen and agreed to keep working toward a trade deal. Here is what was discussed, who is criticizing Carney's China strategy, and what is at stake.",
   "description": "Mark Carney and Donald Trump met for about 20 minutes at APEC in Shenzhen on Nov. 18, 2026, and agreed to keep working on a US-Canada trade deal. What was discussed, the critics, and what is at stake.",
-  "seo_title": "Carney-Trump Meeting in Shenzhen: Tariffs, Critics and What's at Stake",
+  "seo_title": "Carney-Trump Meeting in Shenzhen: What Was Said, Critics and Stakes",
   "section": "world",
   "author": "Ethan R.",
   "key_points": [
