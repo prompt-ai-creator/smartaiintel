@@ -53,11 +53,11 @@
   "show_on_homepage": true,
   "date": "2026-11-19T07:42:00Z",
   "updated": "2026-11-19T07:42:00Z",
-  "image": "/assets/uploads/google-gemini-app-model-picker-auto-gemini-4-neon-2026.webp",
+  "image": "/assets/uploads/google-gemini-logo-gemini-4-neon-release-2026.webp",
   "image_width": 1600,
   "image_height": 900,
-  "image_alt": "The Gemini web app home screen showing the 'Ask Gemini' box and the Gemini Auto model picker",
-  "image_credit": "Screenshot: Google via Wikimedia Commons (public domain)"
+  "image_alt": "The Google Gemini logo, a multicolored four-pointed star beside the word Gemini",
+  "image_credit": "Logo: Google via Wikimedia Commons (public domain)"
 }
 ---
 
