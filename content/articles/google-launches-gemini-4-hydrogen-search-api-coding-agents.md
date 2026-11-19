@@ -34,7 +34,8 @@
   "release_not_before": "2026-11-13T08:55:00Z",
   "image": "/assets/uploads/google-mountain-view-campus-gemini-4-hydrogen-launch.webp",
   "image_alt": "Google corporate campus sign along Charleston Road in Mountain View, California following the launch of Gemini 4 Hydrogen",
-  "image_credit": "Photo by Dietmar Rabich via Wikimedia Commons (CC BY-SA 4.0)"
+  "image_credit": "Photo by Dietmar Rabich via Wikimedia Commons (CC BY-SA 4.0)",
+  "updated": "2026-11-19T07:45:00Z"
 }
 ---
 
@@ -61,3 +62,7 @@ Alongside the model rollout, Google upgraded its Antigravity developer suite for
 For everyday users, Hydrogen is already live inside the Gemini mobile and web apps to speed up research synthesis, spreadsheet analysis in Google Sheets, and multi-turn writing tasks. Inside Google Search, the model powers broader query fan-out and visual answer assembly, allowing Search to break intricate comparison questions into simultaneous web lookups without adding noticeable wait times.
 
 Internal safety evaluations published with Thursday's launch also highlight cleaner boundaries for autonomous software agents, with Google reporting an 81 percent drop in agentic overreach—where an AI tool takes actions beyond a user's instructions—and greater resistance to indirect prompt-injection traps hidden on webpages. The release intensifies a fierce autumn product sprint across Silicon Valley just as [Nvidia navigates a historic chief executive transition](/articles/nvidia-reclaims-4-trillion-close-third-jensen-huang-affair-paul-weiss/) and rival labs race to trim inference costs for corporate customers.
+
+## Update: Google releases Gemini 4 Neon
+
+On Nov. 18, Google released [Gemini 4 Neon](https://smartaiintel.com/articles/gemini-4-neon-release-price-benchmarks-who-gets-it-2026/), a new model that sits between Hydrogen and Carbon. It replaces Gemini 4 Argon and Gemini 3.1 Pro in the Gemini app for AI Pro and Ultra subscribers and costs $3 per million input tokens on the API, twice Hydrogen's price. Free Gemini users stay on Hydrogen.
