@@ -34,7 +34,8 @@
   "release_not_before": "2026-11-13T11:10:00Z",
   "image": "/assets/uploads/anthropic-ipo-nasdaq-times-square-oversubscribed.webp",
   "image_alt": "Inside the Nasdaq MarketSite broadcast floor in New York ahead of Anthropic's oversubscribed ANT public listing",
-  "image_credit": "Photo by Luca Marfe via Wikimedia Commons (CC BY 2.0)"
+  "image_credit": "Photo by Luca Marfe via Wikimedia Commons (CC BY 2.0)",
+  "updated": "2026-11-19T16:56:30Z"
 }
 ---
 
@@ -57,3 +58,7 @@ Behind the sixfold order book sits one of the steepest revenue curves ever prese
 Despite remaining unprofitable on a trailing earnings basis due to massive data-center compute bills, Anthropic appeared to price its initial $1.26 trillion to $1.41 trillion band roughly 20 percent below private-market chatter that had floated a $1.5 trillion to $2 trillion sticker earlier this autumn. Bankers told prospective buyers that existing shareholders will receive allocation priority, leaving many newcomers braced for sharply scaled-back share allotments—and prompting underwriters to weigh lifting the final price range next week if momentum holds.
 
 Anthropic chief executive Dario Amodei and JPMorgan Chase chief executive Jamie Dimon are scheduled to headline a livestreamed investor presentation Friday to cap the first week of the roadshow, keeping Silicon Valley dealmaking at fever pitch alongside [advancing talks for a $3.4 trillion merger between SpaceX and Tesla](/articles/spacex-tesla-advance-talks-historic-3-4-trillion-merger-december/).
+
+## Update: Anthropic stock opens at $111.50
+
+Anthropic priced its IPO at $83 a share and sold 980 million shares, raising about $81.3 billion. Its stock opened on the Nasdaq under the ticker ANT at $111.50 on Thursday, Nov. 19, about 34% above the IPO price. [Read our full report on the debut and how to buy ANT shares](https://smartaiintel.com/articles/anthropic-stock-ant-opens-111-50-nasdaq-debut-how-to-buy-2026/).

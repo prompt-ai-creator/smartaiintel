@@ -41,7 +41,8 @@
   "release_not_before": "2026-11-10T08:40:00-05:00",
   "image": "/assets/uploads/nasdaq-marketsite-times-square-archive.webp",
   "image_alt": "Broadcast studio and electronic market displays inside Nasdaq MarketSite in New York",
-  "image_credit": "Interior trading displays at Nasdaq MarketSite in New York. Luca Marfe, via Wikimedia Commons. Creative Commons Attribution 2.0. Resized and converted to WebP; this adapted photograph remains under the same license. Source: https://commons.wikimedia.org/wiki/File:NASDAQ_Market_Site_201506.jpg License: https://creativecommons.org/licenses/by/2.0/"
+  "image_credit": "Interior trading displays at Nasdaq MarketSite in New York. Luca Marfe, via Wikimedia Commons. Creative Commons Attribution 2.0. Resized and converted to WebP; this adapted photograph remains under the same license. Source: https://commons.wikimedia.org/wiki/File:NASDAQ_Market_Site_201506.jpg License: https://creativecommons.org/licenses/by/2.0/",
+  "updated": "2026-11-19T16:56:30Z"
 }
 ---
 
@@ -76,3 +77,7 @@ Trimming initial 2 trillion dollar whispers down to roughly 1.02 trillion dollar
 Financial disclosures inside the amended prospectus also give public equity analysts concrete revenue benchmarks to weigh against Anthropic's trillion dollar price tag. Based on October revenue run rates cited by analysts reviewing the filing, pricing at 78 dollars per share values Anthropic at roughly thirteen times annualized revenue across its 13.09 billion outstanding shares and approximately seventeen times revenue on its 18.01 billion fully diluted share count.
 
 By comparison, SpaceX raised roughly 75 billion to 86 billion dollars including overallotment options during its June debut at a valuation near 1.75 trillion dollars, backed by dominant commercial launch margins and tens of millions of global Starlink subscribers, while rival OpenAI chief executive Sam Altman reiterated earlier this autumn that OpenAI has no immediate timeline to go public until it can make firmer long term safety guarantees around frontier autonomous models. Stepping onto the Nasdaq stage ahead of OpenAI gives Anthropic first mover access to institutional index portfolios, sovereign wealth capital, and liquid acquisition currency, making next week's bookbuilding window between 70 and 78 dollars a defining verdict on the entire generative AI economy.
+
+## Update: Anthropic stock opens at $111.50
+
+Anthropic later priced its IPO at $83, above this range, and its shares opened on the Nasdaq under the ticker ANT at $111.50 on Thursday, Nov. 19, about 34% above the IPO price. [Read our full report on the debut and how to buy ANT shares](https://smartaiintel.com/articles/anthropic-stock-ant-opens-111-50-nasdaq-debut-how-to-buy-2026/).
