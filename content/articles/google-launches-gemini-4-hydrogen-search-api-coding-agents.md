@@ -39,6 +39,8 @@
 }
 ---
 
+> **Looking for Gemini 4 Neon?** Google released Neon on Nov. 18. Read our full guide: [Gemini 4 Neon release: price, benchmarks and who gets it](https://smartaiintel.com/articles/gemini-4-neon-release-price-benchmarks-who-gets-it-2026/).
+
 MOUNTAIN VIEW, Calif. — Google has released Gemini 4 Hydrogen worldwide, deploying a high-speed artificial intelligence model across Google Search, the Gemini consumer app, Google AI Studio, and its commercial cloud APIs to accelerate everyday software engineering and multi-step agent workflows.
 
 Positioned as the rapid-execution counterpart to Google DeepMind's heavier Carbon and Argon reasoning models, Gemini 4 Hydrogen brings fourth-generation intelligence to free and paid users simultaneously while giving enterprise developers flat pricing across a massive 1-million-token context window.
