@@ -65,31 +65,29 @@
 }
 ---
 
-A ransomware group has published customer data linked to **Visa, Mastercard and JPMorgan Chase**, three of the biggest names in American banking and payments. All three companies confirmed Thursday that outside vendors working for them were hit, but said card numbers and their own payment systems were not affected.
+A ransomware group has published customer data linked to **Visa, Mastercard and JPMorgan Chase**, three of the biggest names in American banking and payments. All three companies confirmed Thursday that outside vendors working for them were hit, but said card numbers and their own payment systems were not affected, [Reuters reported](https://finance.yahoo.com/technology/articles/visa-mastercard-jpmorgan-hit-reported-165341009.html).
 
-The group, which calls itself **n0n**, claimed responsibility, according to The Wall Street Journal, citing cybersecurity firm SOCRadar. Shares of all three companies fell in midday trading after the news.
+The group, which calls itself **n0n**, claimed responsibility, according to The Wall Street Journal, citing cybersecurity firm SOCRadar. Shares of all three companies [fell in midday trading](https://stockanalysis.com/news/jpmorgan-visa-mastercard-customer-data-leaked/) after the news.
 
 ## What happened
 
-The n0n group listed Visa and JPMorgan as victims on its leak site on Nov. 16 and gave them 48 hours to negotiate, according to Cybernews. When that deadline passed, it released the files.
-
-None of the three companies has named the vendors involved or said how many customers were affected in total.
+The n0n group listed Visa and JPMorgan as victims on its leak site on Nov. 16 and gave them 48 hours to negotiate, according to the cybersecurity news site Cybernews. When that deadline passed, it released the files. None of the three companies has named the vendors involved or said how many customers were affected in total.
 
 ## What each company says
 
-- **Visa:** A spokesman said the incident involved "a third-party service provider in Asia Pacific." He said "Visa's systems were not involved and were not impacted" and "no payments data such as card numbers were affected."
-- **Mastercard:** The company said a "limited amount of information from a subset of cardholders enrolled in a specific benefit program" was exposed. It said the issue was contained and there is "no impact to the Mastercard payment network or the ability for people to use their cards."
-- **JPMorgan Chase:** The bank said outside companies providing services to it were targeted. "Based on our investigation so far, we believe the attackers accessed certain marketing data held by those vendors, which may include some customer names and email addresses," a spokesperson said. The bank said its services were not disrupted.
+Visa said the incident involved "a third-party service provider in Asia Pacific." A spokesman said "Visa's systems were not involved and were not impacted" and "no payments data such as card numbers were affected," [according to Quartz](https://qz.com/hackers-leak-visa-mastercard-jpmorgan-data-vendors-111926).
+
+Mastercard said a "limited amount of information from a subset of cardholders enrolled in a specific benefit program" was exposed. The company said the issue was contained and there is "no impact to the Mastercard payment network or the ability for people to use their cards."
+
+JPMorgan Chase said outside companies providing services to the bank were targeted. "Based on our investigation so far, we believe the attackers accessed certain marketing data held by those vendors, which may include some customer names and email addresses," a spokesperson said, [as reported by KHBS](https://www.4029tv.com/article/visa-mastercard-and-jpmorgan-chase-cyberattack/74478458). The bank said its own services were not disrupted.
 
 ## What was in the leaked files
 
-Researchers at Cybernews went through the published files. Their findings, which the companies have not confirmed:
+Researchers at Cybernews went through the published files, and their findings have not been confirmed by the companies. They counted about **16,000 JPMorgan customer email addresses**, some with phone numbers and account IDs, plus around 124 employee email addresses. Those records appear tied to an invitation-only Reserve card for very wealthy clients.
 
-- **JPMorgan:** about **16,000 customer email addresses**, some with phone numbers and account IDs, plus around 124 employee email addresses. The records appear tied to an invitation-only Reserve card for very wealthy clients.
-- **Visa:** more than **6,000 premium cardholders**, apparently from a marketing platform for dining offers in Asia-Pacific, including Hong Kong, Japan, South Korea, Singapore and Australia.
-- **Mastercard:** about **2,000 records**, so jumbled that one researcher said they may be test data.
+The Visa files covered more than **6,000 premium cardholders**, apparently from a marketing platform for dining offers in Asia-Pacific markets including Hong Kong, Japan, South Korea, Singapore and Australia. The Mastercard set held about **2,000 records**, so jumbled that one researcher said they may be test data.
 
-A Cybernews researcher said the three datasets share the same file layout. "It looks a lot like data for all of them was taken from the same third party," Aras Nazarovas said. The companies have not confirmed that.
+The researchers also noticed that the three datasets share the same file layout. "It looks a lot like data for all of them was taken from the same third party," Cybernews researcher Aras Nazarovas said. The companies have not confirmed that, [Times Now noted](https://www.timesnownews.com/world/us/us-news/visa-mastercard-and-jpmorgan-customer-data-leaked-after-hackers-target-third-party-providers-article-156538611).
 
 ## Who is n0n?
 
@@ -97,23 +95,18 @@ The group first appeared in September and has claimed about 200 attacks since th
 
 ## Not related to the Chase outage
 
-The leak comes days after Chase customers had trouble logging in and sending payments on Monday. JPMorgan said "there is no connection" between the two. It blamed Monday's problem on a software bug in an on-premise hardware system.
+The leak comes days after Chase customers had trouble logging in and sending payments on Monday. JPMorgan said "there is no connection" between the two and blamed Monday's problem on a software bug in an on-premise hardware system.
 
 The breach adds to a rough two weeks for U.S. tech systems, after outages hit [Microsoft 365](https://smartaiintel.com/articles/microsoft-365-outage-disrupts-outlook-teams-copilot-exchange-online/) and the [FAA's air traffic systems](https://smartaiintel.com/articles/faa-orders-nationwide-ground-stop-all-us-airports-atc-outage/).
 
 ## What to do if you have a Visa, Mastercard or Chase card
 
-There is no sign that card numbers, PINs or passwords were stolen, so you do not need to cancel your card. But leaked names, emails and phone numbers make it easier for scammers to send convincing fake messages. Experts recommend these steps:
+There is no sign that card numbers, PINs or passwords were stolen, so you do not need to cancel your card. But leaked names, emails and phone numbers make it easier for scammers to send convincing fake messages, so the next few weeks call for extra caution.
 
-1. **Treat any message about the breach with suspicion.** Scammers often pose as the bank right after a leak. Do not click links in unexpected texts or emails.
-2. **Contact your bank directly.** Use the official app, website or the phone number on the back of your card, not a number in a message.
-3. **Never share one-time codes or passwords.** Real bank staff will not ask for them.
-4. **Turn on transaction alerts** in your banking app so you see any charge right away.
-5. **Use two-factor authentication** on your bank and email accounts.
-6. **Watch for a letter or email from Chase.** The bank says it will contact affected customers directly and offer free credit monitoring.
+Treat any call, text or email about the breach with suspicion, because scammers often pose as the bank right after a leak. Do not click links in unexpected messages. If you want to check your account, contact your bank directly through its official app, its website or the phone number on the back of your card. Real bank staff will never ask for your password or a one-time code.
+
+It is also a good moment to turn on transaction alerts in your banking app, so you see any charge right away, and to use two-factor authentication on your bank and email accounts. Chase says it will contact affected customers directly and offer free credit monitoring, so watch for a letter or email from the bank and verify it through the Chase app before acting on it.
 
 ## What's next
 
 Visa and Mastercard have not given a full count of affected cardholders, and none of the companies has said whether the vendors received ransom demands. We will update this story as more details are confirmed.
-
-**Sources:** The Wall Street Journal, Reuters, Quartz, Cybernews, Yahoo Finance, The Verge
