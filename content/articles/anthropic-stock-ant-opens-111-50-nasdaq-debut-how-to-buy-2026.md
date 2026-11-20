@@ -1,9 +1,9 @@
 ---
 {
-  "title": "Anthropic Stock Opens at $111.50 in Nasdaq Debut, 34% Above IPO Price. Here's How to Buy ANT Shares",
+  "title": "Anthropic Stock Slides Toward $83 IPO Price on Day Two After $111.50 Debut. Here's How to Buy ANT Shares",
   "summary": "Anthropic shares opened on the Nasdaq under the ticker ANT at $111.50 on Thursday, 34% above the $83 IPO price, and closed their first day at $97.17. On Friday, the stock opened at $89.86 and slid about 11% to near $86, close to the IPO price, as an AI selloff deepened.",
-  "description": "Anthropic (ANT) stock price today: day-two premarket drop, the $97.17 first-day close, the $111.50 open and how to buy Anthropic shares.",
-  "seo_title": "Anthropic Stock (ANT) Price Today: Debut Recap and How to Buy",
+  "description": "Anthropic stock (ANT) opened at $89.86 on day two and slid about 11% toward its $83 IPO price after a $111.50 debut. Latest price and how to buy ANT.",
+  "seo_title": "Anthropic Stock (ANT) Price Today: Slides Toward $83 IPO Price",
   "section": "business",
   "author": "Carter B.",
   "key_points": [
@@ -91,7 +91,7 @@
   "indexable": true,
   "show_on_homepage": true,
   "date": "2026-11-19T16:56:00Z",
-  "updated": "2026-11-20T15:36:00Z",
+  "updated": "2026-11-20T15:53:00Z",
   "image": "/assets/uploads/anthropic-ceo-dario-amodei-ant-stock-nasdaq-debut-2026.webp",
   "image_width": 1600,
   "image_height": 900,
