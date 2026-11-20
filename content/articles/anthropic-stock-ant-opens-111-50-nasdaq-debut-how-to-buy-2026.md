@@ -1,7 +1,7 @@
 ---
 {
   "title": "Anthropic Stock Opens at $111.50 in Nasdaq Debut, 34% Above IPO Price. Here's How to Buy ANT Shares",
-  "summary": "Anthropic shares opened on the Nasdaq under the ticker ANT at $111.50 on Thursday, 34% above the $83 IPO price, and closed their first day at $97.17. On Friday, the stock fell about 10% in premarket trading to around $86 as an AI selloff deepened.",
+  "summary": "Anthropic shares opened on the Nasdaq under the ticker ANT at $111.50 on Thursday, 34% above the $83 IPO price, and closed their first day at $97.17. On Friday, the stock opened at $89.86 and slid about 11% to near $86, close to the IPO price, as an AI selloff deepened.",
   "description": "Anthropic (ANT) stock price today: day-two premarket drop, the $97.17 first-day close, the $111.50 open and how to buy Anthropic shares.",
   "seo_title": "Anthropic Stock (ANT) Price Today: Debut Recap and How to Buy",
   "section": "business",
@@ -10,12 +10,20 @@
     "Anthropic began trading on the Nasdaq under the ticker ANT shortly before noon ET on Thursday, Nov. 19, at $111.50 a share.",
     "That is about 34% above the $83 IPO price set Wednesday night, which was itself above the $70 to $78 range.",
     "ANT closed its first day at $97.17, up 17.1% from the IPO price, after trading between $92.72 and $115.10.",
-    "On Friday, Nov. 20, ANT fell about 10% in premarket trading, to around $86, as a broad selloff in AI stocks continued. It was still above the $83 IPO price.",
+    "On Friday, Nov. 20, ANT opened at $89.86, down 7.5%, and fell as low as $85.67 in the first hour, about 11% below Thursday's close but still above the $83 IPO price.",
     "The first trade valued the Claude maker at more than $2 trillion, up from about $1.5 trillion at the IPO price.",
     "Anyone with a regular brokerage account can now buy ANT shares on the open market. Options trading is expected to start as soon as Monday, Nov. 23.",
     "Anthropic's underwriters exercised their option to sell extra shares, lifting the IPO to about $93.5 billion, or $119.5 billion including a private placement."
   ],
   "sources": [
+    {
+      "title": "Fox News — Anthropic shares slide 7.5% toward offering price",
+      "url": "https://www.foxnews.com/live-news/anthropic-stock-ipo-compute-costs-to-rise-11-20-26"
+    },
+    {
+      "title": "The Guardian — Anthropic shares slide as AI sell-off hits global markets",
+      "url": "https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news"
+    },
     {
       "title": "Reuters via The Economic Times — Anthropic shares fall 10% post stellar debut",
       "url": "https://economictimes.indiatimes.com/markets/us-stocks/wall-street-guide/anthropic-shares-fall-10-post-stellar-debut-delivers-reality-check-for-ai-trade/articleshow/136027823.cms"
@@ -60,7 +68,7 @@
     },
     {
       "question": "Why is Anthropic stock down on its second day?",
-      "answer": "Anthropic (ANT) fell about 10% in premarket trading on Friday, Nov. 20, to around $86. Analysts pointed to profit-taking after the first-day pop, a broader selloff in AI and chip stocks, worries about Anthropic's valuation of about 40 times sales, and hawkish signals from Federal Reserve officials. Premarket prices can change once regular trading opens at 9:30 a.m. ET."
+      "answer": "Anthropic (ANT) opened at $89.86 on Friday, Nov. 20, down 7.5% from Thursday's $97.17 close, and slid to about $86 in the first hour, roughly 11% lower. Analysts pointed to profit-taking after the first-day pop, a broader selloff in AI and chip stocks, worries about Anthropic's valuation of about 40 times sales, and hawkish signals from Federal Reserve officials. The stock was still above its $83 IPO price."
     },
     {
       "question": "What is Anthropic's stock ticker?",
@@ -83,7 +91,7 @@
   "indexable": true,
   "show_on_homepage": true,
   "date": "2026-11-19T16:56:00Z",
-  "updated": "2026-11-20T13:39:00Z",
+  "updated": "2026-11-20T15:36:00Z",
   "image": "/assets/uploads/anthropic-ceo-dario-amodei-ant-stock-nasdaq-debut-2026.webp",
   "image_width": 1600,
   "image_height": 900,
@@ -95,6 +103,14 @@
 Anthropic's stock is officially trading, and it jumped right out of the gate. Shares of the Claude maker opened on the Nasdaq at **$111.50** under the ticker **ANT** shortly before noon Eastern on Thursday, about **34% above** the $83 IPO price, [CNN reported](https://edition.cnn.com/2026/11/19/business/live-news/anthropic-ipo).
 
 The first trade pushed Anthropic's value past **$2 trillion**, according to [The New York Times](https://www.nytimes.com/live/2026/11/19/technology/anthropic-ipo-ai), up from about $1.5 trillion at the IPO price and more than double what the company was worth six months ago.
+
+## Update, Nov. 20: Anthropic opens at $89.86 and slides toward its $83 IPO price
+
+Anthropic's second day of regular trading started lower. ANT opened at **$89.86** at 9:30 a.m. ET on Friday, down 7.5% from Thursday's $97.17 close, [Fox News reported](https://www.foxnews.com/live-news/anthropic-stock-ipo-compute-costs-to-rise-11-20-26). In the first hour it traded between **$85.67 and $92.56** and was down about **11%** at roughly $86, according to [Yahoo Finance data](https://finance.yahoo.com/quote/ANT/). That leaves the stock only about $3 above the $83 IPO price and about 23% below Thursday's $111.50 first trade.
+
+The selling spread across Wall Street. Anthropic shares fell more than 9% at the opening bell, and commentary quoted in [The Guardian's live coverage](https://www.theguardian.com/business/live/2026/nov/20/asia-stocks-worst-anthropic-ipo-ai-stock-market-latest-updates-news) called the $83 IPO price "the level to watch," warning that a deeper selloff could put the stock at risk of dipping below it. About 139 million shares had changed hands by 10:16 a.m. ET, [MLQ.ai reported](https://mlq.ai/news/anthropic-shares-fall-toward-their-83-ipo-price-on-day-two-as-the-greenshoe-lifts-the-raise-to-935-billion/) using StockAnalysis data.
+
+Even after the drop, Anthropic was worth about $1.14 trillion by intraday market value, Yahoo Finance data show. The IPO itself grew on Friday to about $93.5 billion after underwriters bought extra shares, as detailed below.
 
 ## Update, Nov. 20: Anthropic stock falls about 10% before the bell on day two
 
@@ -110,7 +126,7 @@ The IPO also got bigger on Friday. Anthropic's underwriters exercised their opti
 
 Wall Street analysts are mostly upbeat. Melius Research started coverage with a Buy rating and a $155 price target, and Needham rated the stock a Buy with a $150 target, [Invezz reported](https://finwire.io/news/stock-markets-news/anthropic-slides-over-9-in-premarket-after-blockbuster-debut-whats-going-on). Retail traders bought and sold about $772 million of Anthropic shares on debut day, the most for any IPO since Vanda Research began tracking the data in 2012.
 
-Regular trading opens at **9:30 a.m. ET**, and premarket prices often change once it does. We will update this article after the open.
+Regular trading opens at **9:30 a.m. ET**, and premarket prices often change once it does. Anthropic later opened lower; see the update above.
 
 ## Update: Anthropic closes first day at $97.17
 
