@@ -18,10 +18,6 @@
     {
       "title": "Orlando Sentinel report detailing Big Bend National Park barriers, environmental waivers, and Texas opposition",
       "url": "https://www.orlandosentinel.com/2026/11/09/supreme-court-big-bend-border-wall/"
-    },
-    {
-      "title": "SmartAIIntel report on US immigration enforcement actions and H-1B visa review developments",
-      "url": "https://smartaiintel.com/articles/justice-department-probes-ibm-h1b-visa-bias-uscis-backlog/"
     }
   ],
   "editorial_approved": true,
@@ -40,7 +36,7 @@ The US Supreme Court cleared the way for the Trump administration to resume buil
 
 In an unsigned five-page order on its emergency docket, the court granted a stay sought by Solicitor General D. John Sauer after US District Judge Kathleen Cardone in El Paso halted construction on October 2 and the New Orleans-based 5th US Circuit Court of Appeals declined to lift her block. Justice Ketanji Brown Jackson was the sole justice to note a public dissent, meaning Chief Justice John Roberts and fellow liberal Justices Sonia Sotomayor and Elena Kagan joined the court's conservative majority in allowing work to restart during litigation.
 
-The ruling marks a major operational win for the Department of Homeland Security's border-infrastructure push at a time when the administration is simultaneously [expanding immigration and employment-visa enforcement nationwide](https://smartaiintel.com/articles/justice-department-probes-ibm-h1b-visa-bias-uscis-backlog/), even as the Big Bend project has provoked rare bipartisan pushback inside Texas.
+The ruling marks a major operational win for the Department of Homeland Security's border-infrastructure push at a time when the administration is simultaneously expanding immigration and employment-visa enforcement nationwide, even as the Big Bend project has provoked rare bipartisan pushback inside Texas.
 
 ## Environmental waivers and a 500-mile West Texas border sector
 

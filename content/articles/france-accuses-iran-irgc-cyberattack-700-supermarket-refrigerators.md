@@ -22,10 +22,6 @@
     {
       "title": "Report on Iranian Foreign Ministry rejecting French cyber sabotage accusations as baseless",
       "url": "https://mblip.com/iran-denies-french-cyberattack-that-spoiled-millions-in-food/"
-    },
-    {
-      "title": "SmartAIIntel report on CISA ordering federal agencies to patch actively exploited firewall vulnerabilities",
-      "url": "https://smartaiintel.com/articles/cisa-palo-alto-pan-os-cisco-fmc-zero-day-directive/"
     }
   ],
   "editorial_approved": true,
@@ -54,7 +50,7 @@ According to French investigators and retail industry disclosures, attackers com
 
 By the time store managers arrived the following morning, spoiled meat, dairy, seafood, and frozen goods across more than 700 retail outlets had to be destroyed under French food-safety rules, inflicting tens of millions of euros in direct inventory losses and cleanup expenses. Investigators also documented at least 15 localized electrical and compressor fires sparked by overheated refrigeration units pushed beyond normal operating tolerances.
 
-The attack highlights growing alarm among western cyber defenders over exposed industrial and edge network appliances — the same class of perimeter threat that prompted US officials this week to [issue an emergency CISA directive ordering agencies to patch exploited enterprise firewalls](https://smartaiintel.com/articles/cisa-palo-alto-pan-os-cisco-fmc-zero-day-directive/).
+The attack highlights growing alarm among western cyber defenders over exposed industrial and edge network appliances — the same class of perimeter threat that prompted US officials this week to issue an emergency CISA directive ordering agencies to patch exploited enterprise firewalls.
 
 ## Barrot warns of 'crossed threshold' as Tehran rejects allegations
 

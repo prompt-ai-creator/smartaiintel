@@ -18,10 +18,6 @@
     {
       "title": "Times of India report on SoftBank Group posting 7 billion dollar net loss amid US data center buildout",
       "url": "https://timesofindia.indiatimes.com/technology/tech-news/americas-datacentre-buildout-is-hurting-japanese-giant-softbank-as-the-company-reports-7-billion-net-loss-but-remains-optimist-as-cfo-yoshimitsu-goto-sees-much-promise-in-/articleshow/135709040.cms"
-    },
-    {
-      "title": "SmartAIIntel coverage of Anthropic kicking off Nasdaq IPO roadshow targeting up to 700 billion dollar valuation",
-      "url": "https://smartaiintel.com/articles/anthropic-ipo-roadshow-nasdaq-700-billion-ai-valuation/"
     }
   ],
   "editorial_approved": true,
@@ -52,7 +48,7 @@ Financial pressure inside the commercial unit remained acute in Boeing's latest 
 
 ## SoftBank absorbs $7 billion loss on massive US AI data-center push
 
-On the other side of the Pacific, SoftBank's quarterly results illustrated the staggering upfront capital burn required to build physical power, land, and server capacity for frontier AI developers — arriving in the same week [Anthropic launched its Nasdaq IPO roadshow targeting a valuation of up to $700 billion](https://smartaiintel.com/articles/anthropic-ipo-roadshow-nasdaq-700-billion-ai-valuation/).
+On the other side of the Pacific, SoftBank's quarterly results illustrated the staggering upfront capital burn required to build physical power, land, and server capacity for frontier AI developers — arriving in the same week Anthropic launched its Nasdaq IPO roadshow targeting a valuation of up to $700 billion.
 
 SoftBank raised a record $56.5 billion across debt, asset-backed facilities, and project financing during the third quarter to bankroll multi-gigawatt American data-center campuses and semiconductor investments, pushing its net debt and interest carry higher even before many of those facilities come online and generate contracted cloud lease revenue.
 
