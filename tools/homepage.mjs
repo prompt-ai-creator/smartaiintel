@@ -1,5 +1,6 @@
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const categories={'us-news':'US News',world:'World',security:'War & Security',technology:'Technology',business:'Business',sports:'Football & Sports'};
+const hubLabels={...categories,africa:'Africa & Diaspora'};
 const ids={'us-news':'us-news',world:'world-news',security:'security-news',technology:'technology-news',business:'business-news',sports:'sports-news'};
 
 const navItems=[
@@ -9,7 +10,8 @@ const navItems=[
  ['security','War & Security','/security/'],
  ['technology','Technology','/technology/'],
  ['business','Business','/business/'],
- ['sports','Football & Sports','/sports/']
+ ['sports','Football & Sports','/sports/'],
+ ['africa','Africa','/africa/']
 ];
 
 export const inFocusTopics=[
@@ -25,7 +27,7 @@ export function matchTopicArticles(topic,articles){
  const test=txt=>topic.patterns.some(rx=>rx.test(txt));
  const hits=[];
  for(const a of articles){
-  if(a.test_only===true||a.indexable!==true)continue;
+  if(a.test_only===true||a.indexable!==true||a.section==='africa')continue;
   const headText=[a.title,a.seo_title,a.summary,a.description].filter(Boolean).join(' ');
   const bodyText=a.rawBody||String(a.html||'').replace(/<[^>]+>/g,' ');
   const inHead=test(headText);
@@ -44,7 +46,7 @@ function buildTopicStrip(activeTopicSlug=''){
  return `<div class="wrap topic-strip" id="regions"><span>IN FOCUS</span>${inFocusTopics.map(t=>`<a class="topic-link${t.slug===activeTopicSlug?' active':''}" href="/topics/${t.slug}/"${t.slug===activeTopicSlug?' aria-current="page"':''}>${esc(t.label)}</a>`).join('')}</div>`;
 }
 
-const footerSectionLinks='<a href="/us-news/">US News</a><a href="/world/">World</a><a href="/security/">War &amp; Security</a><a href="/technology/">Technology &amp; AI</a><a href="/business/">Business</a><a href="/sports/">Football &amp; Sports</a><a href="/articles/">All articles</a>';
+const footerSectionLinks='<a href="/us-news/">US News</a><a href="/world/">World</a><a href="/security/">War &amp; Security</a><a href="/technology/">Technology &amp; AI</a><a href="/business/">Business</a><a href="/sports/">Football &amp; Sports</a><a href="/africa/">Africa &amp; Diaspora</a><a href="/articles/">All articles</a>';
 
 function applySharedShellCleanup(out,activeNavKey,activeTopicSlug=''){
  out=out.replace('href="styles.css"','href="/styles.css?v=4"');
@@ -63,7 +65,7 @@ function applySharedShellCleanup(out,activeNavKey,activeTopicSlug=''){
 }
 
 export function homepage(template,articles){
- const eligible=articles.filter(a=>a.test_only!==true&&a.show_on_homepage!==false);
+ const eligible=articles.filter(a=>a.test_only!==true&&a.show_on_homepage!==false&&a.section!=='africa');
  const image=a=>a.image?`<a class="image-link" href="/articles/${a.slug}/"><img src="${esc(a.image)}" alt="${esc(a.image_alt)}" width="800" height="533" loading="lazy"></a>`:'';
  const meta=a=>`<div class="meta">By ${esc(a.author)} <b>·</b> <time datetime="${a.date}">${new Date(a.date).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'})}</time></div>`;
  const card=(a,kind='support',heading='h2')=>`<article class="story ${kind}" data-category="${esc(categories[a.section])}" data-search="${esc([a.title,a.summary,a.sectionLabel,a.author].join(' ').toLowerCase())}">${image(a)}<div class="label"><a href="/${esc(a.section)}/">${esc(a.sectionLabel)}</a></div><${heading}><a href="/articles/${a.slug}/">${esc(a.title)}</a></${heading}>${kind==='lead'||kind==='coverage-card'?`<p>${esc(a.summary)}</p>`:''}${meta(a)}</article>`;
@@ -99,9 +101,9 @@ function renderHubLayout(template,{kickerTitle,hubFullTitle,shortLabel,hubArticl
 }
 
 export function categoryPage(template,sectionKey,sectionFullTitle,articles){
- const shortLabel=categories[sectionKey]||sectionFullTitle;
+ const shortLabel=hubLabels[sectionKey]||sectionFullTitle;
  const secArticles=articles.filter(a=>a.test_only!==true&&a.indexable===true&&a.section===sectionKey);
- const otherLatest=articles.filter(a=>a.test_only!==true&&a.indexable===true&&a.section!==sectionKey).slice(0,4);
+ const otherLatest=articles.filter(a=>a.test_only!==true&&a.indexable===true&&a.section!==sectionKey&&a.section!=='africa').slice(0,4);
  return renderHubLayout(template,{
   kickerTitle:sectionFullTitle.toUpperCase(),
   hubFullTitle:sectionFullTitle,
@@ -116,7 +118,7 @@ export function categoryPage(template,sectionKey,sectionFullTitle,articles){
 export function topicPage(template,topic,articles){
  const matched=matchTopicArticles(topic,articles);
  const matchedSlugs=new Set(matched.map(a=>a.slug));
- const otherLatest=articles.filter(a=>a.test_only!==true&&a.indexable===true&&!matchedSlugs.has(a.slug)).slice(0,4);
+ const otherLatest=articles.filter(a=>a.test_only!==true&&a.indexable===true&&!matchedSlugs.has(a.slug)&&a.section!=='africa').slice(0,4);
  return renderHubLayout(template,{
   kickerTitle:`IN FOCUS · ${topic.label.toUpperCase()}`,
   hubFullTitle:topic.label,
