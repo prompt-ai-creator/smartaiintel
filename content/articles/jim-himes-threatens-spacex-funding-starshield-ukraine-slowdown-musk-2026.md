@@ -59,6 +59,7 @@
   "date": "2026-11-22T04:05:00Z",
   "updated": "2026-11-22T04:05:00Z",
   "image": "/assets/uploads/jim-himes-elon-musk-spacex-starshield-funding-ukraine-2026.webp",
+  "social_image": "/assets/social/jim-himes-elon-musk-spacex-starshield-card.jpg",
   "image_width": 1600,
   "image_height": 900,
   "image_alt": "Side-by-side photos of Rep. Jim Himes in his official congressional portrait and Elon Musk wearing sunglasses and a black cap at CPAC",
