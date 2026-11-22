@@ -201,6 +201,7 @@ function rssDescription(a){
  return text;
 }
 async function rssImage(a){
+ if(a.social_image){try{const sp=a.social_image.split('?')[0];const sb=await fs.readFile(path.join(dest,sp.slice(1)));const sd=jpegSize(sb)||{width:1200,height:630};return {url:origin+sp,type:'image/jpeg',length:sb.length,...sd};}catch{}}
  if(!a.image)return null;
  const base=a.image.split('?')[0];
  const name=path.basename(base).replace(/\.[a-z0-9]+$/i,'');
