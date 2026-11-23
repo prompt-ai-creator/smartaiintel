@@ -91,7 +91,7 @@
     }
   ],
   "image": "/assets/uploads/iowa-army-ammunition-plant-middletown-lead-azide-detonation-2026.webp",
-  "social_image": "/assets/social/iowa-army-lead-azide-detonation-wednesday-card.jpg",
+  "social_image": "/assets/social/iowa-army-lead-azide-detonation-wednesday-card-v2.jpg",
   "image_alt": "Black and white archive photo of wrecked buildings and debris at the Iowa Ordnance Plant after a 1941 explosion",
   "image_credit": "Archive photo: Damage after an explosion at the Iowa Ordnance Plant, now the Iowa Army Ammunition Plant, December 1941. National Archives, public domain, via Wikimedia Commons. This is not the planned detonation.",
   "editorial_approved": true,
