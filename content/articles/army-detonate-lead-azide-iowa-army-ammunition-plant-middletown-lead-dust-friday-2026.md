@@ -1,21 +1,36 @@
 ---
 {
-  "title": "Army Delays Iowa Lead Azide Detonation to Monday, Nov. 23. Here's What to Know About the Lead Dust Plume",
-  "summary": "The US Army has postponed its plan to detonate about 5 tons of degraded lead azide at the Iowa Army Ammunition Plant in Middletown from Friday, Nov. 20, to Monday, Nov. 23, after a lawsuit from environmental groups and a request from Gov. Kim Reynolds. A plume of lead dust could still drift across eastern Iowa and into Illinois when it happens.",
-  "description": "The Army postponed its Iowa Army Ammunition Plant lead azide detonation from Friday to Monday, Nov. 23, after a lawsuit and the governor's request.",
-  "seo_title": "Iowa Lead Azide Detonation Delayed to Monday: What to Know",
+  "title": "Army Moves Iowa Lead Azide Detonation to Wednesday, Nov. 25, Despite Court Pause. Here's What to Know",
+  "summary": "The US Army now plans to detonate about 5 tons of degraded lead azide at the Iowa Army Ammunition Plant in Middletown on Wednesday, Nov. 25, even though a federal appeals court has paused the EPA permit for the blast. The Justice Department says the Army can act under a separate emergency authority and has asked the court to lift its pause. A plume of lead dust could drift across eastern Iowa and into Illinois.",
+  "description": "The Army moved its Iowa Army Ammunition Plant lead azide detonation to Wednesday, Nov. 25, as the DOJ asks a court to lift its pause on the permit.",
+  "seo_title": "Iowa Lead Azide Detonation Moved to Wednesday Despite Court Stay",
   "section": "us-news",
   "author": "Austin J.",
   "key_points": [
-    "The Army postponed its controlled detonations of 68 barrels, about 5 tons, of degraded lead azide at the Iowa Army Ammunition Plant in Middletown from Friday, Nov. 20, to Monday, Nov. 23.",
-    "Acting Army Secretary Adam Telle said Monday is the latest possible moment before a forecast temperature drop that could make the material even more unstable. No start time has been announced.",
-    "Environmental groups sued in federal appeals court to block the EPA permit, and Gov. Kim Reynolds asked for the delay.",
-    "The explosive has become so unstable that moving it could set it off. 'We're really concerned that it will detonate on its own,' an Army spokesperson said.",
-    "Residents near Middletown City Park and Butterfly Park had been asked to leave from 8 a.m. to 2 p.m. CT on the original date because the blasts could break windows. Evacuation guidance will be reissued for Monday.",
-    "Army models show lead particles in the air across an area up to 20 miles wide, from Burlington to north of the Quad Cities. The dust is expected to linger for up to an hour.",
-    "Protesters have called for a delay, and Illinois officials want sampling in their state. The EPA approved the plan with an emergency permit on Nov. 13."
+    "The Army said Sunday evening it moved the controlled detonation to Wednesday, Nov. 25, 'to allow for optimal weather conditions and all mitigation measures to be emplaced.' It was first set for Friday, Nov. 20, then Monday, Nov. 23.",
+    "The 8th U.S. Circuit Court of Appeals paused the EPA's emergency permit late Thursday after the Iowa Environmental Council and the Sierra Club Iowa Chapter sued.",
+    "In a Saturday filing, the Justice Department said the court's order does not stop the Army from acting under a separate emergency legal authority. On Sunday it asked the court to lift the pause.",
+    "Environmental lawyers say the government is trying to bypass judicial review. The court has not said when it will rule.",
+    "The FAA has restricted flights around Middletown from Monday through Wednesday, and Gov. Kim Reynolds activated the state emergency operations center Friday.",
+    "The 68 barrels hold about 9,700 pounds of lead azide that has crystallized and could explode if moved. Army models show lead particles in the air across an area up to 20 miles wide."
   ],
   "sources": [
+    {
+      "title": "CNN — The US Army intends to detonate bomb-making material in Iowa on Wednesday despite a court pause",
+      "url": "https://www.cnn.com/2026/11/21/us/iowa-army-detonation-what-we-know"
+    },
+    {
+      "title": "ABC News — Federal appeals court halts detonation of nearly 5 tons of lead azide at Army plant",
+      "url": "https://abcnews.com/US/federal-appeals-court-temporarily-blocks-controlled-detonation-iowa/story?id=138321357"
+    },
+    {
+      "title": "Iowa Public Radio — Court puts a hold on Army's lead azide detonation permit in Iowa",
+      "url": "https://www.iowapublicradio.org/ipr-news/2026-11-20/court-injunction-army-planned-lead-azide-detonation"
+    },
+    {
+      "title": "Al Jazeera — Inside a US Army plan to detonate Iowa lead stores",
+      "url": "https://www.aljazeera.com/news/2026/11/23/extremely-concerning-inside-a-us-army-plan-to-detonate-iowa-lead-stores"
+    },
     {
       "title": "KCCI — Army postpones detonation of lead azide at Iowa ammunition plant",
       "url": "https://www.kcci.com/article/environmental-groups-sue-to-stop-planned-lead-azide-detonation-at-iowa-ammunition-plant/74482081"
@@ -52,7 +67,11 @@
   "faq": [
     {
       "question": "When is the Iowa Army Ammunition Plant detonation?",
-      "answer": "The Army postponed the detonation from Friday, Nov. 20, to Monday, Nov. 23, 2026, at the Iowa Army Ammunition Plant in Middletown, Iowa. The Army has not announced a start time for Monday, and a pending court challenge could change the date again."
+      "answer": "The Army now plans the detonation for Wednesday, Nov. 25, 2026, at the Iowa Army Ammunition Plant in Middletown, Iowa. It was first set for Friday, Nov. 20, then moved to Monday, Nov. 23. A federal appeals court has paused the EPA permit, and the date could change again."
+    },
+    {
+      "question": "Can the Army detonate the lead azide while the court pause is in place?",
+      "answer": "The Justice Department argues yes. In a Saturday filing, it said the court's order 'does not enjoin or otherwise prohibit the Army from acting under a separate legal authority' for emergencies. Environmental groups say that would bypass judicial review. The 8th Circuit has not yet ruled on the government's request to lift the pause."
     },
     {
       "question": "What is lead azide?",
@@ -60,7 +79,7 @@
     },
     {
       "question": "Who has to evacuate for the Iowa detonation?",
-      "answer": "The Army recommends that people in designated areas near Middletown City Park and Butterfly Park leave their homes from 8 a.m. to 2 p.m. CT on Friday because the blasts could break windows. Temporary accommodations are available at the Armed Forces Reserve Center in Middletown. People in the plume area who cannot leave should stay inside with windows and doors closed."
+      "answer": "The Army recommends that people in designated areas near Middletown City Park and Butterfly Park leave their homes from 8 a.m. to 2 p.m. CT on detonation day because the blasts could break windows. Temporary accommodations are available at the Armed Forces Reserve Center in Middletown. People in the plume area who cannot leave should stay inside with windows and doors closed."
     },
     {
       "question": "Where will the lead dust go?",
@@ -72,6 +91,7 @@
     }
   ],
   "image": "/assets/uploads/iowa-army-ammunition-plant-middletown-lead-azide-detonation-2026.webp",
+  "social_image": "/assets/social/iowa-army-lead-azide-detonation-wednesday-card.jpg",
   "image_alt": "Black and white archive photo of wrecked buildings and debris at the Iowa Ordnance Plant after a 1941 explosion",
   "image_credit": "Archive photo: Damage after an explosion at the Iowa Ordnance Plant, now the Iowa Army Ammunition Plant, December 1941. National Archives, public domain, via Wikimedia Commons. This is not the planned detonation.",
   "editorial_approved": true,
@@ -80,15 +100,27 @@
   "image_width": 1600,
   "image_height": 900,
   "date": "2026-11-19T06:38:00Z",
-  "updated": "2026-11-20T16:13:00Z"
+  "updated": "2026-11-23T04:11:00Z"
 }
 ---
 
-The US Army has pushed back its plan to blow up about 5 tons of unstable explosives at an ammunition plant in southeast Iowa. The two controlled detonations, set for Friday, are now scheduled for **Monday, Nov. 23**, and people living downwind are still worried about what will come down after the blast.
+The US Army has again pushed back its plan to blow up about 5 tons of unstable explosives at an ammunition plant in southeast Iowa. The two controlled detonations, first set for Friday, are now scheduled for **Wednesday, Nov. 25**, even as a federal court weighs whether to block them, and people living downwind are still worried about what will come down after the blast.
 
 The Army will detonate 68 barrels of degraded lead azide at the Iowa Army Ammunition Plant in Middletown. The blasts will send up a plume of dust containing lead, a toxic metal, that could settle on farmland, playgrounds and homes across parts of eastern Iowa and northwest Illinois.
 
-## Update: Army postpones the Iowa detonation to Monday
+## Update: Army moves the Iowa detonation to Wednesday despite a court pause
+
+The Army now plans to carry out the detonation on **Wednesday, Nov. 25**. In a post on X on Sunday evening, the Army said the new date was chosen "to allow for optimal weather conditions and all mitigation measures to be emplaced," [CNN reported](https://www.cnn.com/2026/11/21/us/iowa-army-detonation-what-we-know). It is the third date for the blasts, after Friday and Monday.
+
+The new schedule sets up a fight with the courts. Late Thursday, the 8th U.S. Circuit Court of Appeals paused the EPA's emergency permit for the detonation while it weighs a request from the Iowa Environmental Council and the Sierra Club Iowa Chapter to block it, [ABC News reported](https://abcnews.com/US/federal-appeals-court-temporarily-blocks-controlled-detonation-iowa/story?id=138321357). The order was a single sentence and gave no date for a ruling, [Iowa Public Radio reported](https://www.iowapublicradio.org/ipr-news/2026-11-20/court-injunction-army-planned-lead-azide-detonation).
+
+In a filing late Saturday, the Justice Department said the court's order "does not enjoin or otherwise prohibit the Army from acting under a separate legal authority." Federal attorneys have argued that the law lets the Army treat hazardous waste without a permit in an emergency involving an immediate threat to public safety. "The real choice, in other words, is not between a detonation and no detonation. It is between a planned and mitigated detonation and an unplanned and unmitigated explosion," the filing said. On Sunday, the department asked the court to lift its pause.
+
+Lawyers for the environmental groups say the government is trying to get around the court. "People across numerous impacted communities speaking up and demanding accountability is the only reason there was an opportunity to pause and think about better ways to approach the lead azide problem," Thien Chau, a senior attorney at Earthjustice, said Sunday. An Earthjustice filing said government lawyers had "laid the groundwork for a possible detonation without a permit," [Al Jazeera reported](https://www.aljazeera.com/news/2026/11/23/extremely-concerning-inside-a-us-army-plan-to-detonate-iowa-lead-stores).
+
+Gov. Kim Reynolds activated Iowa's emergency operations center on Friday, and the FAA has restricted flights around Middletown from Monday through Wednesday. Iowa Gov.-elect Rob Sand has said Iowans are "understandably concerned and angry" about how the plan was communicated. Officials in Illinois are warning residents that the dust could cross the Mississippi River. The Army has not announced a start time for Wednesday.
+
+## Earlier: Army postpones the Iowa detonation to Monday
 
 Acting Secretary of the Army Adam Telle announced the delay Thursday evening, less than a day before the planned noon blast. "Public safety is the Army's top priority, and I have directed Army Materiel Command to postpone tomorrow's controlled detonation at the Iowa Army Ammunition Plant in Middletown, Iowa until Monday, November 23," Telle said in a statement on X, [KCCI reported](https://www.kcci.com/article/environmental-groups-sue-to-stop-planned-lead-azide-detonation-at-iowa-ammunition-plant/74482081). He said the new date "will delay the detonation until the latest possible moment prior to a forecasted temperature drop, which would risk further destabilization of the material."
 
@@ -140,4 +172,3 @@ On Wednesday, protesters gathered outside the Armed Forces Reserve Center in Mid
 
 The plant has a history with explosions. In December 1941, a major blast at what was then the Iowa Ordnance Plant destroyed buildings at the site.
 
-**Sources:** The Associated Press; CBS News Chicago; NPR Illinois; CBS2 Iowa; WQAD; US Environmental Protection Agency.
